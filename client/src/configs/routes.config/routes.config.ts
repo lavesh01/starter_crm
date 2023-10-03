@@ -1,6 +1,6 @@
-import { lazy } from 'react'
-import authRoute from './authRoute'
 import type { Routes } from '@/@types/routes'
+import authRoute from './authRoute'
+import { lazy } from 'react'
 
 export const publicRoutes: Routes = [...authRoute]
 
@@ -12,6 +12,12 @@ export const protectedRoutes = [
         authority: [],
     },
     /** Example purpose only, please remove */
+    {
+        key: 'blog',
+        path: '/blog',
+        component: lazy(() => import('@/views/demo/Blog')),
+        authority: [],
+    },
     {
         key: 'singleMenuItem',
         path: '/single-menu-view',

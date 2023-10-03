@@ -19,6 +19,16 @@ const navigationConfig: NavigationTree[] = [
     },
     /** Example purpose only, please remove */
     {
+        key: 'blog',
+        path: '/blog',
+        title: 'Blog',
+        translateKey: 'nav.blog',
+        icon: 'blog',
+        type: NAV_ITEM_TYPE_ITEM,
+        authority: [],
+        subMenu: [],
+    },
+    {
         key: 'singleMenuItem',
         path: '/single-menu-view',
         title: 'Single menu item',

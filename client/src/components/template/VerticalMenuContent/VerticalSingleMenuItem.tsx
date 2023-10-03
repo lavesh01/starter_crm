@@ -1,12 +1,13 @@
-import Tooltip from '@/components/ui/Tooltip'
-import Menu from '@/components/ui/Menu'
-import AuthorityCheck from '@/components/shared/AuthorityCheck'
-import VerticalMenuIcon from './VerticalMenuIcon'
-import { Link } from 'react-router-dom'
 import { Trans, useTranslation } from 'react-i18next'
+
+import AuthorityCheck from '@/components/shared/AuthorityCheck'
 import type { CommonProps } from '@/@types/common'
 import type { Direction } from '@/@types/theme'
+import { Link } from 'react-router-dom'
+import Menu from '@/components/ui/Menu'
 import type { NavigationTree } from '@/@types/navigation'
+import Tooltip from '@/components/ui/Tooltip'
+import VerticalMenuIcon from './VerticalMenuIcon'
 
 const { MenuItem } = Menu
 
@@ -45,6 +46,7 @@ const CollapsedItem = ({
 
 const DefaultItem = (props: DefaultItemProps) => {
     const { nav, onLinkClick, sideCollapsed, userAuthority } = props
+    console.log({ nav, onLinkClick, sideCollapsed, userAuthority })
 
     return (
         <AuthorityCheck userAuthority={userAuthority} authority={nav.authority}>
