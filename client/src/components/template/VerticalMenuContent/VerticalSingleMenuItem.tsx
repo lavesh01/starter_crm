@@ -46,7 +46,6 @@ const CollapsedItem = ({
 
 const DefaultItem = (props: DefaultItemProps) => {
     const { nav, onLinkClick, sideCollapsed, userAuthority } = props
-    console.log({ nav, onLinkClick, sideCollapsed, userAuthority })
 
     return (
         <AuthorityCheck userAuthority={userAuthority} authority={nav.authority}>
