@@ -3,6 +3,17 @@ const router = express.Router();
 const Blog = require('../models/Blog')
 const Category = require('../models/category');
 
+
+router.get('/', async (req, res) => {
+    try {
+        const blog = await Blog.find({ deleted: 0 }).populate('category','name');
+        res.status(200).json(blog);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
+
 router.post('/', async (req,res) => {
     const { title, description, category } = req.body;
     try{
@@ -25,6 +36,22 @@ router.post('/', async (req,res) => {
         res.status(500).json({"Error": err});
     }
 })
+
+router.put('/delete/:id', async (req, res) => {
+    const { id } = req.params;
+    try {
+        const deletedBlog = await Blog.findByIdAndUpdate(id, { deleted: 1 }, { new: true });
+
+        if (deletedBlog) {
+            res.status(201).json({ "Updated": deletedBlog });
+        } else {
+            res.status(404).json({ "Message": "Blog not found" });
+        }
+    } catch (err) {
+        res.status(500).json({ "Error": err.message });
+    }
+});
+
 
 
 router.get('/category', async (req, res) => {
@@ -53,15 +80,6 @@ router.post('/category', async (req, res) => {
             const savedCategory = await newCategory.save();
             res.status(201).json(savedCategory);
         }
-    } catch (error) {
-        res.status(500).json({ error: error.message });
-    }
-});
-
-router.get('/', async (req, res) => {
-    try {
-        const blog = await Blog.find();
-        res.status(200).json(blog);
     } catch (error) {
         res.status(500).json({ error: error.message });
     }

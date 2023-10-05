@@ -1,11 +1,24 @@
+import { apiDeleteBlog, apiGetBlogData, apiPostBlogData } from '@/services/BlogService';
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-
-import { apiGetBlogData } from '@/services/BlogService';
 
 export const fetchBlogs = createAsyncThunk('blog/data/fetchBlogs', async () => {
     const response = await apiGetBlogData()
     return response.data;
 })
+
+type PostBlogData = { title:string,description:string,category:string }
+
+export const postBlogs = createAsyncThunk('blog/data/postBlogs', async (data: PostBlogData) => {
+    const response = await apiPostBlogData(data)
+    return response.data;
+})
+
+export const deleteBlog = createAsyncThunk('blog/data/deleteBlog', async (params: {id: string}) => {
+    const response = await apiDeleteBlog(params)
+    return response.data;
+})
+
+
 
 type Blog = {
     id: string;

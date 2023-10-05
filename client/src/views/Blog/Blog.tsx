@@ -2,8 +2,8 @@ import * as Yup from 'yup'
 
 import { Field, Form, Formik } from 'formik'
 import { FormContainer, FormItem } from '@/components/ui/Form'
-import { apiGetCategoryData, apiPostBlogData } from '@/services/BlogService'
-import reducer, { fetchBlogs, useAppDispatch, useAppSelector } from './store'
+import { apiDeleteBlog, apiGetCategoryData } from '@/services/BlogService'
+import reducer, { deleteBlog, fetchBlogs, postBlogs, useAppDispatch, useAppSelector } from './store'
 import { useEffect, useState } from 'react'
 
 import Button from '@/components/ui/Button'
@@ -30,35 +30,41 @@ const validationSchema = Yup.object().shape({
 
 const Blog = () => {
     const [ categoryData , setCategoryData ] = useState([]);
-    const [ blogs , setBlogs ] = useState([]);
-    const ac  = useAppSelector(state => state.blog.data.blogData)
-    
+    const blogs  = useAppSelector(state => state.blog.data.blogData)
+    console.log(blogs)
     const dispatch = useAppDispatch();
+
+    const fetchData = () => {
+        dispatch(fetchBlogs())
+     }
+ 
+     const fetchCategory = async () => {
+         const response = await apiGetCategoryData()
+         setCategoryData(response.data)
+     }
     
     useEffect(() => {
         fetchData()
         fetchCategory()
     },[])
 
-    const fetchData = () => {
-        dispatch(fetchBlogs())
-    }
-
-    const fetchCategory = async () => {
-        const response = await apiGetCategoryData()
-        setCategoryData(response.data)
-    }
+    
     const options = categoryData.map((category) => ({
         value: category._id,
         label: category.name,
     }));
 
     const onBlogPost = async (values, setSubmitting) => {
-        const response = await apiPostBlogData(values);
-        setSubmitting(false);
-        
-        console.log("response printed");
-        console.log(response);
+        try {
+            setSubmitting(true);
+            const response = await dispatch(postBlogs(values));
+            console.log("Blog posted successfully:", response);
+            fetchData()
+        } catch (error) {
+            console.error("Error posting blog:", error);
+        } finally {
+            setSubmitting(false);
+        }
     }
 
     return (
@@ -154,13 +160,29 @@ const Blog = () => {
             </Formik>
         </div>
 
-
-        <div>
-          {blogs && blogs?.map((blog) => {
-            return (<>
-                <div>{blog.name}</div>
-            </>)
-          })}
+        <div className='bg-gray-200 w-auto h-auto p-4 text-black'>
+            {blogs && blogs.length > 0 ? (
+                blogs.map((blog) => {
+                    return (
+                    <>
+                        <div key={blog._id} className='mb-2'>
+                            {blog.title} | {blog.description} | {blog.category.name}
+                            <button 
+                                onClick={() => {
+                                    dispatch(deleteBlog(blog._id))
+                                    fetchData()
+                                }}
+                                className='px-2 ml-2 bg-red-600 text-white rounded-2xl'
+                            >
+                                Delete
+                            </button>
+                        </div> 
+                    </>
+                )
+                })
+            ) : (
+                <div>No blogs found</div>
+            )}
         </div>
 
     </>
