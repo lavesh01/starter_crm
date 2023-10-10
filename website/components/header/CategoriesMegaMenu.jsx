@@ -1,25 +1,21 @@
-import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { categorieMegaMenuItems } from "../../data/mainMenuData";
+import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import {
-  isActiveParent,
   isActiveLink,
+  isActiveParent,
   isActiveParentChaild,
 } from "../../utils/linkActiveChecker";
+
+import Image from "next/image";
+import Link from "next/link";
+import { categorieMegaMenuItems } from "../../data/mainMenuData";
+import { useRouter } from "next/router";
 
 const CategoriesMegaMenu = () => {
   const router = useRouter();
 
   const itemList = [
-    "Hotel",
-    "Tour",
-    "Activity",
-    "Holiday Rentals",
-    "Car",
-    "Cruise",
-    "Flights",
+    "Country & City",
+    "Recommended Hotels",
   ];
 
   return (

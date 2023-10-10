@@ -1,12 +1,13 @@
 import CallToActions from "../../../components/common/CallToActions";
 import Seo from "../../../components/common/Seo";
-import Header11 from "../../../components/header/header-11";
 import DefaultFooter from "../../../components/footer/default";
 import MainFilterSearchBox from "../../../components/hotel-list/hotel-list-v1/MainFilterSearchBox";
 import TopHeaderFilter from "../../../components/hotel-list/hotel-list-v1/TopHeaderFilter";
 import HotelProperties from "../../../components/hotel-list/hotel-list-v1/HotelProperties";
 import Pagination from "../../../components/hotel-list/common/Pagination";
 import Sidebar from "../../../components/hotel-list/hotel-list-v1/Sidebar";
+import Header1 from "../../../components/header/default-header/index";
+
 
 const index = () => {
   return (
@@ -17,7 +18,7 @@ const index = () => {
       <div className="header-margin"></div>
       {/* header top margin */}
 
-      <Header11 />
+      <Header1 />
       {/* End Header 1 */}
 
       <section className="pt-40 pb-40 bg-light-2">

@@ -31,7 +31,7 @@ const HelpfulFacts = () => {
 
           <div className="row x-gap-50 y-gap-5 pt-10">
             <div className="col-12">
-              <div className="text-15">Airport transfer fee: 60 USD</div>
+              <div className="text-15">Airport transfer fee: 60 ₹</div>
             </div>
 
             <div className="col-12">
@@ -62,7 +62,7 @@ const HelpfulFacts = () => {
             </div>
 
             <div className="col-12">
-              <div className="text-15">Daily Internet/Wi-Fi fee: 10 USD</div>
+              <div className="text-15">Daily Internet/Wi-Fi fee: 10 IND</div>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ const HelpfulFacts = () => {
 
           <div className="row x-gap-50 y-gap-5 pt-10">
             <div className="col-12">
-              <div className="text-15">Daily parking fee: 65 USD</div>
+              <div className="text-15">Daily parking fee: 65 IND</div>
             </div>
           </div>
         </div>

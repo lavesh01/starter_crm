@@ -6,7 +6,6 @@ import "photoswipe/dist/photoswipe.css";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import { hotelsData } from "../../../data/hotels";
 import Seo from "../../../components/common/Seo";
-import Header11 from "../../../components/header/header-11";
 import Overview from "../../../components/hotel-single/Overview";
 import PopularFacilities from "../../../components/hotel-single/PopularFacilities";
 import PropertyHighlights from "../../../components/hotel-single/PropertyHighlights";
@@ -28,6 +27,7 @@ import Hotels2 from "../../../components/hotels/Hotels2";
 import CallToActions from "../../../components/common/CallToActions";
 import DefaultFooter from "../../../components/footer/default";
 import Link from "next/link";
+import Header1 from "../../../components/header/default-header/index";
 
 const HotelSingleV1Dynamic = () => {
   const [isOpen, setOpen] = useState(false);
@@ -58,7 +58,7 @@ const HotelSingleV1Dynamic = () => {
       <div className="header-margin"></div>
       {/* header top margin */}
 
-      <Header11 />
+      <Header1 />
       {/* End Header 1 */}
 
       <TopBreadCrumb />
@@ -112,7 +112,7 @@ const HotelSingleV1Dynamic = () => {
                   <div className="text-14">
                     From{" "}
                     <span className="text-22 text-dark-1 fw-500">
-                      US${hotel?.price}
+                      ₹{hotel?.price}
                     </span>
                   </div>
                 </div>

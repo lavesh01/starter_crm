@@ -48,7 +48,7 @@ const StickyHeader = ({ hotel }) => {
                   <div className="text-14">
                     From{" "}
                     <span className="text-22 text-dark-1 fw-500">
-                      US${hotel?.price}
+                      ₹{hotel?.price}
                     </span>
                   </div>
                 </div>

@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import MainMenu from "../MainMenu";
-import CurrenctyMegaMenu from "../CurrenctyMegaMenu";
-import LanguageMegaMenu from "../LanguageMegaMenu";
 import MobileMenu from "../MobileMenu";
 
 const Header1 = () => {
@@ -33,12 +31,6 @@ const Header1 = () => {
                 </Link>
                 {/* End logo */}
 
-                <div className="header-menu">
-                  <div className="header-menu__content">
-                    <MainMenu style="text-white" />
-                  </div>
-                </div>
-                {/* End header-menu */}
               </div>
               {/* End d-flex */}
             </div>
@@ -46,34 +38,21 @@ const Header1 = () => {
 
             <div className="col-auto">
               <div className="d-flex items-center">
-                <div className="row x-gap-20 items-center xxl:d-none">
-                  <CurrenctyMegaMenu textClass="text-white" />
-                  {/* End Megamenu for Currencty */}
 
-                  {/* Start vertical devider*/}
-                  <div className="col-auto">
-                    <div className="w-1 h-20 bg-white-20" />
+                <div className="header-menu">
+                  <div className="header-menu__content">
+                    <MainMenu style="text-white" />
                   </div>
-                  {/* End vertical devider*/}
-
-                  <LanguageMegaMenu textClass="text-white" />
-                  {/* End Megamenu for Language */}
                 </div>
-                {/* End language and currency selector */}
+                {/* End header-menu */}
 
                 {/* Start btn-group */}
                 <div className="d-flex items-center ml-20 is-menu-opened-hide md:d-none">
                   <Link
-                    href="/others-pages/login"
+                    href="/contact"
                     className="button px-30 fw-400 text-14 -white bg-white h-50 text-dark-1"
                   >
-                    Become An Expert
-                  </Link>
-                  <Link
-                    href="/others-pages/signup"
-                    className="button px-30 fw-400 text-14 border-white -outline-white h-50 text-white ml-20"
-                  >
-                    Sign In / Register
+                    Contact
                   </Link>
                 </div>
                 {/* End btn-group */}
