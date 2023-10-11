@@ -32,16 +32,16 @@ const MainMenu = ({ style = "" }) => {
             <span className="mr-10">Destinations</span>
             <i className="icon icon-chevron-sm-down" />
           </a>
-          <div className="mega w-auto">
+          <div className="mega">
             <CategoriesMegaMenu />
           </div>
         </li>
-        {/* End categories menu items */}
+        {/* End destinations menu items */}
 
         <li
           className={router.pathname === "/blog/blog-list-v1" ? "current" : ""}
         >
-          <Link href="/about-us">About Us</Link>
+          <Link href="/others-pages/about">About Us</Link>
         </li>
 
         <li
@@ -49,7 +49,7 @@ const MainMenu = ({ style = "" }) => {
         >
           <Link href="/blog/blog-list-v1">Blogs</Link>
         </li>
-        {/* End blogIems */}
+        {/* End blog */}
 
         <li className={router.pathname === "/contact" ? "current" : ""}>
           <Link href="/testimonials">Testimonials</Link>

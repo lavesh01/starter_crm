@@ -14,8 +14,10 @@ const CategoriesMegaMenu = () => {
   const router = useRouter();
 
   const itemList = [
-    "Country & City",
-    "Recommended Hotels",
+    "Turkey",
+    "Azerbaijan",
+    "Kazakhstan",
+    "Uzbekistan",
   ];
 
   return (

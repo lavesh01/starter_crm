@@ -18,6 +18,7 @@ export const blogItems = [
     routePath: "/blog/blog-details/1",
   },
 ];
+
 export const pageItems = [
   {
     name: "404",
@@ -112,27 +113,65 @@ export const categorieMegaMenuItems = [
         menuItems: [
           {
             id: 1,
-            title: "Country",
+            title: "State/City",
             menuList: [
               {
-                name: "Turkey",
+                name: "Istanbul",
                 routePath: "/hotel/hotel-list-v1",
               },
               {
-                name: "Russia",
-                routePath: "/hotel/hotel-list-v2",
+                name: "Cappadocia",
+                routePath: "/hotel/hotel-list-v1",
               },
               {
-                name: "Tashkent",
-                routePath: "/hotel/hotel-list-v3",
+                name: "Antalya",
+                routePath: "/hotel/hotel-list-v1",
+              }
+            ],
+          },
+          {
+            id: 2,
+            title: "Hotel",
+            menuList: [
+              {
+                name: "METROPOLITAN TAKSIM HOTEL",
+                routePath: "/hotel/hotel-list-v1",
               },
               {
-                name: "Armenia",
-                routePath: "/hotel/hotel-list-v4",
+                name: "MARMARA TAKSIM",
+                routePath: "/hotel/hotel-list-v1",
               },
               {
-                name: "Georgia",
-                routePath: "/hotel/hotel-list-v5",
+                name: "ELITE WORLD TAKSIM",
+                routePath: "/hotel/hotel-list-v1",
+              },
+              {
+                name: "CAPPA VIA CAVE HOTEL",
+                routePath: "/hotel/hotel-list-v1",
+              },
+              {
+                name: "KALEKONAK CAVE HOTEL",
+                routePath: "/hotel/hotel-list-v1",
+              },
+              {
+                name: "DOORS OF CAPPADOCIA",
+                routePath: "/hotel/hotel-list-v1",
+              },
+              {
+                name: "DEDLI CAVE",
+                routePath: "/hotel/hotel-list-v1",
+              },
+              {
+                name: "RING DOWNTOWN HOTEL",
+                routePath: "/hotel/hotel-list-v1",
+              },
+              {
+                name: "ANTALYA CENDER HOTEL",
+                routePath: "/hotel/hotel-list-v1",
+              },
+              {
+                name: "RAMADA PLAZA",
+                routePath: "/hotel/hotel-list-v1",
               },
             ],
           },
@@ -145,6 +184,76 @@ export const categorieMegaMenuItems = [
     menuCol: [
       {
         id: 1,
+        megaBanner: "/img/backgrounds/7.png",
+        title: "Things to do in the country",
+        btnText: "See Hotel",
+        btnRoute: "/hotel/hotel-list-v1",
+        menuItems: [
+          {
+            id: 1,
+            title: "State/City",
+            menuList: [
+              {
+                name: "Baku",
+                routePath: "/hotel/hotel-list-v1",
+              }
+            ],
+          },
+          {
+            id: 2,
+            title: "Hotel",
+            menuList: [
+              {
+                name: "GABALA HOTEL",
+                routePath: "/hotel/hotel-list-v1",
+              },
+              {
+                name: "GABALA GARDEN 5*",
+                routePath: "/hotel/hotel-list-v1",
+              },
+              {
+                name: "WEST SHINE",
+                routePath: "/hotel/hotel-list-v1",
+              },
+              {
+                name: "SHAPPHIRE CITY",
+                routePath: "/hotel/hotel-list-v1",
+              },
+              {
+                name: "SHAPPHIRE INN",
+                routePath: "/hotel/hotel-list-v1",
+              },
+              {
+                name: "MOGAN",
+                routePath: "/hotel/hotel-list-v1",
+              },
+              {
+                name: "BADAMDAR",
+                routePath: "/hotel/hotel-list-v1",
+              },
+              {
+                name: "HAYATT",
+                routePath: "/hotel/hotel-list-v1",
+              },
+              {
+                name: "HILTON",
+                routePath: "/hotel/hotel-list-v1",
+              },
+              {
+                name: "MARRIOTT",
+                routePath: "/hotel/hotel-list-v1",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 3,
+    menuCol: [
+      {
+        id: 1,
         megaBanner: "/img/backgrounds/8.png",
         title: "Things to do on your tour",
         btnText: "See Tour",
@@ -152,52 +261,150 @@ export const categorieMegaMenuItems = [
         menuItems: [
           {
             id: 1,
-            title: "Baku",
+            title: "State/City",
             menuList: [
               {
-                name: "GABALA HOTEL",
+                name: "Almaty",
                 routePath: "/hotel/hotel-single-v2/3",
-              },
-              {
-                name: "GABALA GARDEN 5*",
-                routePath: "/hotel/hotel-single-v2/3",
-              },
+              }
             ],
           },
           {
             id: 2,
-            title: "ALMATY",
+            title: "Hotel",
             menuList: [
               {
                 name: "RAHAT PALACE",
-                routePath: "/hotel/hotel-single-v2/3",
+                routePath: "/hotel/hotel-list-v1",
               },
               {
                 name: "BEST WESTERN",
-                routePath: "/hotel/hotel-single-v2/3",
+                routePath: "/hotel/hotel-list-v1",
               },
               {
                 name: "UYUT AND KAZZOLE",
-                routePath: "/hotel/hotel-single-v2/3",
+                routePath: "/hotel/hotel-list-v1",
               },
               {
                 name: "RIXOS",
-                routePath: "/hotel/hotel-single-v2/3",
+                routePath: "/hotel/hotel-list-v1",
               },
             ],
           },
+        ],
+      },
+    ],
+  },
+  {
+    id: 4,
+    menuCol: [
+      {
+        id: 1,
+        megaBanner: "/img/backgrounds/8.png",
+        title: "Things to do on your tour",
+        btnText: "See Tour",
+        btnRoute: "/tour/tour-list-v1",
+        menuItems: [
           {
-            id: 3,
-            title: "CAPPADOCIA",
+            id: 1,
+            title: "State/City",
             menuList: [
               {
-                name: "GABALA HOTEL",
+                name: "Tashkent",
                 routePath: "/hotel/hotel-single-v2/3",
               },
               {
-                name: "GABALA GARDEN 5*",
+                name: "Samarkand",
                 routePath: "/hotel/hotel-single-v2/3",
               },
+              {
+                name: "Bukhara",
+                routePath: "/hotel/hotel-single-v2/3",
+              },
+              {
+                name: "Khiva",
+                routePath: "/hotel/hotel-single-v2/3",
+              }
+            ],
+          },
+          {
+            id: 2,
+            title: "Hotel",
+            menuList: [
+              {
+                name: "MERCURE HOTEL",
+                routePath: "",
+              },
+              {
+                name: "ROYAL MEZBON",
+                routePath: "",
+              },
+              {
+                name: "CITY PALACE",
+                routePath: "",
+              },
+              {
+                name: "GRAND SAMARKAND",
+                routePath: "",
+              },
+              {
+                name: "DIYORA",
+                routePath: "",
+              },
+              {
+                name: "EMIRHAN",
+                routePath: "",
+              },
+              {
+                name: "OMAR KHAYYAM",
+                routePath: "",
+              },
+              {
+                name: "ZARGARON PLAZA",
+                routePath: "",
+              },
+              {
+                name: "ASIA BUKHARA",
+                routePath: "",
+              },
+              {
+                name: "KHIVA PALACE",
+                routePath: "",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 5,
+    menuCol: [
+      {
+        id: 1,
+        megaBanner: "/img/backgrounds/8.png",
+        title: "Things to do on your tour",
+        btnText: "See Tour",
+        btnRoute: "/tour/tour-list-v1",
+        menuItems: [
+          {
+            id: 1,
+            title: "State/City",
+            menuList: [
+              {
+                name: "Almaty",
+                routePath: "/hotel/hotel-single-v2/3",
+              }
+            ],
+          },
+          {
+            id: 2,
+            title: "Hotel",
+            menuList: [
+              {
+                name: "Turkey",
+                routePath: "/hotel/hotel-list-v1",
+              }
             ],
           },
         ],
