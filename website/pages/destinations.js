@@ -188,75 +188,6 @@ const Destinations = () => {
       </section>
       {/* Trending Activity Sections */}
 
-      <section className="layout-pt-md layout-pb-md">
-        <div className="container">
-          <div className="row y-gap-20 justify-between items-end">
-            <div className="col-auto">
-              <div className="sectionTitle -md">
-                <h2 className="sectionTitle__title">
-                  Featured Holiday Rentals
-                </h2>
-                <p className=" sectionTitle__text mt-5 sm:mt-0">
-                  Interdum et malesuada fames ac ante ipsum
-                </p>
-              </div>
-            </div>
-            {/* End .col */}
-
-            <div className="col-auto">
-              <Link
-                href="#"
-                className="button -md -blue-1 bg-blue-1-05 text-blue-1"
-              >
-                More <div className="icon-arrow-top-right ml-15" />
-              </Link>
-            </div>
-            {/* End .col */}
-          </div>
-          {/* End .row */}
-
-          <div className="y-gap-30 pt-40 sm:pt-20 item_gap-x30">
-            <Rentals />
-          </div>
-          {/* End .row */}
-        </div>
-        {/* End .container */}
-      </section>
-      {/* Featured Rentals Sections */}
-
-      <section className="layout-pt-md layout-pb-md">
-        <div className="container">
-          <div className="row y-gap-20 justify-between items-end">
-            <div className="col-auto">
-              <div className="sectionTitle -md">
-                <h2 className="sectionTitle__title">Popular Car Hire</h2>
-                <p className=" sectionTitle__text mt-5 sm:mt-0">
-                  Interdum et malesuada fames ac ante ipsum
-                </p>
-              </div>
-            </div>
-            {/* End .col */}
-
-            <div className="col-auto">
-              <Link
-                href="#"
-                className="button -md -blue-1 bg-blue-1-05 text-blue-1"
-              >
-                More <div className="icon-arrow-top-right ml-15" />
-              </Link>
-            </div>
-            {/* End .col */}
-          </div>
-          {/* End .row */}
-
-          <div className="row y-gap-30 pt-40 sm:pt-20 item_gap-x30">
-            <Cars />
-          </div>
-          {/* End .row */}
-        </div>
-        {/* End .container */}
-      </section>
-      {/* Popular Car Hire Sections */}
 
       <section className="layout-pt-md layout-pb-md">
         <div className="container">
@@ -281,41 +212,6 @@ const Destinations = () => {
         {/* End .container */}
       </section>
       {/* End blog Section */}
-
-      <section className="layout-pt-md layout-pb-lg">
-        <div className="container">
-          <div className="row">
-            <div className="col-auto">
-              <div className="sectionTitle -md">
-                <h2 className="sectionTitle__title">Top sights in London</h2>
-                <p className=" sectionTitle__text mt-5 sm:mt-0">
-                  These popular destinations have a lot to offer
-                </p>
-              </div>
-            </div>
-          </div>
-          {/* End .row */}
-
-          <div className="row y-gap-30 pt-40">
-            <Slights />
-          </div>
-          {/* End .row */}
-
-          <div className="row justify-center mt-40">
-            <div className="col-auto">
-              <Link
-                href="#"
-                className="button h-50 w-250 -outline-blue-1 text-blue-1"
-              >
-                Explore more <div className="icon-arrow-top-right ml-15" />
-              </Link>
-            </div>
-          </div>
-          {/* End .row */}
-        </div>
-        {/* End .container */}
-      </section>
-      {/* End Top sights in London */}
 
       <section className="layout-pt-lg layout-pb-lg bg-light-2">
         <div className="container">

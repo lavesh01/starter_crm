@@ -14,7 +14,7 @@ const Copyright = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                ib-themes
+                Eurasia Global DMC
               </a>
               All rights reserved.
             </div>
@@ -43,8 +43,8 @@ const Copyright = () => {
                 <span className="underline">English (US)</span>
               </button>
               <button className="d-flex items-center text-14 fw-500 text-dark-1">
-                <i className="icon-usd text-16 mr-10" />
-                <span className="underline">USD</span>
+                <span className="text-16 mr-10" > ₹ </span>
+                <span className="underline">INR</span>
               </button>
             </div>
           </div>

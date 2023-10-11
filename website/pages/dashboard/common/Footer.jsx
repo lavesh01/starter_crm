@@ -14,7 +14,7 @@ function Footer() {
           <div className="row y-gap-20 items-center">
             <div className="col-auto">
               <div className="text-14 lh-14 mr-30">
-                © {new Date().getFullYear()} GoTrip LLC All rights reserved.
+                © {new Date().getFullYear()} Eurasia Global DMC All rights reserved.
               </div>
             </div>
 
@@ -36,7 +36,7 @@ function Footer() {
         <div className="col-auto">
           <div className="d-flex x-gap-5 y-gap-5 items-center">
             <button className="text-14 fw-500 underline">English (US)</button>
-            <button className="text-14 fw-500 underline">USD</button>
+            <button className="text-14 fw-500 underline">INR</button>
           </div>
         </div>
         {/* End .col-auto */}

@@ -117,7 +117,7 @@ export const categorieMegaMenuItems = [
             menuList: [
               {
                 name: "Istanbul",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1",
               },
               {
                 name: "Cappadocia",
@@ -135,43 +135,43 @@ export const categorieMegaMenuItems = [
             menuList: [
               {
                 name: "METROPOLITAN TAKSIM HOTEL",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/1",
               },
               {
                 name: "MARMARA TAKSIM",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/2",
               },
               {
                 name: "ELITE WORLD TAKSIM",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/3",
               },
               {
                 name: "CAPPA VIA CAVE HOTEL",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/4",
               },
               {
                 name: "KALEKONAK CAVE HOTEL",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/5",
               },
               {
                 name: "DOORS OF CAPPADOCIA",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/6",
               },
               {
                 name: "DEDLI CAVE",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/7",
               },
               {
                 name: "RING DOWNTOWN HOTEL",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/8",
               },
               {
                 name: "ANTALYA CENDER HOTEL",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/9",
               },
               {
                 name: "RAMADA PLAZA",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/10",
               },
             ],
           },
@@ -205,43 +205,43 @@ export const categorieMegaMenuItems = [
             menuList: [
               {
                 name: "GABALA HOTEL",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/11",
               },
               {
                 name: "GABALA GARDEN 5*",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/12",
               },
               {
                 name: "WEST SHINE",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/13",
               },
               {
                 name: "SHAPPHIRE CITY",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/14",
               },
               {
                 name: "SHAPPHIRE INN",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/15",
               },
               {
                 name: "MOGAN",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/16",
               },
               {
                 name: "BADAMDAR",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/17",
               },
               {
                 name: "HAYATT",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/18",
               },
               {
                 name: "HILTON",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/19",
               },
               {
                 name: "MARRIOTT",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/20",
               },
             ],
           },
@@ -265,7 +265,7 @@ export const categorieMegaMenuItems = [
             menuList: [
               {
                 name: "Almaty",
-                routePath: "/hotel/hotel-single-v2/3",
+                routePath: "/hotel/hotel-single-v1",
               }
             ],
           },
@@ -275,19 +275,19 @@ export const categorieMegaMenuItems = [
             menuList: [
               {
                 name: "RAHAT PALACE",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/21",
               },
               {
                 name: "BEST WESTERN",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/22",
               },
               {
                 name: "UYUT AND KAZZOLE",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/23",
               },
               {
                 name: "RIXOS",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/hotel/hotel-single-v1/24",
               },
             ],
           },
@@ -311,19 +311,19 @@ export const categorieMegaMenuItems = [
             menuList: [
               {
                 name: "Tashkent",
-                routePath: "/hotel/hotel-single-v2/3",
+                routePath: "/hotel/hotel-single-v1",
               },
               {
                 name: "Samarkand",
-                routePath: "/hotel/hotel-single-v2/3",
+                routePath: "/hotel/hotel-single-v1",
               },
               {
                 name: "Bukhara",
-                routePath: "/hotel/hotel-single-v2/3",
+                routePath: "/hotel/hotel-single-v1",
               },
               {
                 name: "Khiva",
-                routePath: "/hotel/hotel-single-v2/3",
+                routePath: "/hotel/hotel-single-v1",
               }
             ],
           },
@@ -333,43 +333,43 @@ export const categorieMegaMenuItems = [
             menuList: [
               {
                 name: "MERCURE HOTEL",
-                routePath: "",
+                routePath: "/hotel/hotel-single-v1/25",
               },
               {
                 name: "ROYAL MEZBON",
-                routePath: "",
+                routePath: "/hotel/hotel-single-v1/26",
               },
               {
                 name: "CITY PALACE",
-                routePath: "",
+                routePath: "/hotel/hotel-single-v1/27",
               },
               {
                 name: "GRAND SAMARKAND",
-                routePath: "",
+                routePath: "/hotel/hotel-single-v1/28",
               },
               {
                 name: "DIYORA",
-                routePath: "",
+                routePath: "/hotel/hotel-single-v1/29",
               },
               {
                 name: "EMIRHAN",
-                routePath: "",
+                routePath: "/hotel/hotel-single-v1/30",
               },
               {
                 name: "OMAR KHAYYAM",
-                routePath: "",
+                routePath: "/hotel/hotel-single-v1/31",
               },
               {
                 name: "ZARGARON PLAZA",
-                routePath: "",
+                routePath: "/hotel/hotel-single-v1/32",
               },
               {
                 name: "ASIA BUKHARA",
-                routePath: "",
+                routePath: "/hotel/hotel-single-v1/33",
               },
               {
                 name: "KHIVA PALACE",
-                routePath: "",
+                routePath: "/hotel/hotel-single-v1/34",
               },
             ],
           },
@@ -377,41 +377,6 @@ export const categorieMegaMenuItems = [
       },
     ],
   },
-  {
-    id: 5,
-    menuCol: [
-      {
-        id: 1,
-        megaBanner: "/img/backgrounds/8.png",
-        title: "Things to do on your tour",
-        btnText: "See Tour",
-        btnRoute: "/tour/tour-list-v1",
-        menuItems: [
-          {
-            id: 1,
-            title: "State/City",
-            menuList: [
-              {
-                name: "Almaty",
-                routePath: "/hotel/hotel-single-v2/3",
-              }
-            ],
-          },
-          {
-            id: 2,
-            title: "Hotel",
-            menuList: [
-              {
-                name: "Turkey",
-                routePath: "/hotel/hotel-list-v1",
-              }
-            ],
-          },
-        ],
-      },
-    ],
-  },
-  
 ];
 
 export const categorieMobileItems = [

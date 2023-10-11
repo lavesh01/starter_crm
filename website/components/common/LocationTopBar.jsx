@@ -1,4 +1,4 @@
-const LocationTopBar = () => {
+const LocationTopBar = ({country}) => {
   return (
     <section
       data-aos="fade"
@@ -9,25 +9,19 @@ const LocationTopBar = () => {
           <div className="col-auto">
             <div className="row x-gap-10 y-gap-5 items-center text-14 text-light-1">
               <div className="col-auto">
-                <div>Europe</div>
+                <div>Asia</div>
               </div>
               <div className="col-auto">
                 <div>&gt;</div>
               </div>
               <div className="col-auto">
-                <div>United Kingdom (UK)</div>
-              </div>
-              <div className="col-auto">
-                <div>&gt;</div>
-              </div>
-              <div className="col-auto">
-                <div className="text-dark-1">London</div>
+                <div className="text-dark-1">{country}</div>
               </div>
             </div>
           </div>
           <div className="col-auto">
             <a href="#" className="text-14 text-light-1">
-              London Tourism: Best of London
+              {country} Tourism: Best of {country}
             </a>
           </div>
         </div>
