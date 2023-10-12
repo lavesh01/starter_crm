@@ -3,23 +3,17 @@ import CallToActions from "../../../components/common/CallToActions";
 import Seo from "../../../components/common/Seo";
 import DefaultHeader from "../../../components/header/default-header";
 import DefaultFooter from "../../../components/footer/default";
-import TopDestinations2 from "../../../components/destinations/TopDestinations2";
-import Faq from "../../../components/faq/Faq";
 import TestimonialLeftCol from "../../../components/home/home-1/TestimonialLeftCol";
 import Testimonial from "../../../components/home/home-1/Testimonial";
 import Link from "next/link";
-import Slights from "../../../components/block/Slights";
 import Blog from "../../../components/blog/Blog3";
 import LocationTopBar from "../../../components/common/LocationTopBar";
 import Banner from "../../../components/destinations/components/Banner";
 import Categories from "../../../components/destinations/components/Categories";
 import IntroTown from "../../../components/destinations/components/IntroTown";
-import Weather from "../../../components/destinations/components/Weather";
 import GeneralInfo from "../../../components/destinations/components/GeneralInfo";
-import Cars from "../../../components/cars/Cars";
 import Tours from "../../../components/tours/Tours";
 import Activity from "../../../components/activity/Activity";
-import Rentals from "../../../components/rentals/Rentals";
 import Hotels from "../../../components/hotels/Hotels2";
 import { useRouter } from "next/router";
 import { destinations } from "../../../data/desinations";
@@ -29,7 +23,7 @@ const Destinations = () => {
   const router = useRouter();
   const [destination, setDestination] = useState({});
   const id = router.query.id;
-    console.log(id)
+
   useEffect(() => {
     if (!id) <h1>Loading...</h1>;
     else setDestination(destinations.find((item) => item.id == id));
@@ -38,7 +32,11 @@ const Destinations = () => {
 
   return (
     <>
-      <Seo pageTitle="Destinations" />
+      <Seo 
+        pageTitle="Destination Details"
+        metaTitle={`Discover ${destination?.country} - Explore Attractions, Culture, and More`}
+        metaDescription={`Plan your trip to ${destination?.country} with Eurasia Global DMC. Learn about the attractions, culture, cuisine, and more to make the most of your travel experience.`}
+      />
       {/* End Page Title */}
 
       <div className="header-margin"></div>
@@ -81,7 +79,7 @@ const Destinations = () => {
               <h2 className="text-22 fw-500">General info</h2>
             </div>
             {/* End .col */}
-            <GeneralInfo />
+            <GeneralInfo timeZone={destination?.timeZone} timeBehind={destination?.timeBehind} currency={destination?.currency} exchange={destination?.exchange} bestTimeToVisit={destination?.bestTimeToVisit} />
           </div>
           {/* End .row */}
           <div className="mt-30 border-top-light" />
@@ -98,7 +96,7 @@ const Destinations = () => {
               <div className="sectionTitle -md">
                 <h2 className="sectionTitle__title">Recommended Hotels</h2>
                 <p className=" sectionTitle__text mt-5 sm:mt-0">
-                  Interdum et malesuada fames ac ante ipsum
+                  Discover Our Handpicked Collection of Exceptional Hotels - Your Ideal Stay Awaits!
                 </p>
               </div>
             </div>

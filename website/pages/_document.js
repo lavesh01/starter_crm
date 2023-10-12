@@ -4,10 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <meta
-          name="description"
-          content="Eurasia Global DMC"
-        />
         {/* <!-- Google fonts --> */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -16,7 +12,7 @@ export default function Document() {
           crossOrigin="true"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
           rel="stylesheet"
         />
 

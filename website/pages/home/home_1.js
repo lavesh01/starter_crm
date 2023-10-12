@@ -18,7 +18,11 @@ import dynamic from "next/dynamic";
 const Home_1 = () => {
   return (
     <>
-      <Seo pageTitle="Home" />
+      <Seo 
+        pageTitle="Home" 
+        metaTitle="Eurasia Global DMC - Your Gateway to Extraordinary Journeys" 
+        metaDescription="Explore the world with Eurasia Global DMC - your trusted travel partner offering unique and unforgettable travel experiences. Discover amazing destinations and create lifelong memories." 
+      />
       {/* End Page Title */}
 
       <Header1 />
@@ -40,7 +44,7 @@ const Home_1 = () => {
             </div>
             {/* End col-auto */}
 
-            <div className="col-auto md:d-none">
+            {/* <div className="col-auto md:d-none">
               <a
                 href="#"
                 className="button -md -blue-1 bg-blue-1-05 text-blue-1"
@@ -48,7 +52,7 @@ const Home_1 = () => {
                 View All Destinations
                 <div className="icon-arrow-top-right ml-15" />
               </a>
-            </div>
+            </div> */}
             {/* End col-auto */}
           </div>
           {/* End .row */}
@@ -78,7 +82,7 @@ const Home_1 = () => {
               <div className="sectionTitle -md">
                 <h2 className="sectionTitle__title">Recommended</h2>
                 <p className=" sectionTitle__text mt-5 sm:mt-0">
-                  Interdum et malesuada fames ac ante ipsum
+                Discover Our Handpicked Collection of Exceptional Hotels - Your Ideal Stay Awaits!
                 </p>
               </div>
             </div>
@@ -149,7 +153,7 @@ const Home_1 = () => {
                   Get inspiration for your next trip
                 </h2>
                 <p className=" sectionTitle__text mt-5 sm:mt-0">
-                  Interdum et malesuada fames
+                  Explore Travel Blogs for Ultimate Adventure Inspiration
                 </p>
               </div>
             </div>
@@ -171,7 +175,7 @@ const Home_1 = () => {
               <div className="sectionTitle -md">
                 <h2 className="sectionTitle__title">Destinations we love</h2>
                 <p className=" sectionTitle__text mt-5 sm:mt-0">
-                  Interdum et malesuada fames ac ante ipsum
+                  Embark on a Journey to Our Beloved Destinations
                 </p>
               </div>
             </div>

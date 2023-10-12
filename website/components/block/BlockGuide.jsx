@@ -4,24 +4,25 @@ const BlockGuide = () => {
       id: 1,
       icon: "/img/featureIcons/1/1.svg",
       title: "Best Price Guarantee",
-      text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+      text: "Experience the best rates, always.",
       delayAnim: "100",
     },
     {
       id: 2,
       icon: "/img/featureIcons/1/2.svg",
       title: "Easy & Quick Booking",
-      text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+      text: "Seamless and speedy booking process.",
       delayAnim: "200",
     },
     {
       id: 3,
       icon: "/img/featureIcons/1/3.svg",
       title: "Customer Care 24/7",
-      text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+      text: "Dedicated customer support round the clock.",
       delayAnim: "300",
     },
-  ];
+];
+
   return (
     <>
       {blockContent.map((item) => (

@@ -8,7 +8,7 @@ const Destinations = () => {
   const filterOptions = [
     { label: "All", value: "all" },
     { label: "Asia", value: "asia" },
-    { label: "Europe", value: "europe" },
+    // { label: "Europe", value: "europe" },
     // add more options as needed
   ];
   return (

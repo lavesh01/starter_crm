@@ -12,7 +12,12 @@ import LocationTopBar from "../components/common/LocationTopBar";
 const Contact = () => {
   return (
     <>
-      <Seo pageTitle="Contact" />
+      <Seo 
+        pageTitle="Contact"
+        metaTitle="Get In Touch - Contact Eurasia Global DMC"
+        metaDescription="Reach out to Eurasia Global DMC for inquiries, bookings, or any travel-related assistance. We're here to help you plan your dream journey and make it a reality."
+      />
+
       {/* End Page Title */}
 
       <div className="header-margin"></div>

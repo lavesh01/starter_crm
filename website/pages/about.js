@@ -15,7 +15,11 @@ import Brand from "../components/brand/Brand";
 const About = () => {
   return (
     <>
-      <Seo pageTitle="About" />
+      <Seo 
+        pageTitle="About"
+        metaTitle="Discover Our Story - About Eurasia Global DMC"
+        metaDescription="Learn about Eurasia Global DMC, your gateway to unforgettable travel experiences. Explore our history, mission, and passion for creating memorable journeys."
+      />
       {/* End Page Title */}
 
       <div className="header-margin"></div>
