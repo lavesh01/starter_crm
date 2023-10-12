@@ -18,7 +18,7 @@ const MainMenu = ({ style = "" }) => {
   const router = useRouter();
 
   return (
-    <nav className="menu js-navList flex justify-content-end">
+    <nav className="menu js-navList flex justify-content-center">
       <ul className={`menu__nav ${style} -is-active`}>
         <li
           className={router.pathname === "/" ? "current" : ""}

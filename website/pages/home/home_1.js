@@ -1,23 +1,24 @@
-import dynamic from "next/dynamic";
 import AddBanner from "../../components/add-banner/AddBanner";
-import Seo from "../../components/common/Seo";
-import PopularDestinations from "../../components/destinations/PopularDestinations";
-import DefaultFooter from "../../components/footer/default";
-import Header1 from "../../components/header/header-1";
-import Hero1 from "../../components/hero/hero-1";
 import BlockGuide from "../../components/block/BlockGuide";
 import Blog from "../../components/blog/Blog3";
+import Brand2 from './../../components/brand/Brand2';
 import CallToActions from "../../components/common/CallToActions";
+import DefaultFooter from "../../components/footer/default";
 import Destinations from "../../components/home/home-1/Destinations";
-import Testimonial from "../../components/home/home-1/Testimonial";
-import TestimonialLeftCol from "../../components/home/home-1/TestimonialLeftCol";
+import Header1 from "../../components/header/header-1";
+import Hero1 from "../../components/hero/hero-1";
 import Hotels from "../../components/hotels/Hotels";
+import PopularDestinations from "../../components/destinations/PopularDestinations";
 import SelectFilter from "../../components/hotels/filter-tabs/SelectFilter";
+import Seo from "../../components/common/Seo";
+import Testimonial from "../../components/home/home-1/Testimonial";
+import TestimonialRating from "../../components/home/home-1/TestimonialRating";
+import dynamic from "next/dynamic";
 
 const Home_1 = () => {
   return (
     <>
-      <Seo pageTitle="Home-1" />
+      <Seo pageTitle="Home" />
       {/* End Page Title */}
 
       <Header1 />
@@ -104,29 +105,40 @@ const Home_1 = () => {
       </section>
       {/* Block Guide Section */}
 
-      <section className="layout-pt-lg layout-pb-lg bg-blue-2">
+      
+      <section className="layout-pt-lg layout-pb-lg bg-dark-3">
         <div className="container">
-          <div className="row y-gap-40 justify-between">
-            <div className="col-xl-5 col-lg-6" data-aos="fade-up">
-              <TestimonialLeftCol />
+          <div className="row y-gap-60">
+            <div className="col-xl-5 col-lg-6">
+              <TestimonialRating />
             </div>
-            {/* End col */}
+            {/* End .col */}
 
-            <div className="col-lg-6">
-              <div
-                className="overflow-hidden js-testimonials-slider-3"
-                data-aos="fade-up"
-                data-aos-delay="50"
-              >
-                <Testimonial />
+            <div className="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-10">
+              <Testimonial />
+            </div>
+            {/* End .col */}
+          </div>
+          {/* End .row */}
+
+          <div className="row justify-center text-center pt-60">
+            <div className="col-auto">
+              <div className="text-15 lh-1 text-white">
+                Trusted by the world’s best
               </div>
             </div>
           </div>
           {/* End .row */}
+
+          <div className="px-40 md:px-0">
+            <div className="row y-gap-30 justify-between items-center pt-60 lg:pt-40">
+              <Brand2 />
+            </div>
+          </div>
         </div>
-        {/* End container */}
       </section>
-      {/* End testimonial Section */}
+      {/* End testimonial and brand sections Section */}
+      
 
       <section className="layout-pt-lg layout-pb-md">
         <div className="container">

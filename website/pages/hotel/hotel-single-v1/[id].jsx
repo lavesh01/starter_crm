@@ -1,33 +1,35 @@
-import dynamic from "next/dynamic";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import ModalVideo from "react-modal-video";
 import "photoswipe/dist/photoswipe.css";
+
 import { Gallery, Item } from "react-photoswipe-gallery";
-import { hotelsData } from "../../../data/hotels";
-import Seo from "../../../components/common/Seo";
+import { useEffect, useState } from "react";
+
+import AvailableRooms from "../../../components/hotel-single/AvailableRooms";
+import CallToActions from "../../../components/common/CallToActions";
+import DefaultFooter from "../../../components/footer/default";
+import DetailsReview from "../../../components/hotel-single/guest-reviews/DetailsReview";
+import Facilities from "../../../components/hotel-single/Facilities";
+import Faq from "../../../components/faq/Faq";
+import Header1 from "../../../components/header/default-header/index";
+import HelpfulFacts from "../../../components/hotel-single/HelpfulFacts";
+import Hotels2 from "../../../components/hotels/Hotels2";
+import Image from "next/image";
+import Link from "next/link";
+import ModalVideo from "react-modal-video";
 import Overview from "../../../components/hotel-single/Overview";
 import PopularFacilities from "../../../components/hotel-single/PopularFacilities";
 import PropertyHighlights from "../../../components/hotel-single/PropertyHighlights";
 import RatingTag from "../../../components/hotel-single/RatingTag";
-import StickyHeader from "../../../components/hotel-single/StickyHeader";
-import TopBreadCrumb from "../../../components/hotel-single/TopBreadCrumb";
-import SidebarRight from "../../../components/hotel-single/SidebarRight";
-import AvailableRooms from "../../../components/hotel-single/AvailableRooms";
-import ReviewProgress from "../../../components/hotel-single/guest-reviews/ReviewProgress";
-import DetailsReview from "../../../components/hotel-single/guest-reviews/DetailsReview";
 import ReplyForm from "../../../components/hotel-single/ReplyForm";
 import ReplyFormReview from "../../../components/hotel-single/ReplyFormReview";
-import Facilities from "../../../components/hotel-single/Facilities";
-import Image from "next/image";
+import ReviewProgress from "../../../components/hotel-single/guest-reviews/ReviewProgress";
+import Seo from "../../../components/common/Seo";
+import SidebarRight from "../../../components/hotel-single/SidebarRight";
+import StickyHeader from "../../../components/hotel-single/StickyHeader";
 import Surroundings from "../../../components/hotel-single/Surroundings";
-import HelpfulFacts from "../../../components/hotel-single/HelpfulFacts";
-import Faq from "../../../components/faq/Faq";
-import Hotels2 from "../../../components/hotels/Hotels2";
-import CallToActions from "../../../components/common/CallToActions";
-import DefaultFooter from "../../../components/footer/default";
-import Link from "next/link";
-import Header1 from "../../../components/header/default-header/index";
+import TopBreadCrumb from "../../../components/hotel-single/TopBreadCrumb";
+import dynamic from "next/dynamic";
+import { hotelsData } from "../../../data/hotels";
+import { useRouter } from "next/router";
 
 const HotelSingleV1Dynamic = () => {
   const [isOpen, setOpen] = useState(false);
@@ -61,7 +63,7 @@ const HotelSingleV1Dynamic = () => {
       <Header1 />
       {/* End Header 1 */}
 
-      <TopBreadCrumb />
+      <TopBreadCrumb hotel={hotel?.title} />
       {/* End top breadcrumb */}
 
       <StickyHeader hotel={hotel} />

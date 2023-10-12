@@ -1,7 +1,7 @@
-import Link from "next/link";
 import { useEffect, useState } from "react";
-import MainMenu from "../MainMenu";
 
+import Link from "next/link";
+import MainMenu from "../MainMenu";
 import MobileMenu from "../MobileMenu";
 
 const Header1 = () => {
@@ -24,7 +24,7 @@ const Header1 = () => {
       <header className={`header bg-white ${navbar ? "is-sticky" : ""}`}>
         <div className="header__container px-30 sm:px-20">
           <div className="row justify-between items-center">
-            <div className="col-auto">
+            <div className="col-4">
               <div className="d-flex items-center">
                 <Link href="/" className="header-logo mr-20" style={{width: "110px"}}>
                   <img src="/img/general/FINAL EURASIA GLOBAL LOGO.png" alt="logo icon" />
@@ -36,10 +36,9 @@ const Header1 = () => {
             </div>
             {/* End col */}
 
-            <div className="col-auto">
-              <div className="d-flex items-center">
+            <div className="col-8">
+              <div className="d-flex items-center justify-content-between">
 
-                
               <div className="header-menu">
                   <div className="header-menu__content">
                     <MainMenu style="text-dark-1" />

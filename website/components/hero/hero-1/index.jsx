@@ -1,4 +1,3 @@
-import Link from "next/link";
 import MainFilterSearchBox from "./MainFilterSearchBox";
 
 const index = () => {
@@ -28,14 +27,13 @@ const index = () => {
             {/* End hero title */}
 
             <div
-              className="tabs -underline mt-60 js-tabs d-flex align-content-center justify-content-center"
+              className="tabs -underline mt-60 js-tabs"
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <Link href="/contact">
-                <button className="button px-30 fw-600 text-18 -white bg-white h-50 text-dark-1 rounded-5">Get a Quote</button>
-              </Link>
+             
             </div>
+            <MainFilterSearchBox />
             {/* End tab-filter */}
           </div>
         </div>

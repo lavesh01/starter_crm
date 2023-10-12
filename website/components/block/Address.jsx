@@ -5,7 +5,7 @@ const Address = () => {
       colClass: "col-lg-3",
       title: "Address",
       content: (
-        <>328 Queensberry Street, North Melbourne VIC 3051, Australia.</>
+        <>647/2A, vashishtpuram, Jankipuram Extension, Lucknow, 226021, India.</>
       ),
     },
     {
@@ -14,7 +14,7 @@ const Address = () => {
       title: "Toll Free Customer Care",
       content: (
         <>
-          <a href="tel:+4733378901">+47 333 78 901</a>
+          <a href="tel:+4733378901">+91-8542951004</a>
         </>
       ),
     },
@@ -25,7 +25,7 @@ const Address = () => {
       content: (
         <>
           {" "}
-          <a href="mailto:i@gotrip.com">hi@gotrip.com</a>
+          <a href="mailto:i@gotrip.com">eurasiaglobal.net</a>
         </>
       ),
     },

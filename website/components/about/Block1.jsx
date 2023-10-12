@@ -4,7 +4,7 @@ const Block1 = () => {
   return (
     <>
       <div className="col-lg-5">
-        <h2 className="text-30 fw-600">About Eurasia.com</h2>
+        <h2 className="text-30 fw-600">About Eurasia Global DMC</h2>
         <p className="mt-5">These popular destinations have a lot to offer</p>
         <p className="text-dark-1 mt-60 lg:mt-40 md:mt-20">
           Greetings from Eurasia! We are your devoted travel enthusiasts, driven by a desire to create extraordinary adventures for each traveller.

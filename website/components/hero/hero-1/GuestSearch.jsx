@@ -2,7 +2,9 @@ import React, { useState } from "react";
 const counters = [
   { name: "Adults", defaultValue: 2 },
   { name: "Children", defaultValue: 1 },
+  { name: "Infant", defaultValue: 1 },
   { name: "Rooms", defaultValue: 1 },
+  
 ];
 
 const Counter = ({ name, defaultValue, onCounterChange }) => {
@@ -24,7 +26,13 @@ const Counter = ({ name, defaultValue, onCounterChange }) => {
         <div className="col-auto">
           <div className="text-15 lh-12 fw-500">{name}</div>
           {name === "Children" && (
-            <div className="text-14 lh-12 text-light-1 mt-5">Ages 0 - 17</div>
+            <div className="text-14 lh-12 text-light-1 mt-5">Ages 2 - 11</div>
+          )}
+          {name === "Infant" && (
+            <div className="text-14 lh-12 text-light-1 mt-5">Ages 0 - 2</div>
+          )}
+          {name === "Adults" && (
+            <div className="text-14 lh-12 text-light-1 mt-5">Ages 11+</div>
           )}
         </div>
         {/* End .col-auto */}
@@ -62,7 +70,9 @@ const GuestSearch = () => {
   const [guestCounts, setGuestCounts] = useState({
     Adults: 2,
     Children: 1,
+    Infant: 0,
     Rooms: 1,
+    
   });
   const handleCounterChange = (name, value) => {
     setGuestCounts((prevState) => ({ ...prevState, [name]: value }));
@@ -77,10 +87,10 @@ const GuestSearch = () => {
       >
         <h4 className="text-15 fw-500 ls-2 lh-16">Guest</h4>
         <div className="text-15 text-light-1 ls-2 lh-16">
-          <span className="js-count-adult">{guestCounts.Adults}</span> adults -{" "}
-          <span className="js-count-child">{guestCounts.Children}</span>{" "}
-          childeren - <span className="js-count-room">{guestCounts.Rooms}</span>{" "}
-          room
+          Adults -<span className="js-count-adult">{guestCounts.Adults}</span> {" "}
+          Children - <span className="js-count-child">{guestCounts.Children}</span>{" "}
+          Infant - <span className="js-count-infant">{guestCounts.Infant}</span>{" "}
+          Rooms - <span className="js-count-room">{guestCounts.Rooms}</span>{" "}
         </div>
       </div>
       {/* End guest */}
