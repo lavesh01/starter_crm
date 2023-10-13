@@ -76,7 +76,8 @@ const Tours = () => {
             data-aos-delay={item?.delayAnimation}
           >
             <Link
-              href={`/tour/tour-single/${item.id}`}
+              // href={`/tour/tour-single/${item.id}`}
+              href="#"
               className="tourCard -type-1 rounded-4 hover-inside-slider"
             >
               <div className="tourCard__image position-relative">
@@ -163,15 +164,7 @@ const Tours = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-auto">
-                    <div className="text-14 text-light-1">
-                      From
-                      <span className="text-16 fw-500 text-dark-1">
-                        {" "}
-                        US${item.price}
-                      </span>
-                    </div>
-                  </div>
+          
                 </div>
               </div>
             </Link>

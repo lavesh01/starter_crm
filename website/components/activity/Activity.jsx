@@ -76,7 +76,8 @@ const Activity = () => {
             data-aos-delay={item?.delayAnimation}
           >
             <Link
-              href={`/activity/activity-single/${item.id}`}
+              // href={`/activity/activity-single/${item.id}`}
+              href="#"
               className="activityCard -type-1 rounded-4 hover-inside-slider"
             >
               <div className="activityCard__image position-relative">
@@ -157,14 +158,6 @@ const Activity = () => {
                   </div>
                   {/* End .col-auto */}
 
-                  <div className="col-auto">
-                    <div className="text-14 text-light-1">
-                      From{" "}
-                      <span className="text-16 fw-500 text-dark-1">
-                        US${item.price}
-                      </span>
-                    </div>
-                  </div>
                 </div>
               </div>
             </Link>

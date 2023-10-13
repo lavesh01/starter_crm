@@ -108,7 +108,7 @@ export const categorieMegaMenuItems = [
         id: 1,
         megaBanner: "/img/backgrounds/7.png",
         title: "Things to do in the country",
-        btnText: "See Hotel",
+        btnText: "View Itinerary",
         btnRoute: "/hotel/hotel-list-v1",
         menuItems: [
           {
@@ -117,7 +117,7 @@ export const categorieMegaMenuItems = [
             menuList: [
               {
                 name: "Istanbul",
-                routePath: "/hotel/hotel-single-v1",
+                routePath: "/hotel/hotel-list-v1",
               },
               {
                 name: "Cappadocia",
@@ -135,45 +135,44 @@ export const categorieMegaMenuItems = [
             menuList: [
               {
                 name: "Metropolitan Taksim Hotel",
-                routePath: "/hotel/hotel-single-v1/1",
+                routePath: "/hotel/hotel-single-v1/metropolitan-taksim-hotel",
               },
               {
                 name: "Marmara Taksim",
-                routePath: "/hotel/hotel-single-v1/2",
+                routePath: "/hotel/hotel-single-v1/marmara-taksim",
               },
               {
                 name: "Elite World Taksim",
-                routePath: "/hotel/hotel-single-v1/3",
+                routePath: "/hotel/hotel-single-v1/elite-world-taksim",
               },
               {
                 name: "Cappa Via Cave Hotel",
-                routePath: "/hotel/hotel-single-v1/4",
+                routePath: "/hotel/hotel-single-v1/cappa-via-cave-hotel",
               },
               {
                 name: "Kalekonak Cave Hotel",
-                routePath: "/hotel/hotel-single-v1/5",
+                routePath: "/hotel/hotel-single-v1/kalekonak-cave-hotel",
               },
               {
                 name: "Doors of Cappadocia",
-                routePath: "/hotel/hotel-single-v1/6",
+                routePath: "/hotel/hotel-single-v1/doors-of-cappadocia",
               },
               {
                 name: "Dedli Cave",
-                routePath: "/hotel/hotel-single-v1/7",
+                routePath: "/hotel/hotel-single-v1/dedli-cave",
               },
               {
                 name: "Ring Downtown Hotel",
-                routePath: "/hotel/hotel-single-v1/8",
+                routePath: "/hotel/hotel-single-v1/ring-downtown-hotel",
               },
               {
                 name: "Antalya Cender Hotel",
-                routePath: "/hotel/hotel-single-v1/9",
+                routePath: "/hotel/hotel-single-v1/antalya-cender-hotel",
               },
               {
                 name: "Ramada Plaza",
-                routePath: "/hotel/hotel-single-v1/10",
+                routePath: "/hotel/hotel-single-v1/ramada-plaza",
               }
-              
             ],
           },
         ],
@@ -187,7 +186,7 @@ export const categorieMegaMenuItems = [
         id: 1,
         megaBanner: "/img/backgrounds/7.png",
         title: "Things to do in the country",
-        btnText: "See Hotel",
+        btnText: "View Itinerary",
         btnRoute: "/hotel/hotel-list-v1",
         menuItems: [
           {
@@ -206,44 +205,44 @@ export const categorieMegaMenuItems = [
             menuList: [
               {
                 name: "Gabala Hotel",
-                routePath: "/hotel/hotel-single-v1/11",
+                routePath: "/hotel/hotel-single-v1/gabala-hotel",
               },
               {
                 name: "Gabala Garden 5*",
-                routePath: "/hotel/hotel-single-v1/12",
+                routePath: "/hotel/hotel-single-v1/gabala-garden-5",
               },
               {
                 name: "West Shine",
-                routePath: "/hotel/hotel-single-v1/13",
+                routePath: "/hotel/hotel-single-v1/west-shine",
               },
               {
                 name: "Shapphire City",
-                routePath: "/hotel/hotel-single-v1/14",
+                routePath: "/hotel/hotel-single-v1/shapphire-city",
               },
               {
                 name: "Shapphire Inn",
-                routePath: "/hotel/hotel-single-v1/15",
+                routePath: "/hotel/hotel-single-v1/shapphire-inn",
               },
               {
                 name: "Mogan",
-                routePath: "/hotel/hotel-single-v1/16",
+                routePath: "/hotel/hotel-single-v1/mogan",
               },
               {
                 name: "Badamdar",
-                routePath: "/hotel/hotel-single-v1/17",
+                routePath: "/hotel/hotel-single-v1/badamdar",
               },
               {
                 name: "Hayatt",
-                routePath: "/hotel/hotel-single-v1/18",
+                routePath: "/hotel/hotel-single-v1/hayatt",
               },
               {
                 name: "Hilton",
-                routePath: "/hotel/hotel-single-v1/19",
+                routePath: "/hotel/hotel-single-v1/hilton",
               },
               {
                 name: "Marriott",
-                routePath: "/hotel/hotel-single-v1/20",
-              }              
+                routePath: "/hotel/hotel-single-v1/marriott",
+              }         
             ],
           },
         ],
@@ -257,7 +256,7 @@ export const categorieMegaMenuItems = [
         id: 1,
         megaBanner: "/img/backgrounds/8.png",
         title: "Things to do on your tour",
-        btnText: "See Tour",
+        btnText: "View Itinerary",
         btnRoute: "/tour/tour-list-v1",
         menuItems: [
           {
@@ -276,20 +275,20 @@ export const categorieMegaMenuItems = [
             menuList: [
               {
                 name: "Rahat Palace",
-                routePath: "/hotel/hotel-single-v1/21",
+                routePath: "/hotel/hotel-single-v1/rahat-palace",
               },
               {
                 name: "Best Western",
-                routePath: "/hotel/hotel-single-v1/22",
+                routePath: "/hotel/hotel-single-v1/best-western",
               },
               {
                 name: "Uyut and Kazzole",
-                routePath: "/hotel/hotel-single-v1/23",
+                routePath: "/hotel/hotel-single-v1/uyut-and-kazzole",
               },
               {
                 name: "Rixos",
-                routePath: "/hotel/hotel-single-v1/24",
-              }              
+                routePath: "/hotel/hotel-single-v1/rixos",
+              }            
             ],
           },
         ],
@@ -303,7 +302,7 @@ export const categorieMegaMenuItems = [
         id: 1,
         megaBanner: "/img/backgrounds/8.png",
         title: "Things to do on your tour",
-        btnText: "See Tour",
+        btnText: "View Itinerary",
         btnRoute: "/tour/tour-list-v1",
         menuItems: [
           {
@@ -334,44 +333,44 @@ export const categorieMegaMenuItems = [
             menuList: [
               {
                 name: "Mercure Hotel",
-                routePath: "/hotel/hotel-single-v1/25",
+                routePath: "/hotel/hotel-single-v1/mercure-hotel",
               },
               {
                 name: "Royal Mezbon",
-                routePath: "/hotel/hotel-single-v1/26",
+                routePath: "/hotel/hotel-single-v1/royal-mezbon",
               },
               {
                 name: "City Palace",
-                routePath: "/hotel/hotel-single-v1/27",
+                routePath: "/hotel/hotel-single-v1/city-palace",
               },
               {
                 name: "Grand Samarkand",
-                routePath: "/hotel/hotel-single-v1/28",
+                routePath: "/hotel/hotel-single-v1/grand-samarkand",
               },
               {
                 name: "Diyora",
-                routePath: "/hotel/hotel-single-v1/29",
+                routePath: "/hotel/hotel-single-v1/diyora",
               },
               {
                 name: "Emirhan",
-                routePath: "/hotel/hotel-single-v1/30",
+                routePath: "/hotel/hotel-single-v1/emirhan",
               },
               {
                 name: "Omar Khayyam",
-                routePath: "/hotel/hotel-single-v1/31",
+                routePath: "/hotel/hotel-single-v1/omar-khayyam",
               },
               {
                 name: "Zargaron Plaza",
-                routePath: "/hotel/hotel-single-v1/32",
+                routePath: "/hotel/hotel-single-v1/zargaron-plaza",
               },
               {
                 name: "Asia Bukhara",
-                routePath: "/hotel/hotel-single-v1/33",
+                routePath: "/hotel/hotel-single-v1/asia-bukhara",
               },
               {
                 name: "Khiva Palace",
-                routePath: "/hotel/hotel-single-v1/34",
-              }              
+                routePath: "/hotel/hotel-single-v1/khiva-palace",
+              }            
             ],
           },
         ],

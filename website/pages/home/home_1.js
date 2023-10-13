@@ -43,17 +43,6 @@ const Home_1 = () => {
               </div>
             </div>
             {/* End col-auto */}
-
-            {/* <div className="col-auto md:d-none">
-              <a
-                href="#"
-                className="button -md -blue-1 bg-blue-1-05 text-blue-1"
-              >
-                View All Destinations
-                <div className="icon-arrow-top-right ml-15" />
-              </a>
-            </div> */}
-            {/* End col-auto */}
           </div>
           {/* End .row */}
 
@@ -82,7 +71,7 @@ const Home_1 = () => {
               <div className="sectionTitle -md">
                 <h2 className="sectionTitle__title">Recommended</h2>
                 <p className=" sectionTitle__text mt-5 sm:mt-0">
-                Discover Our Handpicked Collection of Exceptional Hotels - Your Ideal Stay Awaits!
+                  Discover Our Handpicked Collection of Exceptional Hotels - Your Ideal Stay Awaits!
                 </p>
               </div>
             </div>

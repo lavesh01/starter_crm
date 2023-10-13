@@ -36,11 +36,10 @@ const Hotels = () => {
           },
         }}
       >
-        {/* {hotelsData.slice(0, 8).map((item) => ( */}
-        {hotelsData.map((item) => (
+        {hotelsData.slice(0, 8).map((item) => (
           <SwiperSlide key={item?.id}>
             <Link
-              href={`/hotel/hotel-single-v1/${item.id}`}
+              href={`/hotel/hotel-single-v1/${item.param}`}
               className="hotelsCard -type-1 hover-inside-slider"
               data-aos="fade"
               data-aos-delay={item.delayAnimation}
@@ -122,12 +121,6 @@ const Hotels = () => {
                   </div>
                   <div className="text-14 text-light-1 ml-10">
                     {item?.numberOfReviews} reviews
-                  </div>
-                </div>
-                <div className="mt-5">
-                  <div className="fw-500">
-                    Starting from{" "}
-                    <span className="text-blue-1">IND ₹{item?.price}</span>
                   </div>
                 </div>
               </div>

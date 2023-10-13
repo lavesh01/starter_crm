@@ -148,12 +148,6 @@ const Hotels2 = () => {
                     {item?.numberOfReviews} reviews
                   </div>
                 </div>
-                <div className="mt-5">
-                  <div className="fw-500">
-                    Starting from{" "}
-                    <span className="text-blue-1">₹{item?.price}</span>
-                  </div>
-                </div>
               </div>
             </Link>
           </div>

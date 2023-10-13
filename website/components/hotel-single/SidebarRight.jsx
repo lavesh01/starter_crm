@@ -6,8 +6,7 @@ const SidebarRight = ({ hotel }) => {
       <div className="px-30 py-30 border-light rounded-4 shadow-4">
         <div className="d-flex items-center justify-between">
           <div>
-            <span className="text-20 fw-500">₹{hotel?.price}</span>
-            <span className="text-14 text-light-1 ml-5">nights</span>
+            <span className="text-14 text-light-1 ml-5">Hotel</span>
           </div>
           <div className="d-flex items-center">
             <div className="text-14 text-right mr-10">
@@ -24,7 +23,7 @@ const SidebarRight = ({ hotel }) => {
         {/* End d-flex */}
 
         <div className="row y-gap-20 pt-30">
-          <FilterBox />
+          <FilterBox href={hotel?.btnHref} />
         </div>
       </div>
       {/* End px-30 FilterBox */}

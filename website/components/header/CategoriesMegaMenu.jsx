@@ -1,18 +1,13 @@
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
-import {
-  isActiveLink,
-  isActiveParent,
-  isActiveParentChaild,
-} from "../../utils/linkActiveChecker";
 
 import Image from "next/image";
 import Link from "next/link";
 import { categorieMegaMenuItems } from "../../data/mainMenuData";
+import { isActiveLink } from "../../utils/linkActiveChecker";
 import { useRouter } from "next/router";
 
 const CategoriesMegaMenu = () => {
   const router = useRouter();
-
   const itemList = [
     "Turkey",
     "Azerbaijan",
@@ -41,7 +36,7 @@ const CategoriesMegaMenu = () => {
                 <li className="mega__grid">
                   {megaCol?.menuItems?.map((item) => (
                     <div className="mega__item" key={item.id}>
-                      <div className="text-15 fw-500">{item.title}</div>
+                      <div className="text-15 fw-600">{item.title}</div>
                       <div className="y-gap-5 text-15 pt-5">
                         {item?.menuList?.map((list, i) => (
                           <div

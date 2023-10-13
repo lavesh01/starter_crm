@@ -36,56 +36,56 @@ export const destinations2 = [
     hoverText: "1400 Hotels - 22 Tours - 95 Activities",
     city: "Turkey",
     img: "/img/destinations/turkey-bg.jpg",
-    href: "destination/country/1",
+    href: "destination/turkey",
   },
   {
     id: 2,
     hoverText: "1100 Hotels - 18 Tours - 85 Activities",
     city: "Russia",
     img: "/img/destinations/russia-bg.jpg",
-    href: "destination/country/2",
+    href: "destination/russia",
   },
   {
     id: 3,
     hoverText: "1250 Hotels - 21 Tours - 90 Activities",
     city: "Tashkent",
     img: "/img/destinations/tashkent-bg.jpg",
-    href: "destination/country/3",
+    href: "destination/tashkent",
   },
   {
     id: 4,
     hoverText: "1200 Hotels - 20 Tours - 85 Activities",
     city: "Armenia",
     img: "/img/destinations/armenia-bg.jpg",
-    href: "destination/country/4",
+    href: "destination/armenia",
   },
   {
     id: 5,
     hoverText: "1100 Hotels - 19 Tours - 80 Activities",
     city: "Georgia",
     img: "/img/destinations/georgia-bg.jpg",
-    href: "destination/country/5",
+    href: "destination/georgia",
   },
   {
     id: 6,
     hoverText: "1300 Hotels - 20 Tours - 90 Activities",
     city: "Azerbaijan",
     img: "/img/destinations/azerbaijan-bg.jpg",
-    href: "destination/country/6",
+    href: "destination/azerbaijan",
   },
   {
     id: 7,
     hoverText: "1200 Hotels - 18 Tours - 95 Activities",
     city: "Almaty",
     img: "/img/destinations/almaty-bg.jpg",
-    href: "destination/country/7",
+    href: "destination/almaty",
   },
   {
     id: 8,
     hoverText: "950 Hotels - 17 Tours - 70 Activities",
     city: "Bishkek",
     img: "/img/destinations/bishkek-bg.jpg",
-    href: "destination/country/8",
+    href: "destination/bishkek",
   },
 ];
 
@@ -94,6 +94,7 @@ export const destinations = [
   {
     id: 1,
     hoverText: "11 Hotel - 18 Tours - 85 Activity",
+    param: "turkey",
     country: "Turkey",
     img: "/img/destinations/country-bg/turkey.jpg",
     description: "Begin your odyssey in Turkey, a land where the East meets the West, and ancient history intertwines with modern allure. Explore Istanbul's iconic Hagia Sophia and Blue Mosque, stand in awe of the otherworldly landscapes in Cappadocia, and unwind on the pristine beaches of Antalya. Don't miss the historic ruins of Ephesus or the natural wonders of Pamukkale. Delight your taste buds with exquisite Turkish cuisine and lose yourself in the vibrant tapestry of Turkish culture.",
@@ -106,6 +107,7 @@ export const destinations = [
   {
     id: 2,
     hoverText: "13 Hotel - 10 Tours - 70 Activity",
+    param: "russia",
     country: "Russia",
     img: "/img/destinations/country-bg/russia.jpg",
     description: "The world's largest nation, Russia, is a frontier ripe for exploration. Immerse yourself in the cultural diversity of St. Petersburg's Hermitage Museum and the imperial splendour of Moscow's Red Square. Get a view of Russia's enormous landscapes, from the Ural Mountains to Siberia's freezing tundra, by travelling on the storied Trans-Siberian Railway. Enjoy the kind welcome of the locals while dining on borscht and blini, two classic meals.",
@@ -118,6 +120,7 @@ export const destinations = [
   {
     id: 3,
     hoverText: "8 Hotel - 5 Tours - 90 Activity",
+    param: "tashkent",
     country: "Tashkent, Uzbekistan",
     img: "/img/destinations/country-bg/tashkent.jpg",
     description: "In Tashkent, the capital of Uzbekistan, explore the heart of Central Asia. Wander through the brilliant hub of colours and flavours that is the city's lively Chorsu Bazaar. Discover the beautiful Registan Square, a masterpiece of Islamic architecture, in the historic city of Samarkand. Explore the ancient streets of Bukhara, where the stories of the Silk Road come to life. The people of Uzbekistan extend a kind welcome and provide a window into the country's rich cultural history.",
@@ -130,6 +133,7 @@ export const destinations = [
   {
     id: 4,
     hoverText: "10 Hotel - 17 Tours - 56 Activity",
+    param: "armenia",
     country: "Armenia",
     img: "/img/destinations/country-bg/armenia.jpg",
     description: "Enter Armenia, a nation with a rich historical and cultural heritage. Discover the centuries-old monasteries like Tatev and Geghard that are located against the breathtaking Caucasus Mountains. Explore Lake Sevan's beautiful surroundings while indulging in authentic Armenian cuisine. The nation's capital, Yerevan, is vibrant and offers a fusion of modern culture and old history.",
@@ -142,6 +146,7 @@ export const destinations = [
   {
     id: 5,
     hoverText: "9 Hotel - 21 Tours - 73 Activity",
+    param: "georgia",
     country: "Georgia",
     img: "/img/destinations/country-bg/georgia.jpg",
     description: "Georgia, a hidden gem at the nexus of Eastern Europe and Western Asia, offers visitors an experience they won't soon forget. Explore the quaint ancient town of Tbilisi, relax in the therapeutic sulphur springs, and savour Georgian wine, which is among the oldest in the world. Wander through the picturesque Kakheti wine region and explore the historic cave city of Uplistsikhe. Georgia combines a variety of scenery with friendly friendliness.",
@@ -154,6 +159,7 @@ export const destinations = [
   {
     id: 6,
     hoverText: "14 Hotel - 18 Tours - 84 Activity",
+    param: "azerbaijan",
     country: "Azerbaijan",
     img: "/img/destinations/country-bg/azerbaijan.jpg",
     description: "You are invited to see the bustling cities and historic towns of Azerbaijan, where the ancient and the modern coexist. The capital, Baku, is home to a historic Old City and cutting-edge construction. Explore the Gobustan Petroglyphs, the Ateshgah Ancient Ruins, and the Caucasus Mountains' breathtaking scenery. Taste the delicious blend of flavours that is Azerbaijani food and take in the vivid cultural tapestry of the country.",
@@ -166,6 +172,7 @@ export const destinations = [
   {
     id: 7,
     hoverText: "10 Hotel - 14 Tours - 92 Activity",
+    param: "almaty",
     country: "Almaty, Kazakhstan",
     img: "/img/destinations/country-bg/almaty.jpg",
     description: "Accept the clash of modernity and tradition in Almaty, the heart of Kazakhstan. Almaty serves as a gateway to Kazakhstan's natural beauties, which are framed by the magnificent Tien Shan Mountains. Take in some winter sports in Shymbulak, see the lovely Big Almaty Lake, and wander around the city's lush parks. Almaty combines tranquilly and adventure.",
@@ -178,6 +185,7 @@ export const destinations = [
   {
     id: 8,
     hoverText: "8 Hotel - 11 Tours - 44 Activity",
+    param: "bishkek",
     country: "Bishkek, Kyrgyzstan",
     img: "/img/destinations/country-bg/bishkek.jpg",
     description: "The capital of Kyrgyzstan, Bishkek, is a laid-back yet energetic place to end your adventure. Admire the Ala-Too Square and the State Historical Museum's nomadic culture. Immerse yourself in the tranquilly of Lake Issyk-Kul and the breathtaking scenery of Ala Archa National Park. Your Central Asian tour will come to a beautiful close in Kyrgyzstan with its gorgeous landscape and welcoming people.",

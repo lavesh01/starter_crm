@@ -1,7 +1,8 @@
 import GuestSearch from "./GuestSearch";
 import DateSearch from "./DateSearch";
+import Link from "next/link";
 
-const index = () => {
+const index = ({href}) => {
   return (
     <>
       <div className="col-12">
@@ -23,9 +24,14 @@ const index = () => {
 
       <div className="col-12">
         <div className="button-item h-full">
-          <button className="button -dark-1 px-35 h-60 col-12 bg-blue-1 text-white">
-            Check availability
-          </button>
+          <Link 
+            href={`${href}`}
+            target="_blank"
+          >
+            <button className="button -dark-1 px-35 h-60 col-12 bg-blue-1 text-white">
+              Check availability
+            </button>
+          </Link>
         </div>
         {/* End search button_item */}
       </div>

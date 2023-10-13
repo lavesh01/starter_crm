@@ -3,14 +3,10 @@ import "photoswipe/dist/photoswipe.css";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import { useEffect, useState } from "react";
 
-import AvailableRooms from "../../../components/hotel-single/AvailableRooms";
 import CallToActions from "../../../components/common/CallToActions";
 import DefaultFooter from "../../../components/footer/default";
-import DetailsReview from "../../../components/hotel-single/guest-reviews/DetailsReview";
 import Facilities from "../../../components/hotel-single/Facilities";
-import Faq from "../../../components/faq/Faq";
 import Header1 from "../../../components/header/default-header/index";
-import HelpfulFacts from "../../../components/hotel-single/HelpfulFacts";
 import Hotels2 from "../../../components/hotels/Hotels2";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,13 +15,9 @@ import Overview from "../../../components/hotel-single/Overview";
 import PopularFacilities from "../../../components/hotel-single/PopularFacilities";
 import PropertyHighlights from "../../../components/hotel-single/PropertyHighlights";
 import RatingTag from "../../../components/hotel-single/RatingTag";
-import ReplyForm from "../../../components/hotel-single/ReplyForm";
-import ReplyFormReview from "../../../components/hotel-single/ReplyFormReview";
-import ReviewProgress from "../../../components/hotel-single/guest-reviews/ReviewProgress";
 import Seo from "../../../components/common/Seo";
 import SidebarRight from "../../../components/hotel-single/SidebarRight";
 import StickyHeader from "../../../components/hotel-single/StickyHeader";
-import Surroundings from "../../../components/hotel-single/Surroundings";
 import TopBreadCrumb from "../../../components/hotel-single/TopBreadCrumb";
 import dynamic from "next/dynamic";
 import { hotelsData } from "../../../data/hotels";
@@ -35,14 +27,18 @@ const HotelSingleV1Dynamic = () => {
   const [isOpen, setOpen] = useState(false);
   const router = useRouter();
   const [hotel, setHotel] = useState({});
-  const id = router.query.id;
+  const hotelName = router.query.hotelName;
+  console.log(hotelName)
 
   useEffect(() => {
-    if (!id) <h1>Loading...</h1>;
-    else setHotel(hotelsData.find((item) => item.id == id));
-
-    return () => {};
-  }, [id]);
+    const foundHotel = hotelsData.find((item) => item.param == hotelName);
+    if (!hotelName) <h1>Loading...</h1>;
+    else if (!foundHotel) {
+      router.push('/404')
+      return;
+    }
+    else setHotel(foundHotel);
+  }, [hotelName]);
 
   return (
     <>
@@ -66,7 +62,7 @@ const HotelSingleV1Dynamic = () => {
       <TopBreadCrumb hotel={hotel?.title} />
       {/* End top breadcrumb */}
 
-      <StickyHeader hotel={hotel} />
+      <StickyHeader href={hotel?.btnHref} />
       {/* sticky single header for hotel single */}
 
       <section className="pt-40">
@@ -95,14 +91,6 @@ const HotelSingleV1Dynamic = () => {
                     {hotel?.location}
                   </div>
                 </div>
-                <div className="col-auto">
-                  <button
-                    data-x-click="mapFilter"
-                    className="text-blue-1 text-15 underline"
-                  >
-                    Show on map
-                  </button>
-                </div>
               </div>
               {/* End .row */}
             </div>
@@ -111,19 +99,12 @@ const HotelSingleV1Dynamic = () => {
             <div className="col-auto">
               <div className="row x-gap-15 y-gap-15 items-center">
                 <div className="col-auto">
-                  <div className="text-14">
-                    From{" "}
-                    <span className="text-22 text-dark-1 fw-500">
-                      ₹{hotel?.price}
-                    </span>
-                  </div>
-                </div>
-                <div className="col-auto">
                   <Link
-                    href="/hotel/booking-page"
+                    href={`${hotel?.btnHref}`}
+                    target="_blank"
                     className="button h-50 px-24 -dark-1 bg-blue-1 text-white"
                   >
-                    Select Room <div className="icon-arrow-top-right ml-15" />
+                    Book Hotel <div className="icon-arrow-top-right ml-15" />
                   </Link>
                 </div>
               </div>
@@ -267,7 +248,7 @@ const HotelSingleV1Dynamic = () => {
                 {/* End .col-12 Property highlights */}
 
                 <div id="overview" className="col-12">
-                  <Overview />
+                  <Overview overview={hotel?.overview} />
                 </div>
                 {/* End .col-12  Overview */}
 
@@ -301,75 +282,6 @@ const HotelSingleV1Dynamic = () => {
       </section>
       {/* End single page content */}
 
-      <section id="rooms" className="pt-30">
-        <div className="container">
-          <div className="row pb-20">
-            <div className="col-auto">
-              <h3 className="text-22 fw-500">Available Rooms</h3>
-            </div>
-          </div>
-          {/* End .row */}
-          <AvailableRooms hotel={hotel} />
-        </div>
-        {/* End .container */}
-      </section>
-      {/* End Available Rooms */}
-
-      <section className="pt-40" id="reviews">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <h3 className="text-22 fw-500">Guest reviews</h3>
-            </div>
-          </div>
-          {/* End .row */}
-
-          <ReviewProgress />
-          {/* End review with progress */}
-
-          <div className="pt-40">
-            <DetailsReview />
-            {/* End review with details */}
-          </div>
-
-          <div className="row pt-30">
-            <div className="col-auto">
-              <a href="#" className="button -md -outline-blue-1 text-blue-1">
-                Show all 116 reviews{" "}
-                <div className="icon-arrow-top-right ml-15"></div>
-              </a>
-            </div>
-          </div>
-          {/* End .row */}
-        </div>
-        {/* End .container */}
-        {/* End container */}
-      </section>
-      {/* End Review section */}
-
-      <section className="pt-40">
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-8 col-lg-10">
-              <div className="row">
-                <div className="col-auto">
-                  <h3 className="text-22 fw-500">Leave a Reply</h3>
-                  <p className="text-15 text-dark-1 mt-5">
-                    Your email address will not be published.
-                  </p>
-                </div>
-              </div>
-              {/* End .row */}
-
-              <ReplyFormReview />
-              {/* End ReplyFormReview */}
-
-              <ReplyForm />
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* End Reply Comment box section */}
 
       <section className="mt-40" id="facilities">
         <div className="container">
@@ -422,82 +334,16 @@ const HotelSingleV1Dynamic = () => {
       </section>
       {/* End health &  safety measures section */}
 
-      <section className="pt-40">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <h3 className="text-22 fw-500">Hotel surroundings</h3>
-            </div>
-          </div>
-          {/* End .row */}
-
-          <div className="row x-gap-50 y-gap-30 pt-20">
-            <Surroundings />
-          </div>
-          {/* End .row */}
-        </div>
-        {/* End .container */}
-      </section>
-      {/* End hotel surroundings */}
-
-      <section className="pt-40">
-        <div className="container">
-          <div className="pt-40 border-top-light">
-            <div className="row">
-              <div className="col-12">
-                <h3 className="text-22 fw-500">Some helpful facts</h3>
-              </div>
-            </div>
-            {/* End .row */}
-
-            <div className="row x-gap-50 y-gap-30 pt-20">
-              <HelpfulFacts />
-            </div>
-            {/* End .row */}
-          </div>
-          {/* End .pt-40 */}
-        </div>
-        {/* End .container */}
-      </section>
-      {/* End helpful facts surroundings */}
-
-      <section id="faq" className="pt-40 layout-pb-md">
-        <div className="container">
-          <div className="pt-40 border-top-light">
-            <div className="row y-gap-20">
-              <div className="col-lg-4">
-                <h2 className="text-22 fw-500">
-                  FAQs about
-                  <br /> The Crown Hotel
-                </h2>
-              </div>
-              {/* End .row */}
-
-              <div className="col-lg-8">
-                <div className="accordion -simple row y-gap-20 js-accordion">
-                  <Faq />
-                </div>
-              </div>
-              {/* End .col */}
-            </div>
-            {/* End .row */}
-          </div>
-          {/* End .pt-40 */}
-        </div>
-        {/* End .container */}
-      </section>
-      {/* End Faq about sections */}
-
       <section className="layout-pt-md layout-pb-lg">
         <div className="container">
           <div className="row justify-center text-center">
             <div className="col-auto">
               <div className="sectionTitle -md">
                 <h2 className="sectionTitle__title">
-                  Popular properties similar to The Crown Hotel
+                  Popular properties similar to {hotel?.title}
                 </h2>
                 <p className=" sectionTitle__text mt-5 sm:mt-0">
-                  Interdum et malesuada fames ac ante ipsum
+                  Explore Our Top Hotel Selections in the Area
                 </p>
               </div>
               {/* End sectionTitle */}

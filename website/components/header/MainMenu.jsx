@@ -38,6 +38,10 @@ const MainMenu = ({ style = "" }) => {
         </li>
         {/* End destinations menu items */}
 
+        <li className={router.pathname === "/contact" ? "current" : ""}>
+          <Link href="/testimonials">Testimonials</Link>
+        </li>
+
         <li
           className={router.pathname === "/blog/blog-list-v1" ? "current" : ""}
         >
@@ -50,10 +54,6 @@ const MainMenu = ({ style = "" }) => {
           <Link href="/blog/blog-list-v1">Blogs</Link>
         </li>
         {/* End blog */}
-
-        <li className={router.pathname === "/contact" ? "current" : ""}>
-          <Link href="/testimonials">Testimonials</Link>
-        </li>
 
       </ul>
     </nav>

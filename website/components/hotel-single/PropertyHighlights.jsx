@@ -3,7 +3,7 @@ const PropertyHighlights2 = () => {
     {
       id: 1,
       icon: "icon-city",
-      text: `In London City Centre`,
+      text: `In City Center`,
     },
     {
       id: 2,

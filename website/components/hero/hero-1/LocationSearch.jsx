@@ -7,27 +7,42 @@ const SearchBar = () => {
   const locationSearchContent = [
     {
       id: 1,
-      name: "London",
+      name: "Turkey",
       address: "Greater London, United Kingdom",
     },
     {
       id: 2,
-      name: "New York",
+      name: "Russia",
       address: "New York State, United States",
     },
     {
       id: 3,
-      name: "Paris",
+      name: "Tashkent",
       address: "France",
     },
     {
       id: 4,
-      name: "Madrid",
+      name: "Armenia",
       address: "Spain",
     },
     {
       id: 5,
-      name: "Santorini",
+      name: "Georgia",
+      address: "Greece",
+    },
+    {
+      id: 6,
+      name: "Azerbaijan",
+      address: "Greece",
+    },
+    {
+      id: 7,
+      name: "Almaty",
+      address: "Greece",
+    },
+    {
+      id: 8,
+      name: "Bishkek",
       address: "Greece",
     },
   ];
@@ -35,6 +50,7 @@ const SearchBar = () => {
   const handleOptionClick = (item) => {
     setSearchValue(item.name);
     setSelectedItem(item);
+    console.log(selectedItem)
   };
 
   return (

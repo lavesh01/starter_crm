@@ -1,34 +1,38 @@
 import dynamic from "next/dynamic";
-import CallToActions from "../../../components/common/CallToActions";
-import Seo from "../../../components/common/Seo";
-import DefaultHeader from "../../../components/header/default-header";
-import DefaultFooter from "../../../components/footer/default";
-import TestimonialLeftCol from "../../../components/home/home-1/TestimonialLeftCol";
-import Testimonial from "../../../components/home/home-1/Testimonial";
+import CallToActions from "../../components/common/CallToActions";
+import Seo from "../../components/common/Seo";
+import DefaultHeader from "../../components/header/default-header";
+import DefaultFooter from "../../components/footer/default";
+import TestimonialLeftCol from "../../components/home/home-1/TestimonialLeftCol";
+import Testimonial from "../../components/home/home-1/Testimonial";
 import Link from "next/link";
-import Blog from "../../../components/blog/Blog3";
-import LocationTopBar from "../../../components/common/LocationTopBar";
-import Banner from "../../../components/destinations/components/Banner";
-import Categories from "../../../components/destinations/components/Categories";
-import IntroTown from "../../../components/destinations/components/IntroTown";
-import GeneralInfo from "../../../components/destinations/components/GeneralInfo";
-import Tours from "../../../components/tours/Tours";
-import Activity from "../../../components/activity/Activity";
-import Hotels from "../../../components/hotels/Hotels2";
+import Blog from "../../components/blog/Blog3";
+import LocationTopBar from "../../components/common/LocationTopBar";
+import Banner from "../../components/destinations/components/Banner";
+import Categories from "../../components/destinations/components/Categories";
+import IntroTown from "../../components/destinations/components/IntroTown";
+import GeneralInfo from "../../components/destinations/components/GeneralInfo";
+import Tours from "../../components/tours/Tours";
+import Activity from "../../components/activity/Activity";
+import Hotels from "../../components/hotels/Hotels2";
 import { useRouter } from "next/router";
-import { destinations } from "../../../data/desinations";
+import { destinations } from "../../data/desinations";
 import { useState, useEffect } from "react";
 
 const Destinations = () => {
   const router = useRouter();
   const [destination, setDestination] = useState({});
-  const id = router.query.id;
+  const country = router.query.country;
 
   useEffect(() => {
-    if (!id) <h1>Loading...</h1>;
-    else setDestination(destinations.find((item) => item.id == id));
-    return () => {};
-  }, [id]);
+    const foundCountry = destinations.find((item) => item.param === country)
+    if (!country) <h1>Loading...</h1>;
+    else if (!foundCountry){
+      router.push('/404')
+      return;
+    }
+    else setDestination(foundCountry);
+  }, [country]);
 
   return (
     <>
@@ -79,7 +83,13 @@ const Destinations = () => {
               <h2 className="text-22 fw-500">General info</h2>
             </div>
             {/* End .col */}
-            <GeneralInfo timeZone={destination?.timeZone} timeBehind={destination?.timeBehind} currency={destination?.currency} exchange={destination?.exchange} bestTimeToVisit={destination?.bestTimeToVisit} />
+            <GeneralInfo 
+              timeZone={destination?.timeZone} 
+              timeBehind={destination?.timeBehind} 
+              currency={destination?.currency} 
+              exchange={destination?.exchange} 
+              bestTimeToVisit={destination?.bestTimeToVisit} 
+            />
           </div>
           {/* End .row */}
           <div className="mt-30 border-top-light" />
@@ -104,7 +114,7 @@ const Destinations = () => {
 
             <div className="col-auto">
               <Link
-                href="#"
+                href="/hotel/hotel-list-v1"
                 className="button -md -blue-1 bg-blue-1-05 text-blue-1"
               >
                 More <div className="icon-arrow-top-right ml-15" />
@@ -128,7 +138,7 @@ const Destinations = () => {
               <div className="sectionTitle -md">
                 <h2 className="sectionTitle__title">Most Popular Tours</h2>
                 <p className=" sectionTitle__text mt-5 sm:mt-0">
-                  Interdum et malesuada fames ac ante ipsum
+                  Embark on Unforgettable Adventures – Our Top-Rated Tours Await You
                 </p>
               </div>
             </div>
@@ -162,7 +172,7 @@ const Destinations = () => {
               <div className="sectionTitle -md">
                 <h2 className="sectionTitle__title">Trending Activity</h2>
                 <p className=" sectionTitle__text mt-5 sm:mt-0">
-                  Interdum et malesuada fames ac ante ipsum
+                  Hot Picks: Trending Adventures Await!
                 </p>
               </div>
             </div>
@@ -199,7 +209,7 @@ const Destinations = () => {
                   Get inspiration for your next trip
                 </h2>
                 <p className=" sectionTitle__text mt-5 sm:mt-0">
-                  Interdum et malesuada fames
+                  Explore Travel Blogs for Ultimate Adventure Inspiration
                 </p>
               </div>
             </div>
