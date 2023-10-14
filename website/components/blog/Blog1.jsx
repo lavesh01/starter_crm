@@ -40,7 +40,7 @@ const Blog1 = () => {
           {blogsData.slice(0, 9).map((item) => (
             <div className="col-lg-4 col-sm-6" key={item.id}>
               <Link
-                href={`/blog/blog-details/${item.id}`}
+                href={`/blog/blog-details/${item.param}`}
                 className="blogCard -type-1 d-block "
               >
                 <div className="blogCard__image">
@@ -66,7 +66,6 @@ const Blog1 = () => {
         </div>
         {/* End .row */}
 
-        <BlogPagination />
       </div>
     </>
   );

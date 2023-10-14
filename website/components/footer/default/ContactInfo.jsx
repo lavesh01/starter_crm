@@ -2,15 +2,15 @@ const ContactInfo = () => {
   const contactContent = [
     {
       id: 1,
-      title: "Toll Free Customer Care",
+      title: "Customer Care No.",
       action: "tel:+(91) 8542951004",
       text: "+91-8542951004",
     },
     {
       id: 2,
-      title: "Need live support?",
+      title: "email",
       action: "sales@eurasiaglobal.net",
-      text: "eurasiaglobal.net",
+      text: "sales@eurasiaglobal.net",
     },
   ];
   return (

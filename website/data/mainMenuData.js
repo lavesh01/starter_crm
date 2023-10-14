@@ -135,43 +135,43 @@ export const categorieMegaMenuItems = [
             menuList: [
               {
                 name: "Metropolitan Taksim Hotel",
-                routePath: "/hotel/hotel-single-v1/metropolitan-taksim-hotel",
+                routePath: "/hotel/metropolitan-taksim-hotel",
               },
               {
                 name: "Marmara Taksim",
-                routePath: "/hotel/hotel-single-v1/marmara-taksim",
+                routePath: "/hotel/marmara-taksim",
               },
               {
                 name: "Elite World Taksim",
-                routePath: "/hotel/hotel-single-v1/elite-world-taksim",
+                routePath: "/hotel/elite-world-taksim",
               },
               {
                 name: "Cappa Via Cave Hotel",
-                routePath: "/hotel/hotel-single-v1/cappa-via-cave-hotel",
+                routePath: "/hotel/cappa-via-cave-hotel",
               },
               {
                 name: "Kalekonak Cave Hotel",
-                routePath: "/hotel/hotel-single-v1/kalekonak-cave-hotel",
+                routePath: "/hotel/kalekonak-cave-hotel",
               },
               {
                 name: "Doors of Cappadocia",
-                routePath: "/hotel/hotel-single-v1/doors-of-cappadocia",
+                routePath: "/hotel/doors-of-cappadocia",
               },
               {
                 name: "Dedli Cave",
-                routePath: "/hotel/hotel-single-v1/dedli-cave",
+                routePath: "/hotel/dedli-cave",
               },
               {
                 name: "Ring Downtown Hotel",
-                routePath: "/hotel/hotel-single-v1/ring-downtown-hotel",
+                routePath: "/hotel/ring-downtown-hotel",
               },
               {
                 name: "Antalya Cender Hotel",
-                routePath: "/hotel/hotel-single-v1/antalya-cender-hotel",
+                routePath: "/hotel/antalya-cender-hotel",
               },
               {
                 name: "Ramada Plaza",
-                routePath: "/hotel/hotel-single-v1/ramada-plaza",
+                routePath: "/hotel/ramada-plaza",
               }
             ],
           },
@@ -205,43 +205,43 @@ export const categorieMegaMenuItems = [
             menuList: [
               {
                 name: "Gabala Hotel",
-                routePath: "/hotel/hotel-single-v1/gabala-hotel",
+                routePath: "/hotel/gabala-hotel",
               },
               {
                 name: "Gabala Garden 5*",
-                routePath: "/hotel/hotel-single-v1/gabala-garden-5",
+                routePath: "/hotel/gabala-garden-5",
               },
               {
                 name: "West Shine",
-                routePath: "/hotel/hotel-single-v1/west-shine",
+                routePath: "/hotel/west-shine",
               },
               {
                 name: "Shapphire City",
-                routePath: "/hotel/hotel-single-v1/shapphire-city",
+                routePath: "/hotel/shapphire-city",
               },
               {
                 name: "Shapphire Inn",
-                routePath: "/hotel/hotel-single-v1/shapphire-inn",
+                routePath: "/hotel/shapphire-inn",
               },
               {
                 name: "Mogan",
-                routePath: "/hotel/hotel-single-v1/mogan",
+                routePath: "/hotel/mogan",
               },
               {
                 name: "Badamdar",
-                routePath: "/hotel/hotel-single-v1/badamdar",
+                routePath: "/hotel/badamdar",
               },
               {
                 name: "Hayatt",
-                routePath: "/hotel/hotel-single-v1/hayatt",
+                routePath: "/hotel/hayatt",
               },
               {
                 name: "Hilton",
-                routePath: "/hotel/hotel-single-v1/hilton",
+                routePath: "/hotel/hilton",
               },
               {
                 name: "Marriott",
-                routePath: "/hotel/hotel-single-v1/marriott",
+                routePath: "/hotel/marriott",
               }         
             ],
           },
@@ -275,19 +275,19 @@ export const categorieMegaMenuItems = [
             menuList: [
               {
                 name: "Rahat Palace",
-                routePath: "/hotel/hotel-single-v1/rahat-palace",
+                routePath: "/hotel/rahat-palace",
               },
               {
                 name: "Best Western",
-                routePath: "/hotel/hotel-single-v1/best-western",
+                routePath: "/hotel/best-western",
               },
               {
                 name: "Uyut and Kazzole",
-                routePath: "/hotel/hotel-single-v1/uyut-and-kazzole",
+                routePath: "/hotel/uyut-and-kazzole",
               },
               {
                 name: "Rixos",
-                routePath: "/hotel/hotel-single-v1/rixos",
+                routePath: "/hotel/rixos",
               }            
             ],
           },
@@ -333,43 +333,43 @@ export const categorieMegaMenuItems = [
             menuList: [
               {
                 name: "Mercure Hotel",
-                routePath: "/hotel/hotel-single-v1/mercure-hotel",
+                routePath: "/hotel/mercure-hotel",
               },
               {
                 name: "Royal Mezbon",
-                routePath: "/hotel/hotel-single-v1/royal-mezbon",
+                routePath: "/hotel/royal-mezbon",
               },
               {
                 name: "City Palace",
-                routePath: "/hotel/hotel-single-v1/city-palace",
+                routePath: "/hotel/city-palace",
               },
               {
                 name: "Grand Samarkand",
-                routePath: "/hotel/hotel-single-v1/grand-samarkand",
+                routePath: "/hotel/grand-samarkand",
               },
               {
                 name: "Diyora",
-                routePath: "/hotel/hotel-single-v1/diyora",
+                routePath: "/hotel/diyora",
               },
               {
                 name: "Emirhan",
-                routePath: "/hotel/hotel-single-v1/emirhan",
+                routePath: "/hotel/emirhan",
               },
               {
                 name: "Omar Khayyam",
-                routePath: "/hotel/hotel-single-v1/omar-khayyam",
+                routePath: "/hotel/omar-khayyam",
               },
               {
                 name: "Zargaron Plaza",
-                routePath: "/hotel/hotel-single-v1/zargaron-plaza",
+                routePath: "/hotel/zargaron-plaza",
               },
               {
                 name: "Asia Bukhara",
-                routePath: "/hotel/hotel-single-v1/asia-bukhara",
+                routePath: "/hotel/asia-bukhara",
               },
               {
                 name: "Khiva Palace",
-                routePath: "/hotel/hotel-single-v1/khiva-palace",
+                routePath: "/hotel/khiva-palace",
               }            
             ],
           },

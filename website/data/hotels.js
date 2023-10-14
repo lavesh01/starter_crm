@@ -2,8 +2,8 @@ export const hotelsData = [
   {
     id: 1,
     tag: "Breakfast Included",
-    slideImg: ["/img/hotels/1.png"],
-    img: "/img/hotels/1.png",
+    slideImg: ["/img/hotels/metropolitan-taksim-hotel/1.jpg","/img/hotels/metropolitan-taksim-hotel/2.jpg","/img/hotels/metropolitan-taksim-hotel/3.jpg","/img/hotels/metropolitan-taksim-hotel/4.jpg","/img/hotels/metropolitan-taksim-hotel/5.jpg","/img/hotels/metropolitan-taksim-hotel/6.jpg","/img/hotels/metropolitan-taksim-hotel/7.jpg","/img/hotels/metropolitan-taksim-hotel/8.jpg"],
+    img: "/img/hotels/metropolitan-taksim-hotel/1.jpg",
     param: "metropolitan-taksim-hotel",
     title: "Metropolitan Taksim Hotel",
     btnHref: "https://www.makemytrip.com/hotels-international/turkey/istanbul-hotels/metropolitan_hotels_taksim-details.html",
@@ -17,8 +17,8 @@ export const hotelsData = [
   {
     id: 2,
     tag: "",
-    slideImg: ["/img/hotels/2.png", "/img/hotels/1.png", "/img/hotels/3.png"],
-    img: "/img/hotels/2.png",
+    slideImg: ["/img/hotels/marmara-taksim/1.jpg", "/img/hotels/marmara-taksim/2.jpg", "/img/hotels/marmara-taksim/3.jpg","/img/hotels/marmara-taksim/4.jpg","/img/hotels/marmara-taksim/5.jpg","/img/hotels/marmara-taksim/6.jpg","/img/hotels/marmara-taksim/7.jpg"],
+    img: "/img/hotels/marmara-taksim/1.jpg",
     param: "marmara-taksim",
     title: "Marmara Taksim",
     btnHref: "https://www.makemytrip.com/hotels-international/turkey/istanbul-hotels/the_marmara_taksim_6608967321240337-details.html",
@@ -32,8 +32,17 @@ export const hotelsData = [
   {
     id: 3,
     tag: "",
-    slideImg: ["/img/hotels/3.png", "/img/hotels/2.png"],
-    img: "/img/hotels/3.png",
+    slideImg: [
+      "/img/hotels/elite-world-taksim/1.jpg",
+      "/img/hotels/elite-world-taksim/2.jpg",
+      "/img/hotels/elite-world-taksim/3.jpg",
+      "/img/hotels/elite-world-taksim/4.jpg",
+      "/img/hotels/elite-world-taksim/5.jpg",
+      "/img/hotels/elite-world-taksim/6.jpg",
+      "/img/hotels/elite-world-taksim/7.jpg",
+      "/img/hotels/elite-world-taksim/8.jpg"
+    ],
+    img: "/img/hotels/elite-world-taksim/1.jpg",
     param: "elite-world-taksim",
     title: "Elite World Taksim",
     btnHref: "https://www.makemytrip.com/hotels-international/turkey/istanbul-hotels/elite_world_istanbul_taksim_hotel-details.html",
@@ -42,13 +51,22 @@ export const hotelsData = [
     ratings: "4.5",
     numberOfReviews: "1890",
     delayAnimation: "150",
-    routePath: "/hotel/hotel-single-v1/elite-world-taksim"
-  },
+    routePath: "/hotel/elite-world-taksim"
+  },  
   {
     id: 4,
     tag: "",
-    slideImg: ["/img/hotels/4.png", "/img/hotels/5.png"],
-    img: "/img/hotels/4.png",
+    slideImg: [
+      "/img/hotels/cappa-via-cave-hotel/1.jpg",
+      "/img/hotels/cappa-via-cave-hotel/2.jpg",
+      "/img/hotels/cappa-via-cave-hotel/3.jpg",
+      "/img/hotels/cappa-via-cave-hotel/4.jpg",
+      "/img/hotels/cappa-via-cave-hotel/5.jpg",
+      "/img/hotels/cappa-via-cave-hotel/6.jpg",
+      "/img/hotels/cappa-via-cave-hotel/7.jpg",
+      "/img/hotels/cappa-via-cave-hotel/8.jpg"
+    ],
+    img: "/img/hotels/cappa-via-cave-hotel/1.jpg",
     param: "cappa-via-cave-hotel",
     title: "Cappa Via Cave Hotel",
     overview: "The 4.6-star marvel Cappa Via Cave Hotel is a refuge into Cappadocia's enchanted world. Customers enjoy the hotel's distinctive cave suites and excellent service, garnering 1750 evaluations. It offers an enchanted stay in a location reminiscent of a fairytale and is located in the heart of Cappadocia. Immerse yourself in the area's fascinating history and breathtaking scenery. The hotel's genuine cave accommodations and kind service guarantee a wonderful stay.",
@@ -57,13 +75,22 @@ export const hotelsData = [
     ratings: "4.6",
     numberOfReviews: "1750",
     delayAnimation: "120",
-    routePath: "/hotel/hotel-single-v1/cappa-via-cave-hotel"
-  },
+    routePath: "/hotel/cappa-via-cave-hotel"
+  },  
   {
     id: 5,
     tag: "",
-    slideImg: ["/img/hotels/4.png", "/img/hotels/5.png"],
-    img: "/img/hotels/4.png",
+    slideImg: [
+      "/img/hotels/kalekonak-cave-hotel/1.jpg",
+      "/img/hotels/kalekonak-cave-hotel/2.jpg",
+      "/img/hotels/kalekonak-cave-hotel/3.jpg",
+      "/img/hotels/kalekonak-cave-hotel/4.jpg",
+      "/img/hotels/kalekonak-cave-hotel/5.jpg",
+      "/img/hotels/kalekonak-cave-hotel/6.jpg",
+      "/img/hotels/kalekonak-cave-hotel/7.jpg",
+      "/img/hotels/kalekonak-cave-hotel/8.jpg"
+    ],
+    img: "/img/hotels/kalekonak-cave-hotel/1.jpg",
     param: "kalekonak-cave-hotel",
     title: "Kalekonak Cave Hotel",
     overview: "The 4.6-star Kalekonak Cave Hotel is a great place to experience Cappadocia's appeal. With 1750 positive ratings and a setting surrounded by natural beauty, this hotel provides an amazing experience. The hotel's distinctive cave accommodations offer a fusion of contemporary luxury and traditional charm while being surrounded by the mesmerising vistas of Cappadocia. Enjoy the peace and comfort of the cave spaces as you are mesmerised by the mystical atmosphere. Experience Cappadocia's rich history and breathtaking scenery right outside your front door.",
@@ -72,13 +99,22 @@ export const hotelsData = [
     ratings: "4.6",
     numberOfReviews: "1750",
     delayAnimation: "120",
-    routePath: "/hotel/hotel-single-v1/kalekonak-cave-hotel"
+    routePath: "/hotel/kalekonak-cave-hotel"
   },
   {
     id: 6,
     tag: "",
-    slideImg: ["/img/hotels/4.png", "/img/hotels/5.png"],
-    img: "/img/hotels/4.png",
+    slideImg: [
+      "/img/hotels/doors-of-cappadocia/1.jpg",
+      "/img/hotels/doors-of-cappadocia/2.jpg",
+      "/img/hotels/doors-of-cappadocia/3.jpg",
+      "/img/hotels/doors-of-cappadocia/4.jpg",
+      "/img/hotels/doors-of-cappadocia/5.jpg",
+      "/img/hotels/doors-of-cappadocia/6.jpg",
+      "/img/hotels/doors-of-cappadocia/7.jpg",
+      "/img/hotels/doors-of-cappadocia/8.jpg"
+    ],
+    img: "/img/hotels/doors-of-cappadocia/1.jpg",
     param: "doors-of-cappadocia",
     title: "Doors of Cappadocia",
     overview: "You are invited to go on a wonder-filled tour in the centre of Cappadocia by Doors of Cappadocia, a 4.6-star sanctuary. Customers are delighted by the hotel's genuine cave rooms and individualised service, which have received 1750 positive ratings. Each cave room blends traditional charm with contemporary conveniences and is tucked away among the fascinating rock formations. Enjoy the warm warmth and stunning surroundings of the hotel while taking in the beauty of Cappadocia.",
@@ -87,13 +123,22 @@ export const hotelsData = [
     ratings: "4.6",
     numberOfReviews: "1750",
     delayAnimation: "120",
-    routePath: "/hotel/hotel-single-v1/doors-of-cappadocia"
+    routePath: "/hotel/doors-of-cappadocia"
   },
   {
     id: 7,
     tag: "",
-    slideImg: ["/img/hotels/6.png", "/img/hotels/7.png"],
-    img: "/img/hotels/6.png",
+    slideImg: [
+      "/img/hotels/dedli-cave/1.jpg",
+      "/img/hotels/dedli-cave/2.jpg",
+      "/img/hotels/dedli-cave/3.jpg",
+      "/img/hotels/dedli-cave/4.jpg",
+      "/img/hotels/dedli-cave/5.jpg",
+      "/img/hotels/dedli-cave/6.jpg",
+      "/img/hotels/dedli-cave/7.jpg",
+      "/img/hotels/dedli-cave/8.jpg"
+    ],
+    img: "/img/hotels/dedli-cave/1.jpg",
     param: "dedli-cave",
     title: "Dedli Cave",
     overview: "Discover Antalya's beauty at the 4.5-star Dedli Cave Hotel, which boasts 2100 reviews. The hotel, which is tucked away among Antalya's captivating surroundings, offers a tasteful fusion of conventional cave architecture and contemporary comforts. Each cave room radiates cosiness and warmth, luring visitors into a tranquil refuge. Discover Antalya's rich historical and natural beauties while soaking up the charm of this distinctive hotel.",
@@ -102,13 +147,22 @@ export const hotelsData = [
     ratings: "4.5",
     numberOfReviews: "2100",
     delayAnimation: "130",
-    routePath: "/hotel/hotel-single-v1/dedli-cave"
+    routePath: "/hotel/dedli-cave"
   },  
   {
     id: 8,
     tag: "",
-    slideImg: ["/img/hotels/6.png", "/img/hotels/7.png"],
-    img: "/img/hotels/6.png",
+    slideImg: [
+      "/img/hotels/ring-downtown-hotel/1.jpg",
+      "/img/hotels/ring-downtown-hotel/2.jpg",
+      "/img/hotels/ring-downtown-hotel/3.jpg",
+      "/img/hotels/ring-downtown-hotel/4.jpg",
+      "/img/hotels/ring-downtown-hotel/5.jpg",
+      "/img/hotels/ring-downtown-hotel/6.jpg",
+      "/img/hotels/ring-downtown-hotel/7.jpg",
+      "/img/hotels/ring-downtown-hotel/8.jpg"
+    ],
+    img: "/img/hotels/ring-downtown-hotel/1.jpg",
     param: "ring-downtown-hotel",
     title: "Ring Downtown Hotel",
     overview: "Experience Antalya's bustling atmosphere firsthand at the 4.5-star Ring Downtown Hotel, which has received 2100 positive reviews. The hotel, which has a prime location in Antalya, provides visitors a unique fusion of contemporary elegance and first-rate service. A pleasant and enjoyable stay is guaranteed by the contemporary aesthetics used in each room's design. At the Ring Downtown Hotel, you can indulge in luxury while taking in the best of Antalya's sights and vibrant culture.",
@@ -117,13 +171,22 @@ export const hotelsData = [
     ratings: "4.5",
     numberOfReviews: "2100",
     delayAnimation: "130",
-    routePath: "/hotel/hotel-single-v1/ring-downtown-hotel"
+    routePath: "/hotel/ring-downtown-hotel"
   },
   {
     id: 9,
     tag: "",
-    slideImg: ["/img/hotels/6.png", "/img/hotels/7.png"],
-    img: "/img/hotels/6.png",
+    slideImg: [
+      "/img/hotels/antalya-cender-hotel/1.jpg",
+      "/img/hotels/antalya-cender-hotel/2.jpg",
+      "/img/hotels/antalya-cender-hotel/3.jpg",
+      "/img/hotels/antalya-cender-hotel/4.jpg",
+      "/img/hotels/antalya-cender-hotel/5.jpg",
+      "/img/hotels/antalya-cender-hotel/6.jpg",
+      "/img/hotels/antalya-cender-hotel/7.jpg",
+      "/img/hotels/antalya-cender-hotel/8.jpg"
+    ],
+    img: "/img/hotels/antalya-cender-hotel/1.jpg",
     param: "antalya-cender-hotel",
     title: "Antalya Cender Hotel",
     overview: "The 4.5-star Antalya Cender Hotel is a haven of luxury in the city's centre. Customers laud the hotel's great service and cosy accommodations in its 2100 reviews. Its excellent location makes it simple to reach Antalya's well-known attractions. After a day of exploration, the nicely appointed rooms offer a tranquil retreat. Enjoy the amenities of this upscale hotel while taking in Antalya's allure and beauty.",
@@ -132,13 +195,22 @@ export const hotelsData = [
     ratings: "4.5",
     numberOfReviews: "2100",
     delayAnimation: "130",
-    routePath: "/hotel/hotel-single-v1/antalya-cender-hotel"
+    routePath: "/hotel/antalya-cender-hotel"
   },
   {
     id: 10,
     tag: "",
-    slideImg: ["/img/hotels/6.png", "/img/hotels/7.png"],
-    img: "/img/hotels/6.png",
+    slideImg: [
+      "/img/hotels/ramada-plaza/1.jpg",
+      "/img/hotels/ramada-plaza/2.jpg",
+      "/img/hotels/ramada-plaza/3.jpg",
+      "/img/hotels/ramada-plaza/4.jpg",
+      "/img/hotels/ramada-plaza/5.jpg",
+      "/img/hotels/ramada-plaza/6.jpg",
+      "/img/hotels/ramada-plaza/7.jpg",
+      "/img/hotels/ramada-plaza/8.jpg"
+    ],
+    img: "/img/hotels/ramada-plaza/1.jpg",
     param: "ramada-plaza",
     title: "Ramada Plaza",
     overview: "In Antalya, at the 4.5-star Ramada Plaza, experience the height of luxury. The hotel has 2100 reviews and is praised for its opulent amenities and first-rate service. It provides quick access to the city's attractions as well as the stunning Mediterranean coastline because it is located in the centre of Antalya. The well decorated rooms offer a tranquil haven in the midst of the busy metropolis. Discover the ideal fusion of elegance and comfort at the Ramada Plaza, where luxury meets utility.",
@@ -147,13 +219,22 @@ export const hotelsData = [
     ratings: "4.5",
     numberOfReviews: "2100",
     delayAnimation: "130",
-    routePath: "/hotel/hotel-single-v1/ramada-plaza"
+    routePath: "/hotel/ramada-plaza"
   },
   {
     id: 11,
     tag: "",
-    slideImg: ["/img/hotels/8.png", "/img/hotels/9.png"],
-    img: "/img/hotels/8.png",
+    slideImg: [
+      "/img/hotels/gabala-hotel/1.jpg",
+      "/img/hotels/gabala-hotel/2.jpg",
+      "/img/hotels/gabala-hotel/3.jpg",
+      "/img/hotels/gabala-hotel/4.jpg",
+      "/img/hotels/gabala-hotel/5.jpg",
+      "/img/hotels/gabala-hotel/6.jpg",
+      "/img/hotels/gabala-hotel/7.jpg",
+      "/img/hotels/gabala-hotel/8.jpg"
+    ],
+    img: "/img/hotels/gabala-hotel/1.jpg",
     param: "gabala-hotel",
     title: "Gabala Hotel",
     overview: "Enjoy the comfort and elegance of the Gabala Hotel in the centre of Baku. This magnificent facility welcomes you into a world of exquisite luxury and first-rate care. Immerse yourself in luxurious lodgings that have been beautifully constructed with contemporary conveniences to satisfy every demand. The hotel's prime position in Baku makes it simple to explore the colourful culture, important landmarks, and hopping markets of the city. Whether you're a tourist or a business traveller, Gabala Hotel guarantees a memorable stay. Discover Baku's appeal while luxuriating in this hotel's comfort and sophistication, making your trip really memorable.",
@@ -162,14 +243,23 @@ export const hotelsData = [
     ratings: "4.7",
     numberOfReviews: "2900",
     delayAnimation: "140",
-    routePath: "/hotel/hotel-single-v1/gabala-hotel"
+    routePath: "/hotel/gabala-hotel"
   },
   {
     id: 12,
     tag: "",
-    slideImg: ["/img/hotels/8.png", "/img/hotels/9.png"],
-    img: "/img/hotels/8.png",
-    param: "gabala-garden",
+    slideImg: [
+      "/img/hotels/gabala-garden/1.jpg",
+      "/img/hotels/gabala-garden/2.jpg",
+      "/img/hotels/gabala-garden/3.jpg",
+      "/img/hotels/gabala-garden/4.jpg",
+      "/img/hotels/gabala-garden/5.jpg",
+      "/img/hotels/gabala-garden/6.jpg",
+      "/img/hotels/gabala-garden/7.jpg",
+      "/img/hotels/gabala-garden/8.jpg"
+    ],
+    img: "/img/hotels/gabala-garden/1.jpg",
+    param: "gabala-garden-5",
     title: "Gabala Garden 5*",
     overview: "Gabala Garden 5*, the pinnacle of luxury in Baku, offers magnificence. This premium hotel has an air of comfort and refinement about it. Take in the opulent atmosphere created by the luxurious accommodations and first-rate amenities. The hotel's excellent position in Baku makes it simple for you to discover the city's landmarks and cultural history. Whether you're a tourist or a business traveller, Gabala Garden 5* guarantees an excellent stay that will leave you with priceless memories. Enjoy the splendour and luxury that this hotel offers to make your stay in Baku unforgettable.",
     btnHref: "https://www.makemytrip.com/hotels-international/azerbaijan/gebele-hotels/gabala_garden_hotel-details.html",
@@ -177,13 +267,22 @@ export const hotelsData = [
     ratings: "4.7",
     numberOfReviews: "2900",
     delayAnimation: "140",
-    routePath: "/hotel/hotel-single-v1/gabala-garden"
+    routePath: "/hotel/gabala-garden-5"
   },
   {
     id: 13,
     tag: "",
-    slideImg: ["/img/hotels/8.png", "/img/hotels/9.png"],
-    img: "/img/hotels/8.png",
+    slideImg: [
+      "/img/hotels/west-shine/1.jpg",
+      "/img/hotels/west-shine/2.jpg",
+      "/img/hotels/west-shine/3.jpg",
+      "/img/hotels/west-shine/4.jpg",
+      "/img/hotels/west-shine/5.jpg",
+      "/img/hotels/west-shine/6.jpg",
+      "/img/hotels/west-shine/7.jpg",
+      "/img/hotels/west-shine/8.jpg"
+    ],
+    img: "/img/hotels/west-shine/1.jpg",
     param: "west-shine",
     title: "West Shine",
     overview: "In the heart of Baku's hectic city life, West Shine offers a peaceful haven. Enter a world of luxury and cutting-edge amenities that are created to make your stay enjoyable and comfortable. Every visitor will have a memorable stay thanks to the hotel's attractively appointed rooms and polite welcome. West Shine in Baku offers convenient access to the city's tourist destinations and historical sites. Whether you're going for vacation or for work, West Shine promises to be a relaxing hideaway. While enjoying the comfort and elegance that West Shine has to offer, explore the dynamic city of Baku.",
@@ -192,13 +291,22 @@ export const hotelsData = [
     ratings: "4.7",
     numberOfReviews: "2900",
     delayAnimation: "140",
-    routePath: "/hotel/hotel-single-v1/west-shine"
+    routePath: "/hotel/west-shine"
   },
   {
     id: 14,
     tag: "",
-    slideImg: ["/img/hotels/8.png", "/img/hotels/9.png"],
-    img: "/img/hotels/8.png",
+    slideImg: [
+      "/img/hotels/shapphire-city/1.jpg",
+      "/img/hotels/shapphire-city/2.jpg",
+      "/img/hotels/shapphire-city/3.jpg",
+      "/img/hotels/shapphire-city/4.jpg",
+      "/img/hotels/shapphire-city/5.jpg",
+      "/img/hotels/shapphire-city/6.jpg",
+      "/img/hotels/shapphire-city/7.jpg",
+      "/img/hotels/shapphire-city/8.jpg"
+    ],
+    img: "/img/hotels/shapphire-city/1.jpg",
     param: "shapphire-city",
     title: "Shapphire City",
     overview: "The pinnacle of luxury, Shapphire City in Baku combines modern sophistication with classic charm. The hotel's beautiful design and meticulous attention to detail produce a posh and pleasant atmosphere. Its convenient location enables visitors to fully experience Baku's dynamic attractions and rich culture. After a day of exploration, the luxurious apartments provide a refuge of rest. Every stay at Shapphire City is exceptional, embodying the best in hospitality. Discover Baku's charm while luxuriating in Shapphire City's comfort and amenities, which promises a wonderful experience.",
@@ -207,13 +315,22 @@ export const hotelsData = [
     ratings: "4.7",
     numberOfReviews: "2900",
     delayAnimation: "140",
-    routePath: "/hotel/hotel-single-v1/shapphire-city"
+    routePath: "/hotel/shapphire-city"
   },
   {
     id: 15,
     tag: "",
-    slideImg: ["/img/hotels/8.png", "/img/hotels/9.png"],
-    img: "/img/hotels/8.png",
+    slideImg: [
+      "/img/hotels/shapphire-inn/1.jpg",
+      "/img/hotels/shapphire-inn/2.jpg",
+      "/img/hotels/shapphire-inn/3.jpg",
+      "/img/hotels/shapphire-inn/4.jpg",
+      "/img/hotels/shapphire-inn/5.jpg",
+      "/img/hotels/shapphire-inn/6.jpg",
+      "/img/hotels/shapphire-inn/7.jpg",
+      "/img/hotels/shapphire-inn/8.jpg"
+    ],
+    img: "/img/hotels/shapphire-inn/1.jpg",
     param: "shapphire-inn",
     title: "Shapphire Inn",
     overview: "The Shapphire Inn in Baku is a charming getaway that offers the ideal blend of contemporary comfort and classic elegance. The hotel's tastefully decorated rooms and excellent service guarantee that guests will have a wonderful stay. While sleeping in the comfortable surroundings of Shapphire Inn, immerse yourself in the centre of Baku's lively vitality. Discover the rich cultural history of the city, indulge in gastronomic treats, or just relax in the hotel's luxury. Shapphire Inn offers a seamless fusion of ease and elegance, standing as a tribute to sophisticated luxury. While taking advantage of Shapphire Inn's tranquilly and comfort, explore Baku's dynamic metropolis.",
@@ -222,13 +339,22 @@ export const hotelsData = [
     ratings: "4.7",
     numberOfReviews: "2900",
     delayAnimation: "140",
-    routePath: "/hotel/hotel-single-v1/shapphire-inn"
+    routePath: "/hotel/shapphire-inn"
   },
   {
     id: 16,
     tag: "",
-    slideImg: ["/img/hotels/8.png", "/img/hotels/9.png"],
-    img: "/img/hotels/8.png",
+    slideImg: [
+      "/img/hotels/mogan/1.jpg",
+      "/img/hotels/mogan/2.jpg",
+      "/img/hotels/mogan/3.jpg",
+      "/img/hotels/mogan/4.jpg",
+      "/img/hotels/mogan/5.jpg",
+      "/img/hotels/mogan/6.jpg",
+      "/img/hotels/mogan/7.jpg",
+      "/img/hotels/mogan/8.jpg"
+    ],
+    img: "/img/hotels/mogan/1.jpg",
     param: "mogan",
     title: "Mogan",
     overview: "The Mogan in Baku is a refuge of luxury and comfort with a sophisticated design and first-rate amenities that provide an opulent getaway for visitors. The hotel's advantageous position makes it simple to access Baku's well-known attractions and vibrant city life. Immerse yourself in the chic and contemporary atmosphere of the rooms to guarantee a pleasurable and restful stay. Mogan guarantees a remarkable experience, leaving you with priceless memories whether you're travelling for business or pleasure. Enjoy the elegance and comfort that Mogan gives to every visitor while discovering Baku's dynamic charm and rich cultural heritage.",
@@ -237,13 +363,22 @@ export const hotelsData = [
     ratings: "4.7",
     numberOfReviews: "2900",
     delayAnimation: "140",
-    routePath: "/hotel/hotel-single-v1/mogan"
+    routePath: "/hotel/mogan"
   },
   {
     id: 17,
     tag: "",
-    slideImg: ["/img/hotels/8.png", "/img/hotels/9.png"],
-    img: "/img/hotels/8.png",
+    slideImg: [
+      "/img/hotels/badamdar/1.jpg",
+      "/img/hotels/badamdar/2.jpg",
+      "/img/hotels/badamdar/3.jpg",
+      "/img/hotels/badamdar/4.jpg",
+      "/img/hotels/badamdar/5.jpg",
+      "/img/hotels/badamdar/6.jpg",
+      "/img/hotels/badamdar/7.jpg",
+      "/img/hotels/badamdar/8.jpg"
+    ],
+    img: "/img/hotels/badamdar/1.jpg",
     param: "badamdar",
     title: "Badamdar",
     overview: "In the heart of the action-packed city of Baku, the Badamdar Hotel and Residences is a haven of luxury and tranquilly. This hotel offers a seamless fusion of contemporary elegance and welcoming warmth and is tucked away in a prime location. Modern conveniences and well-designed accommodations guarantee a relaxing and restorative stay. Explore Baku's cultural treasures, then unwind in the hotel's serene atmosphere at the end of the day. As a symbol of elegance and sophistication, the Badamdar Hotel and Residences is the perfect option for both business and leisure travellers looking for an opulent hideaway.",
@@ -252,13 +387,22 @@ export const hotelsData = [
     ratings: "4.7",
     numberOfReviews: "2900",
     delayAnimation: "140",
-    routePath: "/hotel/hotel-single-v1/badamdar"
+    routePath: "/hotel/badamdar"
   },
   {
     id: 18,
     tag: "",
-    slideImg: ["/img/hotels/8.png", "/img/hotels/9.png"],
-    img: "/img/hotels/8.png",
+    slideImg: [
+      "/img/hotels/hayatt/1.jpg",
+      "/img/hotels/hayatt/2.jpg",
+      "/img/hotels/hayatt/3.jpg",
+      "/img/hotels/hayatt/4.jpg",
+      "/img/hotels/hayatt/5.jpg",
+      "/img/hotels/hayatt/6.jpg",
+      "/img/hotels/hayatt/7.jpg",
+      "/img/hotels/hayatt/8.jpg"
+    ],
+    img: "/img/hotels/hayatt/1.jpg",
     param: "hayatt",
     title: "Hayatt",
     overview: "The Hyatt in Baku is the pinnacle of luxury and offers guests a magnificent sanctuary in the middle of the city. A memorable stay is guaranteed by the hotel's luxurious rooms and suites, which are furnished with modern decor and first-rate amenities. The Hyatt in Baku's most desirable neighbourhood offers quick access to the city's tourist destinations and historical sites. At the end of the day, retire to the elegance and luxury that Hyatt offers after experiencing the city's dynamic energy and rich history. At Hyatt, you'll enjoy unrivalled luxury and exceptional service while making lifelong experiences.",
@@ -267,13 +411,22 @@ export const hotelsData = [
     ratings: "4.7",
     numberOfReviews: "2900",
     delayAnimation: "140",
-    routePath: "/hotel/hotel-single-v1/hayatt"
+    routePath: "/hotel/hayatt"
   },
   {
     id: 19,
     tag: "",
-    slideImg: ["/img/hotels/8.png", "/img/hotels/9.png"],
-    img: "/img/hotels/8.png",
+    slideImg: [
+      "/img/hotels/hilton/1.jpg",
+      "/img/hotels/hilton/2.jpg",
+      "/img/hotels/hilton/3.jpg",
+      "/img/hotels/hilton/4.jpg",
+      "/img/hotels/hilton/5.jpg",
+      "/img/hotels/hilton/6.jpg",
+      "/img/hotels/hilton/7.jpg",
+      "/img/hotels/hilton/8.jpg"
+    ],
+    img: "/img/hotels/hilton/1.jpg",
     param: "hilton",
     title: "Hilton",
     overview: "Hilton Baku stands as a beacon of luxury and comfort in the heart of Baku. With its contemporary design and exceptional service, this hotel offers a lavish experience to every guest. The well-appointed rooms, boasting modern amenities and stunning views, ensure a delightful stay. Strategically located, Hilton Baku allows for easy exploration of Baku's cultural and historical landmarks. Whether you're visiting for business or leisure, Hilton Baku promises a luxurious retreat. Discover the vibrant city of Baku while indulging in the comfort and sophistication that Hilton Baku provides, making your stay truly memorable.",
@@ -282,13 +435,22 @@ export const hotelsData = [
     ratings: "4.7",
     numberOfReviews: "2900",
     delayAnimation: "140",
-    routePath: "/hotel/hotel-single-v1/hilton"
+    routePath: "/hotel/hilton"
   },
   {
     id: 20,
     tag: "",
-    slideImg: ["/img/hotels/8.png", "/img/hotels/9.png"],
-    img: "/img/hotels/8.png",
+    slideImg: [
+      "/img/hotels/marriott/1.jpg",
+      "/img/hotels/marriott/2.jpg",
+      "/img/hotels/marriott/3.jpg",
+      "/img/hotels/marriott/4.jpg",
+      "/img/hotels/marriott/5.jpg",
+      "/img/hotels/marriott/6.jpg",
+      "/img/hotels/marriott/7.jpg",
+      "/img/hotels/marriott/8.jpg"
+    ],
+    img: "/img/hotels/marriott/1.jpg",
     param: "marriott",
     title: "Marriott",
     overview: "The luxurious and elegant Marriott Baku Hotel Boulevard is the pinnacle of sophistication in Baku. The hotel offers a fusion of contemporary style and classic charm, creating a welcoming environment for guests. A comfortable and peaceful stay is guaranteed by the chicly furnished accommodations and first-rate amenities. The Marriott Baku Hotel Boulevard's convenient location makes it simple for visitors to take in Baku's lively culture and sights. The Marriott Baku Hotel Boulevard offers the height of elegance and flawless service, making your stay in Baku unforgettable.",
@@ -297,13 +459,22 @@ export const hotelsData = [
     ratings: "4.7",
     numberOfReviews: "2900",
     delayAnimation: "140",
-    routePath: "/hotel/hotel-single-v1/marriott"
+    routePath: "/hotel/marriott"
   },
   {
     id: 21,
     tag: "",
-    slideImg: ["/img/hotels/10.png", "/img/hotels/11.png"],
-    img: "/img/hotels/10.png",
+    slideImg: [
+      "/img/hotels/rahat-palace/1.jpg",
+      "/img/hotels/rahat-palace/2.jpg",
+      "/img/hotels/rahat-palace/3.jpg",
+      "/img/hotels/rahat-palace/4.jpg",
+      "/img/hotels/rahat-palace/5.jpg",
+      "/img/hotels/rahat-palace/6.jpg",
+      "/img/hotels/rahat-palace/7.jpg",
+      "/img/hotels/rahat-palace/8.jpg"
+    ],
+    img: "/img/hotels/rahat-palace/1.jpg",
     param: "rahat-palace",
     title: "Rahat Palace",
     overview: "An oasis of luxury and beauty, Rahat Palace in Almaty offers visitors a genuinely magnificent stay. An atmosphere of refinement and luxury is created by the hotel's majestic architecture and superb decor. Immerse yourself in the opulent suites and rooms that are furnished with luxurious furnishings and modern conveniences to make your stay memorable. Rahat Palace is conveniently close to Almaty's tourist destinations and cultural treasures. Whether you're a tourist or a business traveller, Rahat Palace guarantees an outstanding experience that will leave you with priceless memories. Enjoy the splendour and comfort that this hotel has to offer to make your trip to Almaty unforgettable.",
@@ -312,13 +483,22 @@ export const hotelsData = [
     ratings: "4.5",
     numberOfReviews: "1750",
     delayAnimation: "150",
-    routePath: "/hotel/hotel-single-v1/rahat-palace"
+    routePath: "/hotel/rahat-palace"
   },
   {
     id: 22,
     tag: "",
-    slideImg: ["/img/hotels/10.png", "/img/hotels/11.png"],
-    img: "/img/hotels/10.png",
+    slideImg: [
+      "/img/hotels/best-western/1.jpg",
+      "/img/hotels/best-western/2.jpg",
+      "/img/hotels/best-western/3.jpg",
+      "/img/hotels/best-western/4.jpg",
+      "/img/hotels/best-western/5.jpg",
+      "/img/hotels/best-western/6.jpg",
+      "/img/hotels/best-western/7.jpg",
+      "/img/hotels/best-western/8.jpg"
+    ],
+    img: "/img/hotels/best-western/1.jpg",
     param: "best-western",
     title: "Best Western",
     overview: "Almaty's Best Western Plus Atakent Park Hotel is the ideal fusion of cutting-edge comfort and first-rate service, offering visitors a pleasurable stay. The hotel's modern architecture and well furnished rooms provide a tranquil and welcoming atmosphere. Immerse yourself in Almaty's vibrant centre, with the hotel's convenient location making it simple to explore the area's tourist destinations and historical sites. The Best Western Plus Atakent Park Hotel promises to be a restorative retreat whether you're travelling for work or pleasure. Enjoy the comfort and luxury our hotel offers while exploring the dynamic city of Almaty for a really unforgettable vacation.",
@@ -327,13 +507,22 @@ export const hotelsData = [
     ratings: "4.5",
     numberOfReviews: "1750",
     delayAnimation: "150",
-    routePath: "/hotel/hotel-single-v1/best-western"
+    routePath: "/hotel/best-western"
   },
   {
     id: 23,
     tag: "",
-    slideImg: ["/img/hotels/10.png", "/img/hotels/11.png"],
-    img: "/img/hotels/10.png",
+    slideImg: [
+      "/img/hotels/uyut-and-kazzole/1.jpg",
+      "/img/hotels/uyut-and-kazzole/2.jpg",
+      "/img/hotels/uyut-and-kazzole/3.jpg",
+      "/img/hotels/uyut-and-kazzole/4.jpg",
+      "/img/hotels/uyut-and-kazzole/5.jpg",
+      "/img/hotels/uyut-and-kazzole/6.jpg",
+      "/img/hotels/uyut-and-kazzole/7.jpg",
+      "/img/hotels/uyut-and-kazzole/8.jpg"
+    ],
+    img: "/img/hotels/uyut-and-kazzole/1.jpg",
     param: "uyut-and-kazzole",
     title: "Uyut and Kazzole",
     overview: "Almaty's Uyut & Kazzole Hotel combines comfort, sophistication, and top-notch service to give visitors a comfortable stay. The hotel has tastefully decorated rooms with contemporary conveniences, guaranteeing a comfortable stay. Its convenient Almaty location enables visitors to explore the city's attractions and fully experience its colourful culture. Return to Uyut and Kazzole after a day of exploration to relax in the friendly atmosphere. Experience the warmth and kindness that this hotel gives to create a really unforgettable stay in Almaty.",
@@ -342,13 +531,22 @@ export const hotelsData = [
     ratings: "4.5",
     numberOfReviews: "1750",
     delayAnimation: "150",
-    routePath: "/hotel/hotel-single-v1/uyut-and-kazzole"
+    routePath: "/hotel/uyut-and-kazzole"
   },
   {
     id: 24,
     tag: "",
-    slideImg: ["/img/hotels/10.png", "/img/hotels/11.png"],
-    img: "/img/hotels/10.png",
+    slideImg: [
+      "/img/hotels/rixos/1.jpg",
+      "/img/hotels/rixos/2.jpg",
+      "/img/hotels/rixos/3.jpg",
+      "/img/hotels/rixos/4.jpg",
+      "/img/hotels/rixos/5.jpg",
+      "/img/hotels/rixos/6.jpg",
+      "/img/hotels/rixos/7.jpg",
+      "/img/hotels/rixos/8.jpg"
+    ],
+    img: "/img/hotels/rixos/1.jpg",
     param: "rixos",
     title: "Rixos",
     overview: "In the centre of Almaty, Rixos Almaty stands as a representation of grandeur and luxury. A sophisticated and affluent atmosphere is created by the hotel's lavish architecture and decor. Immerse yourself in the opulent suites and rooms that are furnished with contemporary conveniences to make your stay luxurious. You can easily access the city's attractions from the well-placed Rixos Almaty, allowing you to discover the city's natural beauty and rich cultural heritage. Whether travelling for work or pleasure, Rixos Almaty guarantees a memorable getaway. While enjoying the comfort and elegance that Rixos Almaty offers, explore the dynamic city of Almaty and leave with priceless memories.",
@@ -357,28 +555,46 @@ export const hotelsData = [
     ratings: "4.5",
     numberOfReviews: "1750",
     delayAnimation: "150",
-    routePath: "/hotel/hotel-single-v1/rixos"
+    routePath: "/hotel/rixos"
   },
   {
     id: 25,
     tag: "",
-    slideImg: ["/img/hotels/10.png"],
-    img: "/img/hotels/10.png",
+    slideImg: [
+      "/img/hotels/mercure-hotel/1.jpg",
+      "/img/hotels/mercure-hotel/2.jpg",
+      "/img/hotels/mercure-hotel/3.jpg",
+      "/img/hotels/mercure-hotel/4.jpg",
+      "/img/hotels/mercure-hotel/5.jpg",
+      "/img/hotels/mercure-hotel/6.jpg",
+      "/img/hotels/mercure-hotel/7.jpg",
+      "/img/hotels/mercure-hotel/8.jpg"
+    ],
+    img: "/img/hotels/mercure-hotel/1.jpg",
     param: "mercure-hotel",
     title: "Mercure Hotel",
-    overview: "The Mercure Hotel in Almaty combines modern elegance with unbeatable comfort to ensure that visitors have a wonderful stay. The hotel's well decorated rooms and contemporary conveniences guarantee a comfortable stay. Its convenient location in the centre of Almaty enables visitors to take in the city's attractions and vibrant culture. Return to the warm atmosphere of the Mercure Hotel after a day of sightseeing for a tranquil escape. Experience the warmth and kindness that this hotel gives to create a really unforgettable stay in Almaty.",
+    overview: "The Mercure Hotel in Almaty combines modern elegance with unbeatable comfort to ensure that visitors have a wonderful stay. The hotel's well-decorated rooms and contemporary conveniences guarantee a comfortable stay. Its convenient location in the centre of Almaty enables visitors to take in the city's attractions and vibrant culture. Return to the warm atmosphere of the Mercure Hotel after a day of sightseeing for a tranquil escape. Experience the warmth and kindness that this hotel gives to create a really unforgettable stay in Almaty.",
     btnHref: "https://www.makemytrip.com/hotels-international/kazakhstan/almaty-hotels/mercure_almaty_city_center-details.html",
     location: "Almaty",
     ratings: "4.5",
     numberOfReviews: "1200",
     delayAnimation: "100",
-    routePath: "/hotel/hotel-single-v1/mercure-hotel"
+    routePath: "/hotel/mercure-hotel"
   },
   {
     id: 26,
     tag: "",
-    slideImg: ["/img/hotels/10.png"],
-    img: "/img/hotels/10.png",
+    slideImg: [
+      "/img/hotels/royal-mezbon/1.jpg",
+      "/img/hotels/royal-mezbon/2.jpg",
+      "/img/hotels/royal-mezbon/3.jpg",
+      "/img/hotels/royal-mezbon/4.jpg",
+      "/img/hotels/royal-mezbon/5.jpg",
+      "/img/hotels/royal-mezbon/6.jpg",
+      "/img/hotels/royal-mezbon/7.jpg",
+      "/img/hotels/royal-mezbon/8.jpg",
+    ],
+    img: "/img/hotels/royal-mezbon/1.jpg",
     param: "royal-mezbon",
     title: "Royal Mezbon",
     overview: "The Royal Mezbon Hotel & Spa in Tashkent is an opulent retreat that provides visitors with an excellent stay. Elegant and sophisticated surroundings are created by the hotel's majestic architecture and beautiful decor. Immerse yourself in the luxurious suites and rooms that are furnished with contemporary conveniences to make your stay memorable and comfortable. The Royal Mezbon Hotel & Spa in Tashkent is close to the city's tourist destinations and cultural landmarks. The Royal Mezbon Hotel & Spa guarantees an amazing stay, leaving you with priceless memories whether you're a tourist or a business traveller.",
@@ -387,13 +603,22 @@ export const hotelsData = [
     ratings: "4.3",
     numberOfReviews: "1050",
     delayAnimation: "120",
-    routePath: "/hotel/hotel-single-v1/royal-mezbon"
+    routePath: "/hotel/royal-mezbon"
   },
   {
     id: 27,
     tag: "",
-    slideImg: ["/img/hotels/10.png"],
-    img: "/img/hotels/10.png",
+    slideImg: [
+      "/img/hotels/city-palace/1.jpg",
+      "/img/hotels/city-palace/2.jpg",
+      "/img/hotels/city-palace/3.jpg",
+      "/img/hotels/city-palace/4.jpg",
+      "/img/hotels/city-palace/5.jpg",
+      "/img/hotels/city-palace/6.jpg",
+      "/img/hotels/city-palace/7.jpg",
+      "/img/hotels/city-palace/8.jpg"
+    ],
+    img: "/img/hotels/city-palace/1.jpg",
     param: "city-palace",
     title: "City Palace",
     overview: "The City Palace Hotel in Tashkent offers guests a warm and comfortable stay by fusing contemporary convenience with age-old hospitality. The hotel's tastefully decorated rooms and thoughtful amenities guarantee a comfortable stay. Its convenient location enables visitors to take in Tashkent's sights and extensive history. Return to the cosy atmosphere of City Palace Hotel after a day of exploring for a tranquil escape. Discover the warm welcome and attentive treatment that our hotel provides to make your time in Tashkent very memorable.",
@@ -402,13 +627,22 @@ export const hotelsData = [
     ratings: "4.4",
     numberOfReviews: "1150",
     delayAnimation: "110",
-    routePath: "/hotel/hotel-single-v1/city-palace"
+    routePath: "/hotel/city-palace"
   },
   {
     id: 28,
     tag: "",
-    slideImg: ["/img/hotels/10.png"],
-    img: "/img/hotels/10.png",
+    slideImg: [
+      "/img/hotels/grand-samarkand/1.jpg",
+      "/img/hotels/grand-samarkand/2.jpg",
+      "/img/hotels/grand-samarkand/3.jpg",
+      "/img/hotels/grand-samarkand/4.jpg",
+      "/img/hotels/grand-samarkand/5.jpg",
+      "/img/hotels/grand-samarkand/6.jpg",
+      "/img/hotels/grand-samarkand/7.jpg",
+      "/img/hotels/grand-samarkand/8.jpg",
+    ],
+    img: "/img/hotels/grand-samarkand/1.jpg",
     param: "grand-samarkand",
     title: "Grand Samarkand",
     overview: "The Grand Samarkand Superior B Hotel in Samarkand combines comfort and elegance to give visitors an exceptional stay. A sense of refinement and comfort is created by the hotel's attractive architecture and well decorated furnishings. Immerse yourself in the chic lodgings, which have contemporary conveniences and promise a delightful stay. Grand Samarkand Superior B Hotel's Samarkand location gives you quick access to the city's top sights so you can learn more about its rich culture and history. Grand Samarkand Superior B Hotel guarantees a great escape whether you're travelling for work or pleasure. While enjoying the comfort and quality this hotel offers, explore Samarkand's beauty and leave with priceless memories.",
@@ -417,43 +651,70 @@ export const hotelsData = [
     ratings: "4.6",
     numberOfReviews: "1350",
     delayAnimation: "130",
-    routePath: "/hotel/hotel-single-v1/grand-samarkand"
+    routePath: "/hotel/grand-samarkand"
   },
   {
     id: 29,
     tag: "",
-    slideImg: ["/img/hotels/10.png"],
-    img: "/img/hotels/10.png",
-    param: "diyora",
-    title: "Diyora",
-    overview: "Samarkand's Diyora Hotel is a charming fusion of conventional charm and contemporary conveniences that offers visitors a welcoming and relaxing stay. The hotel's tastefully decorated rooms and thoughtful amenities guarantee a comfortable and unwinding stay. Samarkand's cultural and historical attractions are easily accessible from the hotel, allowing visitors to explore the area. Return to the warm atmosphere of Diyora Hotel after a day of exploration for a tranquil escape. Experience the warmth and kindness that this hotel offers to create lasting memories of your time in Samarkand.",
-    btnHref: "https://www.makemytrip.com/hotels-international/uzbekistan/oqdaryo-hotels/hotel_diyora-details.html",
-    location: "Samarkand",
-    ratings: "4.2",
-    numberOfReviews: "950",
-    delayAnimation: "90",
-    routePath: "/hotel/hotel-single-v1/diyora"
+    slideImg: [
+      "/img/hotels/diyora/1.jpg",
+      "/img/hotels/diyora/2.jpg",
+      "/img/hotels/diyora/3.jpg",
+      "/img/hotels/diyora/4.jpg",
+      "/img/hotels/diyora/5.jpg",
+      "/img/hotels/diyora/6.jpg",
+      "/img/hotels/diyora/7.jpg",
+      "/img/hotels/diyora/8.jpg"
+    ],
+    "img": "/img/hotels/diyora/1.jpg",
+    "param": "diyora",
+    "title": "Diyora",
+    "overview": "Samarkand's Diyora Hotel is a charming fusion of conventional charm and contemporary conveniences that offers visitors a welcoming and relaxing stay. The hotel's tastefully decorated rooms and thoughtful amenities guarantee a comfortable and unwinding stay. Samarkand's cultural and historical attractions are easily accessible from the hotel, allowing visitors to explore the area. Return to the warm atmosphere of Diyora Hotel after a day of exploration for a tranquil escape. Experience the warmth and kindness that this hotel offers to create lasting memories of your time in Samarkand.",
+    "btnHref": "https://www.makemytrip.com/hotels-international/uzbekistan/oqdaryo-hotels/hotel_diyora-details.html",
+    "location": "Samarkand",
+    "ratings": "4.2",
+    "numberOfReviews": "950",
+    "delayAnimation": "90",
+    "routePath": "/hotel/diyora"
   },
   {
-    id: 30,
-    tag: "",
-    slideImg: ["/img/hotels/10.png"],
-    img: "/img/hotels/10.png",
-    param: "emirhan",
-    title: "Emirhan",
-    overview: "Travellers exploring this ancient city in Samarkand can find a pleasant and cosy getaway at the Emirhan Hotel. The hotel offers tastefully decorated rooms with cutting-edge conveniences to provide a comfortable stay. Guests can easily visit the city's sights and cultural monuments thanks to the hotel's convenient Samarkand location. Return to the welcoming atmosphere of the Emirhan Hotel after a day of exploring to relax. Experience the welcoming ambiance and prompt service that our hotel offers to make your stay in Samarkand genuinely enjoyable.",
-    btnHref: "https://www.makemytrip.com/hotels-international/uzbekistan/oqdaryo-hotels/rooms-in-emirhan-details.html",
-    location: "Samarkand",
-    ratings: "4.7",
-    numberOfReviews: "1400",
-    delayAnimation: "140",
-    routePath: "/hotel/hotel-single-v1/emirhan"
+    "id": 30,
+    "tag": "",
+    "slideImg": [
+      "/img/hotels/emirhan/1.jpg",
+      "/img/hotels/emirhan/2.jpg",
+      "/img/hotels/emirhan/3.jpg",
+      "/img/hotels/emirhan/4.jpg",
+      "/img/hotels/emirhan/5.jpg",
+      "/img/hotels/emirhan/6.jpg",
+      "/img/hotels/emirhan/7.jpg",
+      "/img/hotels/emirhan/8.jpg"
+    ],
+    "img": "/img/hotels/emirhan/1.jpg",
+    "param": "emirhan",
+    "title": "Emirhan",
+    "overview": "Travellers exploring this ancient city in Samarkand can find a pleasant and cosy getaway at the Emirhan Hotel. The hotel offers tastefully decorated rooms with cutting-edge conveniences to provide a comfortable stay. Guests can easily visit the city's sights and cultural monuments thanks to the hotel's convenient Samarkand location. Return to the welcoming atmosphere of the Emirhan Hotel after a day of exploring to relax. Experience the welcoming ambiance and prompt service that our hotel offers to make your stay in Samarkand truly enjoyable.",
+    "btnHref": "https://www.makemytrip.com/hotels-international/uzbekistan/oqdaryo-hotels/rooms-in-emirhan-details.html",
+    "location": "Samarkand",
+    "ratings": "4.7",
+    "numberOfReviews": "1400",
+    "delayAnimation": "140",
+    "routePath": "/hotel/emirhan"
   },
   {
     id: 31,
     tag: "",
-    slideImg: ["/img/hotels/10.png"],
-    img: "/img/hotels/10.png",
+    slideImg: [
+      "/img/hotels/omar-khayyam/1.jpg",
+      "/img/hotels/omar-khayyam/2.jpg",
+      "/img/hotels/omar-khayyam/3.jpg",
+      "/img/hotels/omar-khayyam/4.jpg",
+      "/img/hotels/omar-khayyam/5.jpg",
+      "/img/hotels/omar-khayyam/6.jpg",
+      "/img/hotels/omar-khayyam/7.jpg",
+      "/img/hotels/omar-khayyam/8.jpg"
+    ],
+    img: "/img/hotels/omar-khayyam/1.jpg",
     param: "omar-khayyam",
     title: "Omar Khayyam",
     overview: "The Omar Khayyam Hotel in Bukhara combines conventional elegance and contemporary comfort to give visitors a welcoming and genuine experience. The hotel offers tastefully decorated rooms with all the necessary conveniences for a comfortable stay. Its location in Bukhara enables visitors to explore the city's historical landmarks and fully experience its vibrant culture. Return to the welcoming atmosphere of the Omar Khayyam Hotel after a day of sightseeing to unwind. Experience this hotel's warm welcome and unique cultural charm to make the most of your trip to Bukhara.",
@@ -462,13 +723,22 @@ export const hotelsData = [
     ratings: "4.4",
     numberOfReviews: "1160",
     delayAnimation: "105",
-    routePath: "/hotel/hotel-single-v1/omar-khayyam"
+    routePath: "/hotel/omar-khayyam"
   },
   {
     id: 32,
     tag: "",
-    slideImg: ["/img/hotels/10.png"],
-    img: "/img/hotels/10.png",
+    slideImg: [
+      "/img/hotels/zargaron-plaza/1.jpg",
+      "/img/hotels/zargaron-plaza/2.jpg",
+      "/img/hotels/zargaron-plaza/3.jpg",
+      "/img/hotels/zargaron-plaza/4.jpg",
+      "/img/hotels/zargaron-plaza/5.jpg",
+      "/img/hotels/zargaron-plaza/6.jpg",
+      "/img/hotels/zargaron-plaza/7.jpg",
+      "/img/hotels/zargaron-plaza/8.jpg"
+    ],
+    img: "/img/hotels/10.jpg",
     param: "zargaron-plaza",
     title: "Zargaron Plaza",
     overview: "The luxurious and opulent Zargaron Plaza Hotel in Bukhara offers guests a remarkable stay in the centre of the city. The hotel's tasteful interior design and magnificent architecture provide an atmosphere of luxury and sophistication. Immerse yourself in the opulent suites and rooms decorated with contemporary conveniences to make your stay memorable and comfortable. The Zargaron Plaza Hotel is situated in Bukhara, making it simple for you to visit the city's landmarks and learn more about its fascinating history and culture. The Zargaron Plaza Hotel guarantees an opulent refuge whether you're travelling for work or pleasure. While enjoying the comfort and quality our hotel offers, explore Bukhara's splendour and leave with priceless memories.",
@@ -477,13 +747,22 @@ export const hotelsData = [
     ratings: "4.6",
     numberOfReviews: "1300",
     delayAnimation: "120",
-    routePath: "/hotel/hotel-single-v1/zargaron-plaza"
+    routePath: "/hotel/zargaron-plaza"
   },
   {
     id: 33,
     tag: "",
-    slideImg: ["/img/hotels/10.png"],
-    img: "/img/hotels/10.png",
+    slideImg: [
+      "/img/hotels/asia-bukhara/1.jpg",
+      "/img/hotels/asia-bukhara/2.jpg",
+      "/img/hotels/asia-bukhara/3.jpg",
+      "/img/hotels/asia-bukhara/4.jpg",
+      "/img/hotels/asia-bukhara/5.jpg",
+      "/img/hotels/asia-bukhara/6.jpg",
+      "/img/hotels/asia-bukhara/7.jpg",
+      "/img/hotels/asia-bukhara/8.jpg"
+    ],
+    img: "/img/hotels/10.jpg",
     param: "asia-bukhara",
     title: "Asia Bukhara",
     overview: "The Asia Bukhara Hotel offers a lovely fusion of contemporary conveniences and classic Uzbek architecture, giving visitors an authentic experience. The hotel offers tastefully decorated rooms with all conveniences, guaranteeing a comfortable and restful stay. Its advantageous location in Bukhara enables visitors to see the city's historical monuments and fully appreciate its rich heritage. Return to Asia Bukhara Hotel's warm atmosphere after a day of exploring to relax. Experience the welcoming ambiance and cultural diversity that our hotel offers to create lasting memories of your time in Bukhara.",
@@ -492,21 +771,30 @@ export const hotelsData = [
     ratings: "4.3",
     numberOfReviews: "970",
     delayAnimation: "95",
-    routePath: "/hotel/hotel-single-v1/asia-bukhara"
+    routePath: "/hotel/asia-bukhara"
   },
   {
     id: 34,
     tag: "",
-    slideImg: ["/img/hotels/10.png"],
-    img: "/img/hotels/10.png",
+    slideImg: [
+      "/img/hotels/khiva-palace/1.jpg",
+      "/img/hotels/khiva-palace/2.jpg",
+      "/img/hotels/khiva-palace/3.jpg",
+      "/img/hotels/khiva-palace/4.jpg",
+      "/img/hotels/khiva-palace/5.jpg",
+      "/img/hotels/khiva-palace/6.jpg",
+      "/img/hotels/khiva-palace/7.jpg",
+      "/img/hotels/khiva-palace/8.jpg"
+    ],
+    img: "/img/hotels/10.jpg",
     param: "khiva-palace",
     title: "Khiva Palace",
     overview: "The Khiva Palace Hotel in Khiva offers visitors a unique experience in this historic city by fusing history, luxury, and comfort in the most exquisite way. The architecture and interior decor of the hotel are indicative of Khiva's illustrious past and vibrant present. Immerse yourself in the tastefully decorated rooms and suites that are supplied with contemporary conveniences to make your stay enjoyable and memorable. The Khiva Palace Hotel's location in Khiva makes it simple to visit the city's sights and learn more about its intriguing history. Whether travelling for work or pleasure, Khiva Palace Hotel guarantees a memorable getaway. While enjoying the comfort and quality this hotel offers, experience the magic of Khiva, leaving you with priceless memories.",
     btnHref: "https://www.makemytrip.com/hotels-international/uzbekistan/xiva-hotels/reikartz_khiva_palace-details.html",
     location: "Khiva",
-    ratings: "4.5",
-    numberOfReviews: "1220",
-    delayAnimation: "110",
-    routePath: "/hotel/hotel-single-v1/khiva-palace"
+    ratings : "4.6",
+    numberOfReviews: "1300",
+    delayAnimation: "120",
+    routePath: "/hotel/khiva-palace"
   }  
 ];
