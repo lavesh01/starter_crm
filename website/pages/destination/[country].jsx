@@ -1,23 +1,23 @@
-import dynamic from "next/dynamic";
-import CallToActions from "../../components/common/CallToActions";
-import Seo from "../../components/common/Seo";
-import DefaultHeader from "../../components/header/default-header";
-import DefaultFooter from "../../components/footer/default";
-import TestimonialLeftCol from "../../components/home/home-1/TestimonialLeftCol";
-import Testimonial from "../../components/home/home-1/Testimonial";
-import Link from "next/link";
-import Blog from "../../components/blog/Blog3";
-import LocationTopBar from "../../components/common/LocationTopBar";
+import { useEffect, useState } from "react";
+
 import Banner from "../../components/destinations/components/Banner";
+import Blog from "../../components/blog/Blog3";
+import CallToActions from "../../components/common/CallToActions";
 import Categories from "../../components/destinations/components/Categories";
-import IntroTown from "../../components/destinations/components/IntroTown";
+import DefaultFooter from "../../components/footer/default";
+import DefaultHeader from "../../components/header/default-header";
 import GeneralInfo from "../../components/destinations/components/GeneralInfo";
-import Tours from "../../components/tours/Tours";
-import Activity from "../../components/activity/Activity";
 import Hotels from "../../components/hotels/Hotels2";
-import { useRouter } from "next/router";
+import IntroTown from "../../components/destinations/components/IntroTown";
+import Link from "next/link";
+import LocationTopBar from "../../components/common/LocationTopBar";
+import Seo from "../../components/common/Seo";
+import Testimonial from "../../components/home/home-1/Testimonial";
+import TestimonialLeftCol from "../../components/home/home-1/TestimonialLeftCol";
+import Tours from "../../components/tours/Tours";
 import { destinations } from "../../data/desinations";
-import { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
+import { useRouter } from "next/router";
 
 const Destinations = () => {
   const router = useRouter();
@@ -37,9 +37,15 @@ const Destinations = () => {
   return (
     <>
       <Seo 
-        pageTitle="Destination Details"
+        pageTitle="Destination"
         metaTitle={`Discover ${destination?.country} - Explore Attractions, Culture, and More`}
-        metaDescription={`Plan your trip to ${destination?.country} with Eurasia Global DMC. Learn about the attractions, culture, cuisine, and more to make the most of your travel experience.`}
+        metaDescription={`Plan your trip to ${destination?.country} with Eurasia. Learn about the attractions, culture, cuisine, and more to make the most of your travel experience.`}
+        ogImage={`/img/seo/country-page.jpg`}
+        ogImageAlt={`${destination?.country}-page-image`}
+        twitterHandle="@eurassia"
+        canonicalUrl={`${process.env.BASE_URL}/destination/${destination?.param}`}
+        robotsContent="index, follow"
+        keywords={`${destination?.country} Travel, ${destination?.country} Attractions, ${destination?.country} Culture, ${destination?.country} Cuisine, Eurasia Destination`}
       />
       {/* End Page Title */}
 
@@ -165,7 +171,7 @@ const Destinations = () => {
       </section>
       {/* End Tours Sections */}
 
-      <section className="layout-pt-md layout-pb-md">
+      {/* <section className="layout-pt-md layout-pb-md">
         <div className="container">
           <div className="row y-gap-20 justify-between items-end">
             <div className="col-auto">
@@ -176,7 +182,6 @@ const Destinations = () => {
                 </p>
               </div>
             </div>
-            {/* End .col */}
 
             <div className="col-auto">
               <Link
@@ -186,18 +191,14 @@ const Destinations = () => {
                 More <div className="icon-arrow-top-right ml-15" />
               </Link>
             </div>
-            {/* End .col */}
           </div>
-          {/* End .row */}
 
           <div className="row y-gap-30 pt-40 sm:pt-20 item_gap-x30">
             <Activity />
           </div>
-          {/* End .row */}
         </div>
-        {/* End .container */}
       </section>
-      {/* Trending Activity Sections */}
+      Trending Activity Sections */}
 
 
       <section className="layout-pt-md layout-pb-md">

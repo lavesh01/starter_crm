@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from "react";
+
 import CallToActions from "../../../components/common/CallToActions";
-import Seo from "../../../components/common/Seo";
-import DefaultHeader from "../../../components/header/default-header";
 import DefaultFooter from "../../../components/footer/default";
+import DefaultHeader from "../../../components/header/default-header";
+import DetailsContent from "../../../components/blog/blog-details/DetailsContent";
 import LocationTopBar from "../../../components/common/LocationTopBar";
 import RelatedBlog from "../../../components/blog/blog-details/RelatedBlog";
+import Seo from "../../../components/common/Seo";
 import blogsData from "../../../data/blogs";
 import { useRouter } from "next/router";
-import DetailsContent from "../../../components/blog/blog-details/DetailsContent";
-import FormReply from "../../../components/blog/blog-details/FormReply";
-import TopComment from "../../../components/blog/blog-details/TopComment";
-import BlogNavigator from "../../../components/blog/blog-details/BlogNavigator";
-import Comments from "../../../components/blog/blog-details/Comments";
 
 const BlogSingleDynamic = () => {
   const router = useRouter();
@@ -30,7 +27,18 @@ const BlogSingleDynamic = () => {
 
   return (
     <>
-      <Seo pageTitle="Blog Single" />
+      <Seo 
+        pageTitle="Blogs"
+        metaTitle={`Explore ${blog?.title} - Where Tradition Meets Modernity`}
+        metaDescription={`Discover the rich cultural tapestry of ${blog?.title}, where modernity seamlessly blends with ancient traditions. Immerse yourself in the city's history, architecture, and vibrant culture.`}
+        ogImage="/img/seo/blog-page.jpg"
+        ogImageAlt={`${blog?.title} Blog Image`}
+        twitterHandle="@eurassia"
+        canonicalUrl={`${process.env.BASE_URL}${blog?.routePath}`}
+        robotsContent="index, follow"
+        keywords={`${blog?.title}, ${blog?.tag}, ${blog?.param}, tradition, modernity, culture`}
+      />
+
       {/* End Page Title */}
 
       <div className="header-margin"></div>

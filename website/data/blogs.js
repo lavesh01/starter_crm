@@ -26,7 +26,7 @@ module.exports = [
     routePath: "/blog/blog-list/discovering-almaty-the-gem-of-kazakhstan"
   },
   {
-    id: 1,
+    id: 2,
     img: "/img/blog/tashkent-blog.jpg",
     title: "Tashkent Unveiled - Where Tradition Meets Modernity",
     param: "tashkent-unveiled-where-tradition-meets-modernity",

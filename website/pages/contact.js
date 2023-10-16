@@ -1,21 +1,27 @@
-import dynamic from "next/dynamic";
-import CallToActions from "../components/common/CallToActions";
-import Seo from "../components/common/Seo";
-import DefaultHeader from "../components/header/default-header";
-import DefaultFooter from "../components/footer/default";
-import WhyChoose from "../components/block/BlockGuide";
 import Address from "../components/block/Address";
-import Social from "../components/common/social/Social";
+import CallToActions from "../components/common/CallToActions";
 import ContactForm from "../components/common/ContactForm";
+import DefaultFooter from "../components/footer/default";
+import DefaultHeader from "../components/header/default-header";
 import LocationTopBar from "../components/common/LocationTopBar";
+import Seo from "../components/common/Seo";
+import Social from "../components/common/social/Social";
+import WhyChoose from "../components/block/BlockGuide";
+import dynamic from "next/dynamic";
 
 const Contact = () => {
   return (
     <>
       <Seo 
         pageTitle="Contact"
-        metaTitle="Get In Touch - Contact Eurasia Global DMC"
-        metaDescription="Reach out to Eurasia Global DMC for inquiries, bookings, or any travel-related assistance. We're here to help you plan your dream journey and make it a reality."
+        metaTitle="Get In Touch - Contact Eurasia"
+        metaDescription="Reach out to Eurasia for inquiries, bookings, or any travel-related assistance. We're here to help you plan your dream journey and make it a reality."
+        ogImage="/img/seo/contact-page.jpg"
+        ogImageAlt="contact page-image" 
+        twitterHandle="@eurassia" 
+        canonicalUrl={`${process.env.BASE_URL}/contact`} 
+        robotsContent="index, follow"
+        keywords="Eurasia,contact us,get in touch,travel inquiries,booking assistance"
       />
 
       {/* End Page Title */}
@@ -25,9 +31,6 @@ const Contact = () => {
 
       <DefaultHeader />
       {/* End Header 1 */}
-
-      <LocationTopBar />
-      {/* End location top bar section */}
 
       <div className="map-outer">
         <div className="map-canvas">

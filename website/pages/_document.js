@@ -16,11 +16,6 @@ export default function Document() {
           rel="stylesheet"
         />
 
-        <meta
-          name="keywords"
-          content="	booking, car rental, cruise, destination, experiences, flight, holiday, hotel, real estate, resort, tour, travel, travel agency, trip, vacation"
-        />
-
         <link rel="icon" href="/favicon.jpg" />
       </Head>
       <body>

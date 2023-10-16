@@ -3,13 +3,24 @@ import DefaultFooter from "../components/footer/default";
 import DefaultHeader from "../components/header/default-header";
 import Seo from "../components/common/Seo";
 import Testimonial from "../components/home/home-1/Testimonial";
-import dynamic from "next/dynamic";
 import TestimonialLeftCol from './../components/home/home-1/TestimonialLeftCol';
+import dynamic from "next/dynamic";
 
 const Testimonials = () => {
   return (
     <>
-      <Seo pageTitle="Testimonials" />
+      <Seo 
+        pageTitle="Testimonials"
+        metaTitle="Read What Our Clients Say - Testimonials"
+        metaDescription="Explore testimonials and reviews from our happy clients. Discover how Eurasia has made their journeys memorable and extraordinary."
+        ogImage="/img/seo/testimonials-page.jpg"
+        ogImageAlt="testimonials-page-image"
+        twitterHandle="@eurassia"
+        canonicalUrl={`${process.env.BASE_URL}/testimonials`}
+        robotsContent="index, follow"
+        keywords="Testimonials, Client Reviews, Travel Experiences, Client Testimonials, Happy Clients, Eurasia Global DMC Testimonials"
+      />
+
       {/* End Page Title */}
 
       <div className="header-margin"></div>

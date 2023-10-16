@@ -1,25 +1,32 @@
-import dynamic from "next/dynamic";
-import CallToActions from "../components/common/CallToActions";
-import Seo from "../components/common/Seo";
-import DefaultHeader from "../components/header/default-header";
-import DefaultFooter from "../components/footer/default";
-import WhyChoose from "../components/block/BlockGuide";
 import Block1 from "../components/about/Block1";
-import Image from "next/image";
+import Brand from "../components/brand/Brand";
+import CallToActions from "../components/common/CallToActions";
 import Counter from "../components/counter/Counter";
+import Counter2 from "../components/counter/Counter2";
+import DefaultFooter from "../components/footer/default";
+import DefaultHeader from "../components/header/default-header";
+import Image from "next/image";
+import Seo from "../components/common/Seo";
 import Team1 from "../components/team/Team1";
 import Testimonial from "../components/testimonial/Testimonial";
-import Counter2 from "../components/counter/Counter2";
-import Brand from "../components/brand/Brand";
+import WhyChoose from "../components/block/BlockGuide";
+import dynamic from "next/dynamic";
 
 const About = () => {
   return (
     <>
       <Seo 
         pageTitle="About"
-        metaTitle="Discover Our Story - About Eurasia Global DMC"
-        metaDescription="Learn about Eurasia Global DMC, your gateway to unforgettable travel experiences. Explore our history, mission, and passion for creating memorable journeys."
+        metaTitle="Discover Our Story - About Eurasia"
+        metaDescription="Learn about Eurasia, your gateway to unforgettable travel experiences. Explore our history, mission, and passion for creating memorable journeys." 
+        ogImage="/img/seo/about-page.jpg"
+        ogImageAlt="about-page-image"
+        twitterHandle="@eurassia"
+        canonicalUrl={`${process.env.BASE_URL}/about`}
+        robotsContent="index, follow"
+        keywords="Travel Company, Unforgettable Journeys, Travel Stories, Passion for Travel, About Eurasia Global DMC"
       />
+
       {/* End Page Title */}
 
       <div className="header-margin"></div>
@@ -99,31 +106,6 @@ const About = () => {
       </section>
       {/* End counter Section */}
 
-      <section className="layout-pt-lg layout-pb-lg">
-        <div className="container">
-          <div className="row y-gap-20 justify-between items-end">
-            <div className="col-auto">
-              <div className="sectionTitle -md">
-                <h2 className="sectionTitle__title">Our Team</h2>
-                <p className=" sectionTitle__text mt-5 sm:mt-0">
-                  United in passion, committed to your journey.
-                </p>
-              </div>
-            </div>
-          </div>
-          {/* End .row */}
-
-          <div className=" pt-40 js-section-slider">
-            <div className="item_gap-x30">
-              <Team1 />
-            </div>
-          </div>
-          {/* End  js-section-slider */}
-        </div>
-        {/* End container */}
-      </section>
-      {/* End team section */}
-
       <section className="section-bg layout-pt-lg layout-pb-lg">
         <div className="section-bg__item -mx-20 bg-light-2" />
         <div className="container">
@@ -148,20 +130,6 @@ const About = () => {
           </div>
           {/* End .overflow-hidden */}
 
-          <div className="row y-gap-30 items-center pt-40 sm:pt-20">
-            <div className="col-xl-4">
-              <Counter2 />
-            </div>
-            {/* End .col */}
-
-            <div className="col-xl-8">
-              <div className="row y-gap-30 justify-between items-center">
-                <Brand />
-              </div>
-            </div>
-            {/* End .col */}
-          </div>
-          {/* End .row */}
         </div>
         {/* End .container */}
       </section>

@@ -109,7 +109,7 @@ export const categorieMegaMenuItems = [
         megaBanner: "/img/backgrounds/7.png",
         title: "Things to do in the country",
         btnText: "View Itinerary",
-        btnRoute: "/hotel/hotel-list-v1",
+        btnRoute: "/coming-soon",
         menuItems: [
           {
             id: 1,
@@ -117,15 +117,15 @@ export const categorieMegaMenuItems = [
             menuList: [
               {
                 name: "Istanbul",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/destination/istanbul",
               },
               {
                 name: "Cappadocia",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/destination/cappadocia",
               },
               {
                 name: "Antalya",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/destination/antalya",
               }
             ],
           },
@@ -187,7 +187,7 @@ export const categorieMegaMenuItems = [
         megaBanner: "/img/backgrounds/7.png",
         title: "Things to do in the country",
         btnText: "View Itinerary",
-        btnRoute: "/hotel/hotel-list-v1",
+        btnRoute: "/coming-soon",
         menuItems: [
           {
             id: 1,
@@ -195,7 +195,7 @@ export const categorieMegaMenuItems = [
             menuList: [
               {
                 name: "Baku",
-                routePath: "/hotel/hotel-list-v1",
+                routePath: "/destination/baku",
               }
             ],
           },
@@ -257,7 +257,7 @@ export const categorieMegaMenuItems = [
         megaBanner: "/img/backgrounds/8.png",
         title: "Things to do on your tour",
         btnText: "View Itinerary",
-        btnRoute: "/tour/tour-list-v1",
+        btnRoute: "/coming-soon",
         menuItems: [
           {
             id: 1,
@@ -265,7 +265,7 @@ export const categorieMegaMenuItems = [
             menuList: [
               {
                 name: "Almaty",
-                routePath: "/hotel/hotel-single-v1",
+                routePath: "/destination/almaty",
               }
             ],
           },
@@ -303,7 +303,7 @@ export const categorieMegaMenuItems = [
         megaBanner: "/img/backgrounds/8.png",
         title: "Things to do on your tour",
         btnText: "View Itinerary",
-        btnRoute: "/tour/tour-list-v1",
+        btnRoute: "/coming-soon",
         menuItems: [
           {
             id: 1,
@@ -311,19 +311,19 @@ export const categorieMegaMenuItems = [
             menuList: [
               {
                 name: "Tashkent",
-                routePath: "/hotel/hotel-single-v1",
+                routePath: "/destination/tashkent",
               },
               {
                 name: "Samarkand",
-                routePath: "/hotel/hotel-single-v1",
+                routePath: "/destination/samarkand",
               },
               {
                 name: "Bukhara",
-                routePath: "/hotel/hotel-single-v1",
+                routePath: "/destination/bukhara",
               },
               {
                 name: "Khiva",
-                routePath: "/hotel/hotel-single-v1",
+                routePath: "/destination/khiva",
               }
             ],
           },

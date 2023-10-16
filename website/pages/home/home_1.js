@@ -1,4 +1,5 @@
 import AddBanner from "../../components/add-banner/AddBanner";
+import { BaseNextRequest } from "next/dist/server/base-http";
 import BlockGuide from "../../components/block/BlockGuide";
 import Blog from "../../components/blog/Blog3";
 import Brand2 from './../../components/brand/Brand2';
@@ -22,6 +23,12 @@ const Home_1 = () => {
         pageTitle="Home" 
         metaTitle="Eurasia Global DMC - Your Gateway to Extraordinary Journeys" 
         metaDescription="Explore the world with Eurasia Global DMC - your trusted travel partner offering unique and unforgettable travel experiences. Discover amazing destinations and create lifelong memories." 
+        ogImage="/img/seo/home-page.jpg"
+        ogImageAlt="home-page-image" 
+        twitterHandle="@eurassia" 
+        canonicalUrl={`${process.env.BASE_URL}/home`} 
+        robotsContent="index, follow"
+        keywords="Travel Experiences, Adventure Travel, Vacation Destinations, Custom Travel Packages, Explore Journeys, Holiday Planning, Wanderlust Adventures, Travel Inspiration, Discover New Places, Memorable Trips"
       />
       {/* End Page Title */}
 

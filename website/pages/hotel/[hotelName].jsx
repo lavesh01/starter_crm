@@ -51,10 +51,17 @@ const HotelSingleV1Dynamic = () => {
       />
 
       <Seo 
-        pageTitle="Hotel Single"
-        // metaTitle={}
-        // metaDescription={}
+        pageTitle="Hotel"
+        metaTitle="Discover Charming Hotels - Your Comfortable Retreats with Eurasia"
+        metaDescription="Explore a curated selection of charming hotels across various destinations with Eurasia. Find your perfect home away from home for an unforgettable travel experience."
+        ogImage="/img/seo/hotels-page.jpg"
+        ogImageAlt="hotels-page-image"
+        twitterHandle="@eurassia"
+        canonicalUrl={`${process.env.BASE_URL}/hotels`}
+        robotsContent="index, follow"
+        keywords="Hotels, Accommodations, Charming Stays, Eurasia Hotels, Comfortable Retreats, Travel and Stay, Hotel Deals"
       />
+
       {/* End Page Title */}
 
       <div className="header-margin"></div>

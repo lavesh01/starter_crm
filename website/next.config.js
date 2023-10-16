@@ -4,6 +4,9 @@ const nextConfig = {
     appDir: true,
   },
   reactStrictMode: false,
+  env: { 
+    BASE_URL: "http://localhost:3000",
+  } 
 };
 
 module.exports = nextConfig;

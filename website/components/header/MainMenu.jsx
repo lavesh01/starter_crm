@@ -1,15 +1,3 @@
-import {
-  blogItems,
-  dashboardItems,
-  homeItems,
-  pageItems,
-} from "../../data/mainMenuData";
-import {
-  isActiveLink,
-  isActiveParent,
-  isActiveParentChaild,
-} from "../../utils/linkActiveChecker";
-
 import CategoriesMegaMenu from "./CategoriesMegaMenu";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -49,7 +37,7 @@ const MainMenu = ({ style = "" }) => {
         </li>
 
         <li
-          className={router.pathname === "/blog/blog-list-v1" ? "current" : ""}
+          className={router.pathname === "/blog/blog-list" ? "current" : ""}
         >
           <Link href="/blog/blog-list">Blogs</Link>
         </li>

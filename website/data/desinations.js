@@ -195,6 +195,98 @@ export const destinations = [
     exchange: "1 INR = 0.88KGS",
     bestTimeToVisit: "AUG",
   },
+  {
+    "id": 9,
+    "hoverText": "16 Hotel - 20 Tours - 75 Activity",
+    "param": "istanbul",
+    "country": "Istanbul, Turkey",
+    "img": "/img/destinations/country-bg/istanbul.jpg",
+    "description": "Discover the enigmatic blend of East and West in Istanbul, where ancient history meets vibrant modernity. The city is a living mosaic of culture, adorned with awe-inspiring mosques, palaces, and bazaars. Uncover the secrets of the iconic Hagia Sophia, where centuries of history echo within its walls. Take a boat ride along the Bosphorus to witness the skyline adorned with minarets and domes, showcasing the city's diverse architectural tapestry. Taste the tantalizing flavors of Turkish cuisine and immerse yourself in the lively ambiance of the Grand Bazaar. Istanbul invites you to stroll through its enchanting neighborhoods, making every step a journey through time.",
+    "timeZone": "GMT +03:00",
+    "timeBehind": "2 hours ahead",
+    "currency": "Turkish Lira",
+    "exchange": "1 INR = 0.082 TRY",
+    "bestTimeToVisit": "APR-OCT"
+},
+  {
+    "id": 10,
+    "hoverText": "10 Hotel - 15 Tours - 50 Activity",
+    "param": "cappadocia",
+    "country": "Cappadocia, Turkey",
+    "img": "/img/destinations/country-bg/cappadocia.jpg",
+    "description": "Embark on a surreal journey to Cappadocia, a land of whimsical fairy chimneys and captivating hot air balloon-filled skies. The unique topography is a testament to nature's artistry, offering a dreamlike landscape to wander through. Delve into the underground cities and ancient cave churches that tell stories of civilizations past. Rise with the sun to witness the majestic hot air balloons painting the sky, an experience etched in memory forever. Cappadocia beckons adventurers and dreamers to explore its otherworldly scenery and create a tale of their own in this magical land.",
+    "timeZone": "GMT +03:00",
+    "timeBehind": "2 hours ahead",
+    "currency": "Turkish Lira",
+    "exchange": "1 INR = 0.082 TRY",
+    "bestTimeToVisit": "APR-OCT"
+  },
+  {
+    "id": 11,
+    "hoverText": "22 Hotel - 18 Tours - 60 Activity",
+    "param": "antalya",
+    "country": "Antalya, Turkey",
+    "img": "/img/destinations/country-bg/antalya.jpg",
+    "description": "Antalya, a coastal gem nestled along the turquoise shores of the Mediterranean, invites travelers to embrace the sun, sea, and history. The city boasts pristine beaches and breathtaking cliffs, making it a haven for sun-seekers and adventure enthusiasts alike. Explore the well-preserved ruins of ancient cities like Perge and Aspendos, where echoes of ancient civilizations whisper their tales. Immerse yourself in the vibrant nightlife, savoring the flavors of Mediterranean cuisine. Antalya is a paradise that invites you to unwind, rejuvenate, and bask in the beauty of nature and antiquity, promising an unforgettable escape.",
+    "timeZone": "GMT +03:00",
+    "timeBehind": "2 hours ahead",
+    "currency": "Turkish Lira",
+    "exchange": "1 INR = 0.082 TRY",
+    "bestTimeToVisit": "APR-NOV"
+  },
+  {
+    "id": 12,
+    "hoverText": "14 Hotel - 17 Tours - 60 Activity",
+    "param": "baku",
+    "country": "Baku, Azerbaijan",
+    "img": "/img/destinations/country-bg/baku.jpg",
+    "description": "Nestled on the shores of the Caspian Sea, Baku, the capital of Azerbaijan, beckons with a unique blend of the old and the ultramodern. Walk through the charming cobbled streets of the Old City, Icherisheher, where ancient walls guard centuries of history. The Flame Towers, a trio of dazzling skyscrapers, illuminate the cityscape, symbolizing the juxtaposition of past and future. Indulge in Azerbaijani cuisine, a delightful fusion of flavors, and witness the fiery Ateshgah Fire Temple. Baku invites you to explore its blend of cultures, from the vibrant nightlife to the rich heritage, promising an unforgettable experience.",
+    "timeZone": "GMT +04:00",
+    "timeBehind": "1 hour ahead",
+    "currency": "Azerbaijani Manat",
+    "exchange": "1 INR = 0.021 AZN",
+    "bestTimeToVisit": "APR-JUN, SEP-OCT"
+},
+{
+  "id": 15,
+  "hoverText": "10 Hotel - 12 Tours - 40 Activity",
+  "param": "samarkand",
+  "country": "Samarkand, Uzbekistan",
+  "img": "/img/destinations/country-bg/samarkand.jpg",
+  "description": "Step into the fabled Silk Road city of Samarkand, where the pages of history come to life. Marvel at the Registan Square, adorned with intricate tilework that reflects the city's grandeur. Samarkand's skyline is a canvas of majestic minarets and domes, showcasing the grand architecture of the Timurid dynasty. Delve into the city's rich tapestry of culture and artistry, and let the aromatic scents of the bustling bazaars guide your way. Samarkand is an enchanting tale of antiquity and splendor, inviting you to uncover its treasures and immerse yourself in a journey through time.",
+  "timeZone": "GMT +05:00",
+  "timeBehind": "3 hours ahead",
+  "currency": "Uzbekistani Som",
+  "exchange": "1 INR = 0.08 UZS",
+  "bestTimeToVisit": "APR-JUN, SEP-OCT"
+},
+{
+  "id": 16,
+  "hoverText": "8 Hotel - 10 Tours - 30 Activity",
+  "param": "bukhara",
+  "country": "Bukhara, Uzbekistan",
+  "img": "/img/destinations/country-bg/bukhara.jpg",
+  "description": "Journey to the heart of Uzbekistan and discover Bukhara, a city steeped in the sands of time. Renowned as a living museum of Central Asian history, Bukhara unveils a mesmerizing tapestry of ancient mosques, mausoleums, and minarets. The Ark of Bukhara, an ancient fortress, stands as a testament to the city's enduring legacy. Lose yourself in the bustling bazaars where silk and spices tell tales of the Silk Road. The Kalyan Minaret pierces the sky, a symbol of Bukhara's architectural prowess. Bukhara's streets echo with whispers of legendary scholars, poets, and conquerors. From the tranquil Lyabi Hauz square to the ornate Ismail Samani Mausoleum, Bukhara beckons explorers to unravel its enigmatic charm, promising an expedition through centuries of culture and heritage.",
+  "timeZone": "GMT +05:00",
+  "timeBehind": "3 hours ahead",
+  "currency": "Uzbekistani Som",
+  "exchange": "1 INR = 0.08 UZS",
+  "bestTimeToVisit": "APR-JUN, SEP-OCT"
+},
+{
+  "id": 17,
+  "hoverText": "6 Hotel - 8 Tours - 25 Activity",
+  "param": "khiva",
+  "country": "Khiva, Uzbekistan",
+  "img": "/img/destinations/country-bg/khiva.jpg",
+  "description": "Khiva, an open-air museum in the heart of the Uzbek desert, transports you back in time to an ancient oasis. Enclosed within formidable city walls, this UNESCO World Heritage site boasts stunning turquoise minarets and intricate tilework. Stroll through the narrow labyrinthine streets of the old town, each corner revealing tales of conquests and trade. The mesmerizing Ichan Kala invites you to wander through its historical mosques, madrasahs, and mausoleums. Khiva invites you to step into the past, where the whispers of a bygone era echo through its stunning architecture and timeless charm.",
+  "timeZone": "GMT +05:00",
+  "timeBehind": "3 hours ahead",
+  "currency": "Uzbekistani Som",
+  "exchange": "1 INR = 0.08 UZS",
+  "bestTimeToVisit": "APR-JUN, SEP-OCT"
+}
+
 ];
 
 export const destinations3 = [
