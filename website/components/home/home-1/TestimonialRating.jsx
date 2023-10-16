@@ -6,7 +6,7 @@ const TestimonialRating = () => {
           <br /> saying us?
         </h2>
         <p className="text-white mt-20">
-            Eurasia isn't just a travel company; they're a community that genuinely cares about what we have to say. They value our feedback, making each journey better than the last.
+            Eurasia isn&apos;t just a travel company; they&apos;re a community that genuinely cares about what we have to say. They value our feedback, making each journey better than the last.
         </p>
   
         <div className="row y-gap-30 text-white pt-60 lg:pt-40">

@@ -44,7 +44,7 @@ import {
           <Text style={paragraph}>Hi <b>{name}</b>,</Text>
 
           <Text style={paragraph}>
-            Thank you for reaching out to Eurasia! We have received your inquiry and are thrilled that you're considering us for your travel needs.
+            Thank you for reaching out to Eurasia! We have received your inquiry and are thrilled that you&apos;re considering us for your travel needs.
           </Text>
 
           <Text style={paragraph}>
