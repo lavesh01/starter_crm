@@ -11,7 +11,7 @@ const Address = () => {
     {
       id: 2,
       colClass: "col-auto",
-      title: "Toll Free Customer Care",
+      title: "Customer Care No.",
       content: (
         <>
           <a href="tel:+4733378901">+91-8542951004</a>
@@ -21,11 +21,11 @@ const Address = () => {
     {
       id: 3,
       colClass: "col-auto",
-      title: "Need live support?",
+      title: "email",
       content: (
         <>
           {" "}
-          <a href="mailto:i@gotrip.com">eurasiaglobal.net</a>
+          <a href="mailto:i@gotrip.com">sales@eurasiaglobal.net</a>
         </>
       ),
     },

@@ -1,16 +1,54 @@
-import React from "react";
+import axios from "axios";
+import React, { useState } from "react";
+
+import { z } from "zod";
+
+const contactFormSchema = z.object({
+  name: z.string().min(2, { message: "Must be 2 or more characters long" }),
+  email: z.string().email({ message: "Invalid email address" }),
+  phone: z.string(),
+  message: z.string(),
+});
 
 const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: ""
+  });
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    // handle form submission logic here
+
+    try {
+      const validatedData = contactFormSchema.parse(formData);
+      console.log("Form Data:", validatedData);
+      axios.post('/api/emails', validatedData)
+        .then(res => console.log(res.data))
+        .catch(error => console.error(error))
+
+    } catch (error) {
+      console.error("Form validation error:", error.errors);
+    }
+  };
+  
+  const handleChange = (event) => {
+    const { id, value } = event.target;
+    setFormData({ ...formData, [id]: value });
   };
 
   return (
     <form className="row y-gap-20 pt-20" onSubmit={handleSubmit}>
       <div className="col-12">
         <div className="form-input">
-          <input type="text" id="name" required />
+          <input 
+            type="text" 
+            id="name"
+            onChange={handleChange}
+            value={formData.name} 
+            required 
+          />
           <label htmlFor="name" className="lh-1 text-16 text-light-1">
             Full Name
           </label>
@@ -18,7 +56,13 @@ const ContactForm = () => {
       </div>
       <div className="col-12">
         <div className="form-input">
-          <input type="email" id="email" required />
+          <input 
+            type="email" 
+            id="email"
+            onChange={handleChange}
+            value={formData.email} 
+            required 
+          />
           <label htmlFor="email" className="lh-1 text-16 text-light-1">
             Email
           </label>
@@ -26,15 +70,26 @@ const ContactForm = () => {
       </div>
       <div className="col-12">
         <div className="form-input">
-          <input type="text" id="subject" required />
-          <label htmlFor="subject" className="lh-1 text-16 text-light-1">
-            Subject
+          <input 
+            type="tel" 
+            id="phone"
+            onChange={handleChange}
+            value={formData.phone} 
+            required 
+          />
+          <label htmlFor="phone" className="lh-1 text-16 text-light-1">
+            Phone
           </label>
         </div>
       </div>
       <div className="col-12">
         <div className="form-input">
-          <textarea id="message" required rows="4"></textarea>
+          <textarea 
+            id="message" 
+            required rows="4"    
+            onChange={handleChange}
+            value={formData.message}>
+            </textarea>
           <label htmlFor="message" className="lh-1 text-16 text-light-1">
             Your Message
           </label>
