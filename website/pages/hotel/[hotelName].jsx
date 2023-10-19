@@ -10,7 +10,6 @@ import Header1 from "../../components/header/default-header/index";
 import Hotels2 from "../../components/hotels/Hotels2";
 import Image from "next/image";
 import Link from "next/link";
-import ModalVideo from "react-modal-video";
 import Overview from "../../components/hotel-single/Overview";
 import PopularFacilities from "../../components/hotel-single/PopularFacilities";
 import PropertyHighlights from "../../components/hotel-single/PropertyHighlights";
@@ -19,7 +18,6 @@ import Seo from "../../components/common/Seo";
 import SidebarRight from "../../components/hotel-single/SidebarRight";
 import StickyHeader from "../../components/hotel-single/StickyHeader";
 import TopBreadCrumb from "../../components/hotel-single/TopBreadCrumb";
-import dynamic from "next/dynamic";
 import { hotelsData } from "../../data/hotels";
 import { useRouter } from "next/router";
 
@@ -42,14 +40,6 @@ const HotelSingleV1Dynamic = () => {
 
   return (
     <>
-      <ModalVideo
-        channel="youtube"
-        autoplay
-        isOpen={isOpen}
-        videoId="oqNZOOWF8qM"
-        onClose={() => setOpen(false)}
-      />
-
       <Seo 
         pageTitle="Hotel"
         metaTitle="Discover Charming Hotels - Your Comfortable Retreats with Eurasia"
@@ -126,32 +116,7 @@ const HotelSingleV1Dynamic = () => {
 
           <Gallery>
           <div className="galleryGrid -type-1 pt-30">
-            <div className="galleryGrid__item relative d-flex">
-              <Item
-                original={hotel?.img}
-                // thumbnail={hotel?.img}
-                width={660}
-                height={660}
-              >
-                {({ ref, open }) => (
-                  <img
-                    src={hotel?.img}
-                    ref={ref}
-                    onClick={open}
-                    alt="image"
-                    role="button"
-                    className="rounded-4"
-                  />
-                )}
-              </Item>
-              <div className="absolute px-20 py-20 col-12 d-flex justify-end">
-                <button className="button -blue-1 size-40 rounded-full flex-center bg-white text-dark-1">
-                  <i className="icon-heart text-16" />
-                </button>
-              </div>
-            </div>
-
-            {hotel?.slideImg?.slice(1,4).map((image, index) => (
+            {hotel?.slideImg?.slice(0,5).map((image, index) => (
               <div key={index} className="galleryGrid__item">
                 <Item
                   original={image}
@@ -172,27 +137,6 @@ const HotelSingleV1Dynamic = () => {
               </div>
             ))}
 
-            <div className="galleryGrid__item relative d-flex">
-              <div className="absolute px-10 py-10 col-12 h-full d-flex justify-end items-end">
-                <Item
-                  original={hotel?.img} // Display the first image in the lightbox
-                  // thumbnail={hotel?.img}
-                  width={450}
-                  height={375}
-                >
-                  {({ ref, open }) => (
-                    <div
-                      className="button -blue-1 px-24 py-15 bg-white text-dark-1 js-gallery"
-                      ref={ref}
-                      onClick={open}
-                      role="button"
-                    >
-                      See All Photos
-                    </div>
-                  )}
-                </Item>
-              </div>
-            </div>
           </div>
         </Gallery>
 
@@ -334,6 +278,4 @@ const HotelSingleV1Dynamic = () => {
   );
 };
 
-export default dynamic(() => Promise.resolve(HotelSingleV1Dynamic), {
-  ssr: false,
-});
+export default HotelSingleV1Dynamic;

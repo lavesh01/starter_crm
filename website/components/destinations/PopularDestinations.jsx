@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import { Scrollbar } from "swiper";
 import { destinations2 } from "../../data/desinations";
+import dynamic from "next/dynamic";
 
 const PopularDestinations = () => {
   return (
@@ -87,4 +88,4 @@ const PopularDestinations = () => {
   );
 };
 
-export default PopularDestinations;
+export default dynamic(() => Promise.resolve(PopularDestinations),{ssr: false});

@@ -38,7 +38,7 @@ const Header1 = () => {
             {/* End col */}
 
             <div className="col-8">
-              <div className="d-flex items-center justify-content-between">
+              <div className="d-flex items-center justify-content-between" >
 
                 <div className="header-menu">
                   <div className="header-menu__content">
@@ -59,13 +59,7 @@ const Header1 = () => {
                 {/* End btn-group */}
 
                 {/* Start mobile menu icon */}
-                <div className="d-none xl:d-flex x-gap-20 items-center pl-30 text-white">
-                  <div>
-                    <Link
-                      href="/others-pages/login"
-                      className="d-flex items-center icon-user text-inherit text-22"
-                    />
-                  </div>
+                <div className="d-none xl:d-flex x-gap-20 items-center pl-30 text-dark-1" style={{width:"100%",justifyContent:"flex-end"}}>
                   <div>
                     <button
                       className="d-flex items-center icon-menu text-inherit text-20"
@@ -75,7 +69,7 @@ const Header1 = () => {
                     />
 
                     <div
-                      className="offcanvas offcanvas-start  mobile_menu-contnet "
+                      className="offcanvas offcanvas-start  mobile_menu-contnet"
                       tabIndex="-1"
                       id="mobile-sidebar_menu"
                       aria-labelledby="offcanvasMenuLabel"

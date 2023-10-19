@@ -8,7 +8,7 @@ const ContactInfo = () => {
     },
     {
       id: 2,
-      title: "email",
+      title: "Email",
       action: "sales@eurasiaglobal.net",
       text: "sales@eurasiaglobal.net",
     },

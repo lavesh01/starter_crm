@@ -1,12 +1,15 @@
 import Head from "next/head";
 
-const Seo = ({ pageTitle, metaTitle, metaDescription ,ogImage,ogImageAlt, twitterHandle, canonicalUrl, robotsContent,keywords }) => (
+const Seo = ({ pageTitle, metaTitle, metaDescription ,ogImage,ogImageAlt, twitterHandle, canonicalUrl, robotsContent,keywords,structuredDataScript }) => (
   <>
     <Head>
       <title>
         {pageTitle &&
           `${pageTitle} || Eurasia Global DMC`}
       </title>
+      
+      {structuredDataScript}
+
       {metaTitle && <meta name="title" content={metaTitle} />}
       {metaDescription && <meta name="description" content={metaDescription} />}
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -37,7 +40,7 @@ const Seo = ({ pageTitle, metaTitle, metaDescription ,ogImage,ogImageAlt, twitte
         name="twitter:image"
         content={ogImage}
       /> }
-      { ogImageAlt && <meta name="twitter:image:alt" content="Alt text for your image" /> }
+      { ogImageAlt && <meta name="twitter:image:alt" content={ogImageAlt} /> }
 
       {/* Robots Meta Tag */}
       <meta name="robots" content={robotsContent || "index, follow"} />

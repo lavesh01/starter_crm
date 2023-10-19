@@ -1,9 +1,8 @@
-import dynamic from "next/dynamic";
-import CallToActions from "../components/common/CallToActions";
 import Seo from "../components/common/Seo";
 import DefaultHeader from "../components/header/default-header";
 import DefaultFooter from "../components/footer/default";
 import NotFound from "../components/common/NotFound";
+import CallToActions from "../components/common/CallToActions";
 
 const index = () => {
   return (
@@ -29,4 +28,4 @@ const index = () => {
   );
 };
 
-export default dynamic(() => Promise.resolve(index), { ssr: false });
+export default index;

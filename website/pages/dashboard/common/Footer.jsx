@@ -4,7 +4,7 @@ function Footer() {
   const linksData = [
     { label: "Privacy", url: "#" },
     { label: "Terms", url: "#" },
-    { label: "Site Map", url: "#" },
+    { label: "Site Map", url: "/sitemap.xml" },
   ];
 
   return (

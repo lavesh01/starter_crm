@@ -13,20 +13,16 @@ const Copyright = () => {
               </span>
             </div>
           </div>
-          {/* End .col */}
 
           <div className="col-auto">
             <div className="d-flex x-gap-15">
               <a href="#">Privacy</a>
               <a href="#">Terms</a>
-              <a href="#">Site Map</a>
+              <a href="/sitemap.xml">Site Map</a>
             </div>
           </div>
-          {/* End .col */}
         </div>
-        {/* End .row */}
       </div>
-      {/* End .col */}
 
       <div className="col-auto">
         <div className="row y-gap-10 items-center">
@@ -42,17 +38,14 @@ const Copyright = () => {
               </button>
             </div>
           </div>
-          {/* End .col */}
 
           <div className="col-auto">
             <div className="d-flex x-gap-20 items-center">
               <Social />
             </div>
           </div>
-          {/* End .col */}
         </div>
       </div>
-      {/* End .col */}
     </div>
   );
 };

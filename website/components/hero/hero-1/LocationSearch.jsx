@@ -1,56 +1,60 @@
+import { useEffect } from "react";
 import { useState } from "react";
 
-const SearchBar = () => {
+const SearchBar = ({setLocation,location}) => {
   const [searchValue, setSearchValue] = useState("");
-  const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedItem, setSelectedItem] = useState("");
+
+  useEffect(() => {
+    setLocation(searchValue);
+  }, [searchValue, selectedItem, setLocation]);
 
   const locationSearchContent = [
     {
       id: 1,
       name: "Turkey",
-      address: "Greater London, United Kingdom",
+      address: "Turkey",
     },
     {
       id: 2,
       name: "Russia",
-      address: "New York State, United States",
+      address: "Russia",
     },
     {
       id: 3,
       name: "Tashkent",
-      address: "France",
+      address: "Tashkent, Uzbekistan",
     },
     {
       id: 4,
       name: "Armenia",
-      address: "Spain",
+      address: "Armenia",
     },
     {
       id: 5,
       name: "Georgia",
-      address: "Greece",
+      address: "Georgia",
     },
     {
       id: 6,
       name: "Azerbaijan",
-      address: "Greece",
+      address: "Azerbaijan",
     },
     {
       id: 7,
       name: "Almaty",
-      address: "Greece",
+      address: "Almaty, Kazakhstan",
     },
     {
       id: 8,
       name: "Bishkek",
-      address: "Greece",
+      address: "Bishkek, Kyrgyzstan",
     },
-  ];
+  ];  
 
   const handleOptionClick = (item) => {
     setSearchValue(item.name);
     setSelectedItem(item);
-    console.log(selectedItem)
   };
 
   return (
@@ -61,14 +65,14 @@ const SearchBar = () => {
           data-bs-auto-close="true"
           data-bs-offset="0,22"
         >
-          <h4 className="text-15 fw-500 ls-2 lh-16">Location</h4>
+          {/* <h4 className="text-15 fw-500 ls-2 lh-16">Location</h4> */}
           <div className="text-15 text-light-1 ls-2 lh-16">
             <input
               autoComplete="off"
               type="search"
               placeholder="Where are you going?"
               className="js-search js-dd-focus"
-              value={searchValue}
+              value={location}
               onChange={(e) => setSearchValue(e.target.value)}
             />
           </div>

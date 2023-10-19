@@ -1,16 +1,20 @@
 import axios from "axios";
 import React, { useState } from "react";
-
+import ReCAPTCHA from "react-google-recaptcha";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { z } from "zod";
 
 const contactFormSchema = z.object({
-  name: z.string().min(2, { message: "Must be 2 or more characters long" }),
+  name: z.string().min(2, { message: "Name must be 2 or more characters long" }),
   email: z.string().email({ message: "Invalid email address" }),
-  phone: z.string(),
+  phone: z.string().min(10, { message: 'Must be a valid mobile number' })
+  .max(14, { message: 'Must be a valid mobile number' }),
   message: z.string(),
 });
 
 const ContactForm = () => {
+  const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,15 +25,72 @@ const ContactForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
+    if (!isCaptchaVerified) {
+      toast.error("Please verify the reCAPTCHA.", {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+      return; 
+    }
+
     try {
       const validatedData = contactFormSchema.parse(formData);
-      console.log("Form Data:", validatedData);
-      axios.post('/api/emails', validatedData)
-        .then(res => console.log(res.data))
-        .catch(error => console.error(error))
 
+      axios
+        .post("/api/emails", validatedData)
+        .then((res) => {
+          
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            message: "",
+          });
+          setIsCaptchaVerified(false);
+          toast.success("Email sent successfully!", {
+            position: "bottom-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
+        })
+        .catch((error) => {
+          // console.error(error)
+          toast.error("Something went wrong! Try again later.", {
+            position: "bottom-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          })
+        });
     } catch (error) {
-      console.error("Form validation error:", error.errors);
+    
+      error.errors.forEach((errorMsg) => {
+        toast.error(errorMsg.message, {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+      });
     }
   };
   
@@ -37,6 +98,12 @@ const ContactForm = () => {
     const { id, value } = event.target;
     setFormData({ ...formData, [id]: value });
   };
+
+  
+  function onChange(value) {
+    // console.log("Captcha value:", value);
+    setIsCaptchaVerified(true);
+  }
 
   return (
     <form className="row y-gap-20 pt-20" onSubmit={handleSubmit}>
@@ -95,6 +162,12 @@ const ContactForm = () => {
           </label>
         </div>
       </div>
+      <div className="col-12">
+        <ReCAPTCHA
+          sitekey={process.env.GOOGLE_SITE_KEY}
+          onChange={onChange}
+        />
+      </div>
       <div className="col-auto">
         <button
           type="submit"
@@ -103,6 +176,18 @@ const ContactForm = () => {
           Send Message <div className="icon-arrow-top-right ml-15"></div>
         </button>
       </div>
+      <ToastContainer
+          position="bottom-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+      />
     </form>
   );
 };

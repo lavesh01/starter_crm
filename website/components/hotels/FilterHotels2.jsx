@@ -47,7 +47,7 @@ const FilterHotels2 = () => {
           data-aos-delay={item.delayAnimation}
         >
           <Link
-            href={`/hotel/hotel-single-v1/${item.id}`}
+            href={`/hotel/${item.param}`}
             className="hotelsCard -type-1 hover-inside-slider"
           >
             <div className="hotelsCard__image">

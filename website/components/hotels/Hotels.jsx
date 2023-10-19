@@ -1,7 +1,8 @@
+import { Navigation, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import Image from "next/image";
 import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
 import { hotelsData } from "../../data/hotels";
 import isTextMatched from "../../utils/isTextMatched";
 
@@ -39,7 +40,7 @@ const Hotels = () => {
         {hotelsData.slice(0, 8).map((item) => (
           <SwiperSlide key={item?.id}>
             <Link
-              href={`/hotel/hotel-single-v1/${item.param}`}
+              href={`/hotel/${item.param}`}
               className="hotelsCard -type-1 hover-inside-slider"
               data-aos="fade"
               data-aos-delay={item.delayAnimation}
@@ -71,7 +72,6 @@ const Hotels = () => {
                     </div>
                   </div>
                 </div>
-                {/* End .cardImage */}
 
                 <div className="cardImage__wishlist">
                   <button className="button -blue-1 bg-white size-30 rounded-full shadow-2">

@@ -12,7 +12,7 @@ export const hotelsData = [
     ratings: "4.7",
     numberOfReviews: "3014",
     delayAnimation: "100",
-    routePath: "/hotel/hotel-single-v1/metropolitan-taksim-hotel"
+    routePath: "/hotel/metropolitan-taksim-hotel"
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ export const hotelsData = [
     ratings: "4.8",
     numberOfReviews: "2345",
     delayAnimation: "200",
-    routePath: "/hotel/hotel-single-v1/marmara-taksim"
+    routePath: "/hotel/marmara-taksim"
   },
   {
     id: 3,
@@ -64,7 +64,6 @@ export const hotelsData = [
       "/img/hotels/cappa-via-cave-hotel/5.jpg",
       "/img/hotels/cappa-via-cave-hotel/6.jpg",
       "/img/hotels/cappa-via-cave-hotel/7.jpg",
-      "/img/hotels/cappa-via-cave-hotel/8.jpg"
     ],
     img: "/img/hotels/cappa-via-cave-hotel/1.jpg",
     param: "cappa-via-cave-hotel",

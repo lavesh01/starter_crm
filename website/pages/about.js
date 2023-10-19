@@ -7,10 +7,8 @@ import DefaultFooter from "../components/footer/default";
 import DefaultHeader from "../components/header/default-header";
 import Image from "next/image";
 import Seo from "../components/common/Seo";
-import Team1 from "../components/team/Team1";
 import Testimonial from "../components/testimonial/Testimonial";
 import WhyChoose from "../components/block/BlockGuide";
-import dynamic from "next/dynamic";
 
 const About = () => {
   return (
@@ -19,7 +17,7 @@ const About = () => {
         pageTitle="About"
         metaTitle="Discover Our Story - About Eurasia"
         metaDescription="Learn about Eurasia, your gateway to unforgettable travel experiences. Explore our history, mission, and passion for creating memorable journeys." 
-        ogImage="/img/seo/about-page.jpg"
+        ogImage="/img/seo/about-page.PNG"
         ogImageAlt="about-page-image"
         twitterHandle="@eurassia"
         canonicalUrl={`${process.env.BASE_URL}/about`}
@@ -144,4 +142,4 @@ const About = () => {
   );
 };
 
-export default dynamic(() => Promise.resolve(About), { ssr: false });
+export default About;

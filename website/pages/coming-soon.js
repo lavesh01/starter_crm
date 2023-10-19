@@ -1,9 +1,7 @@
 import CallToActions from "../components/common/CallToActions";
-
 import DefaultFooter from "../components/footer/default";
 import DefaultHeader from "../components/header/default-header";
 import Seo from "../components/common/Seo";
-import dynamic from "next/dynamic";
 
 const ComingSoon = () => {
   return (
@@ -29,4 +27,4 @@ const ComingSoon = () => {
   );
 };
 
-export default dynamic(() => Promise.resolve(ComingSoon), { ssr: false });
+export default ComingSoon;

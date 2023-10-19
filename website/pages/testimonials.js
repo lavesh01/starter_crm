@@ -2,9 +2,8 @@ import CallToActions from "../components/common/CallToActions";
 import DefaultFooter from "../components/footer/default";
 import DefaultHeader from "../components/header/default-header";
 import Seo from "../components/common/Seo";
-import Testimonial from "../components/home/home-1/Testimonial";
-import TestimonialLeftCol from './../components/home/home-1/TestimonialLeftCol';
-import dynamic from "next/dynamic";
+import Testimonial from "../components/home/Testimonial";
+import TestimonialLeftCol from './../components/home/TestimonialLeftCol';
 
 const Testimonials = () => {
   return (
@@ -13,7 +12,7 @@ const Testimonials = () => {
         pageTitle="Testimonials"
         metaTitle="Read What Our Clients Say - Testimonials"
         metaDescription="Explore testimonials and reviews from our happy clients. Discover how Eurasia has made their journeys memorable and extraordinary."
-        ogImage="/img/seo/testimonials-page.jpg"
+        ogImage="/img/seo/testimonials-page.PNG"
         ogImageAlt="testimonials-page-image"
         twitterHandle="@eurassia"
         canonicalUrl={`${process.env.BASE_URL}/testimonials`}
@@ -65,4 +64,4 @@ const Testimonials = () => {
   );
 };
 
-export default dynamic(() => Promise.resolve(Testimonials), { ssr: false });
+export default Testimonials;

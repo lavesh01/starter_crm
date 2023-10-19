@@ -14,9 +14,9 @@ module.exports = [
     title: "Support",
     menuList: [
       { name: "Contact", routerPath: "/contact" },
-      { name: "Privacy Policy", routerPath: "/others-pages/terms" },
-      { name: "Terms and Conditions", routerPath: "/others-pages/terms" },
-      { name: "Sitemap", routerPath: "/others-pages/terms" },
+      { name: "Privacy Policy", routerPath: "/terms" },
+      { name: "Terms and Conditions", routerPath: "/terms" },
+      { name: "Sitemap", routerPath: "/sitemap.xml" },
     ],
   },
   // {

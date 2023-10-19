@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 import {
     Body,
     Button,
@@ -9,20 +11,16 @@ import {
     Preview,
     Section,
     Text,
-  } from '@react-email/components';
-  import * as React from 'react';
-  import fs from "fs";
-  
-  interface WelcomeEmailProps {
+} from '@react-email/components';
+
+import fs from "fs";
+
+interface WelcomeEmailProps {
     name: string;
     phone: string;
     email: string;
     message: string;
   }
-  const getImageDataUri = () => {
-    const imageFilePath = `${process.env.BASE_URL}/img/general/FINAL EURASIA GLOBAL LOGO.png`;
-    return imageFilePath;
-  };
   
   export const WelcomeEmail = ({
     name,phone,email,message 
@@ -30,7 +28,7 @@ import {
     <Html>
       <Head />
       <Preview>
-        Eurasia.
+      Thank You for Your Inquiry.
       </Preview>
       <Body style={main}>
         <Container style={container}>

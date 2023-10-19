@@ -35,7 +35,7 @@ const Hotels3 = () => {
         {hotelsData?.slice(11, 16)?.map((item) => (
           <SwiperSlide key={item?.id}>
             <Link
-              href={`/hotel/hotel-single-v2/${item.id}`}
+              href={`/hotel/${item.param}`}
               className="hotelsCard -type-1 hover-inside-slider"
               data-aos="fade"
               data-aos-delay={item.delayAnimation}

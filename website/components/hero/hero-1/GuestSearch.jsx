@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+
+import { useEffect } from "react";
+
 const counters = [
   { name: "Adults", defaultValue: 2 },
   { name: "Children", defaultValue: 1 },
@@ -66,14 +69,12 @@ const Counter = ({ name, defaultValue, onCounterChange }) => {
   );
 };
 
-const GuestSearch = () => {
-  const [guestCounts, setGuestCounts] = useState({
-    Adults: 2,
-    Children: 1,
-    Infant: 0,
-    Rooms: 1,
-    
-  });
+const GuestSearch = ({ setGuests , guests}) => {
+  const [guestCounts, setGuestCounts] = useState(guests);
+  useEffect(() => {
+    setGuests(guestCounts);
+  },[guestCounts])
+  
   const handleCounterChange = (name, value) => {
     setGuestCounts((prevState) => ({ ...prevState, [name]: value }));
   };
@@ -85,12 +86,12 @@ const GuestSearch = () => {
         aria-expanded="false"
         data-bs-offset="0,22"
       >
-        <h4 className="text-15 fw-500 ls-2 lh-16">Guest</h4>
+        {/* <h4 className="text-15 fw-500 ls-2 lh-16">Guest</h4> */}
         <div className="text-15 text-light-1 ls-2 lh-16">
-          Adults -<span className="js-count-adult">{guestCounts.Adults}</span> {" "}
-          Children - <span className="js-count-child">{guestCounts.Children}</span>{" "}
-          Infant - <span className="js-count-infant">{guestCounts.Infant}</span>{" "}
-          Rooms - <span className="js-count-room">{guestCounts.Rooms}</span>{" "}
+          Adults-&nbsp;<span className="js-count-adult">&nbsp;{guestCounts.Adults}&nbsp;</span> {" "}
+          {/* Children - <span className="js-count-child">{guestCounts.Children}</span>{" "} */}
+          {/* Infant - <span className="js-count-infant">{guestCounts.Infant}</span>{" "} */}
+          Rooms-&nbsp;<span className="js-count-room">&nbsp;{guestCounts.Rooms}&nbsp;</span>{" "}
         </div>
       </div>
       {/* End guest */}

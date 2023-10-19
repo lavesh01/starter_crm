@@ -9,10 +9,7 @@ import { useRouter } from "next/router";
 const CategoriesMegaMenu = () => {
   const router = useRouter();
   const itemList = [
-    "Turkey",
-    "Azerbaijan",
-    "Kazakhstan",
-    "Uzbekistan",
+    "Countries",
   ];
 
   return (
