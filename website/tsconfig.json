@@ -28,8 +28,11 @@
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "pages/api/emails.js", "pages/api/hello.ts"  ],
+    "**/*.tsx",
+    "pages/api/emails.js",
+    "pages/api/hello.ts",
+    "D:\\Office files\\Admin Dashboard\\Starter admin\\website\\.next/types/**/*.ts"
+  ],
   "exclude": [
     "node_modules"
   ]

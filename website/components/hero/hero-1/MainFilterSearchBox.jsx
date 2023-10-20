@@ -1,11 +1,13 @@
-import axios from "axios";
+import 'react-toastify/dist/ReactToastify.css';
+
+import { ToastContainer, toast } from 'react-toastify';
+
+import { DateObject } from "react-multi-date-picker";
 import DateSearch from "../DateSearch";
 import GuestSearch from "./GuestSearch";
 import LocationSearch from "./LocationSearch";
+import axios from "axios";
 import { useState } from "react";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { DateObject } from "react-multi-date-picker";
 import { z } from 'zod';
 
 const queryDataSchema = z.object({
@@ -28,10 +30,10 @@ const MainFilterSearchBox = () => {
     new DateObject().setDay(14).add(1, "month"),
   ]);
   const [ guests,setGuests ] = useState({
-    Adults: 2,
+    Adults: 0,
     Children: 0,
     Infant: 0,
-    Rooms: 1,
+    Rooms: 0,
     
   });
   const [ phone,setPhone ] = useState("");
@@ -41,6 +43,7 @@ const MainFilterSearchBox = () => {
     e.preventDefault();
   
     const quoteData = { location, dates, guests, phone, email };
+    console.log(quoteData)
   
     try {
       queryDataSchema.parse(quoteData);
@@ -55,10 +58,10 @@ const MainFilterSearchBox = () => {
             new DateObject().setDay(14).add(1, "month"),
           ]);
           setGuests({
-            Adults: 2,
+            Adults: 0,
             Children: 0,
             Infant: 0,
-            Rooms: 1,
+            Rooms: 0,
           });
           setPhone("");
           setEmail("");

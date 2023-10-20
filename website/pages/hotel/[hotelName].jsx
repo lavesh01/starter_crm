@@ -36,7 +36,7 @@ const HotelSingleV1Dynamic = () => {
     }
     else setHotel(foundHotel);
     console.log()
-  }, [hotelName]);
+  }, [hotelName,router]);
 
   return (
     <>
@@ -124,7 +124,7 @@ const HotelSingleV1Dynamic = () => {
                   height={375}
                 >
                   {({ ref, open }) => (
-                    <img
+                    <Image
                       ref={ref}
                       onClick={open}
                       src={image}

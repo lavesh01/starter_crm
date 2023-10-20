@@ -1,11 +1,14 @@
 import { Gallery, Item } from "react-photoswipe-gallery";
 import { useEffect, useState } from "react";
+
 import Blog from "../../components/blog/Blog3";
 import CallToActions from "../../components/common/CallToActions";
 import Categories from "../../components/destinations/components/Categories";
+import City from "../../components/destinations/City";
 import DefaultFooter from "../../components/footer/default";
 import DefaultHeader from "../../components/header/default-header";
 import Hotels from "../../components/hotels/Hotels2";
+import Image from "next/image";
 import IntroTown from "../../components/destinations/components/IntroTown";
 import Link from "next/link";
 import LocationTopBar from "../../components/common/LocationTopBar";
@@ -15,7 +18,6 @@ import TestimonialLeftCol from "../../components/home/TestimonialLeftCol";
 import Tours from "../../components/tours/Tours";
 import { destinations } from "../../data/desinations";
 import { useRouter } from "next/router";
-import City from "../../components/destinations/City";
 
 const Destinations = () => {
   const router = useRouter();
@@ -30,7 +32,7 @@ const Destinations = () => {
       return;
     }
     else setDestination(foundCountry);
-  }, [country]);
+  }, [country,router]);
 
   return (
     <>
@@ -50,10 +52,8 @@ const Destinations = () => {
 
       <DefaultHeader />
 
-      <LocationTopBar country={destination?.country} />
-
       <div className="z-2 px-50 py-10 md:py-20 md:px-30">
-          <h1 className="text-50 fw-600 text-black lg:text-40 md:text-30">
+          <h1 className="text-40 fw-600 text-black lg:text-40 md:text-30">
             Explore {destination?.country}
           </h1>
           <div className="text-black">
@@ -61,7 +61,7 @@ const Destinations = () => {
           </div>
 
         <Gallery>
-          <div className="galleryGrid -type-1 pt-30">
+          <div className="galleryGrid -type-1 pt-10">
 
             {destination?.slideImg?.map((image, index) => (
               <div key={index} className="galleryGrid__item">
@@ -71,13 +71,13 @@ const Destinations = () => {
                   height={175}
                 >
                   {({ ref, open }) => (
-                    <img
+                    <Image
                       ref={ref}
                       onClick={open}
                       src={image}
                       alt="image"
                       className="rounded-4"
-                      style={{ maxHeight: "500px", objectFit: "cover" }}
+                      style={{ maxHeight: "450px", objectFit: "cover", overflow: "hidden" }}
                       role="button"
                     />
                   )}

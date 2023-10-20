@@ -1,4 +1,61 @@
+import 'react-toastify/dist/ReactToastify.css';
+
+import { ToastContainer, toast } from 'react-toastify';
+
+import axios from "axios";
+import { useState } from "react";
+import { z } from "zod";
+
+const emailSchema = z.string().email();
+
 const CallToActions = () => {
+  const [ email, setEmail ] = useState('');
+
+  const handleEmail = (e) => {
+    e.preventDefault();
+    try{
+      emailSchema.parse(email);
+      axios.post('/api/newsletter',{email})
+      .then(() => {
+        setEmail('')
+        toast.success("Subscribed successfully!", {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+      })
+      .catch((error) => {
+        console.error(error)
+        toast.error("Something went wrong! Try again later.", {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        })
+      })
+    }catch(err) {
+      toast.error("Invalid email address! Please enter a valid email.",{
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      })
+    }
+  }
+
   return (
     <section className="layout-pt-md layout-pb-md bg-dark-2">
       <div className="container">
@@ -18,30 +75,40 @@ const CallToActions = () => {
               </div>
             </div>
           </div>
-          {/* End .col */}
 
           <div className="col-auto">
             <div className="single-field -w-410 d-flex x-gap-10 y-gap-20">
               <div>
                 <input
                   className="bg-white h-60"
-                  type="text"
+                  type="email"
                   placeholder="Your Email"
+                  onChange={(e) => setEmail(e.target.value)}
+                  value={email}
                 />
               </div>
-              {/* End email input */}
 
               <div>
-                <button className="button -md h-60 bg-blue-1 text-white">
+                <button className="button -md h-60 bg-blue-1 text-white" onClick={(e) => handleEmail(e)}>
                   Subscribe
                 </button>
               </div>
-              {/* End subscribe btn */}
             </div>
           </div>
-          {/* End .col */}
         </div>
       </div>
+      <ToastContainer
+          position="bottom-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+      />
     </section>
   );
 };

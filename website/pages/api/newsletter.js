@@ -1,13 +1,13 @@
-import { QueryEmail } from './../emails/QueryEmail';
+import { NewsletterEmail } from './../emails/NewsletterEmail';
 import { render } from '@react-email/render';
 import sendEmail from "../../utils/sendEmail";
 
 export default async function POST(req,res) {
     try {
-        const {location,dates,guests,email,phone} = req.body;
-        console.log({location,dates,guests,email,phone})
+        const { email } = req.body;
+        console.log({email})
 
-        const emailHtml = render(<QueryEmail location={location} dates={dates} guests={guests} email={email} phone={phone} />);
+        const emailHtml = render(<NewsletterEmail email={email}/>);
         const result = sendEmail(email,emailHtml);
         
         return res.json({
@@ -18,6 +18,5 @@ export default async function POST(req,res) {
         console.error('Error:', error);
         return res.json(error);
     }
-    
 }
 

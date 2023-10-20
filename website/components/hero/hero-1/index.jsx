@@ -1,10 +1,11 @@
+import Image from "next/image";
 import MainFilterSearchBox from "./MainFilterSearchBox";
 
 const index = () => {
   return (
     <section className="masthead -type-1 z-5">
       <div className="masthead__bg">
-        <img alt="image" src="/img/masthead/1/bg.webp" className="js-lazy" />
+        <Image alt="image" src="/img/masthead/1/bg.webp" className="js-lazy" />
       </div>
       <div className="container">
         <div className="row justify-center">

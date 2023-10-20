@@ -1,12 +1,10 @@
-import { Sidebar, Menu, MenuItem, ProSidebarProvider } from 'react-pro-sidebar';
-import { categorieMegaMenuItems } from "../../data/mainMenuData";
+import { Menu, MenuItem, Sidebar } from 'react-pro-sidebar';
+
 import ContactInfo from "./ContactInfo";
+import Image from "next/image";
 import Link from "next/link";
 import Social from "../common/social/Social";
-import { TabPanel } from "react-tabs";
-import { isActiveLink } from "../../utils/linkActiveChecker";
 import { useRouter } from "next/router";
-import Image from "next/image";
 
 const MobileMenu = () => {
   const router = useRouter();
@@ -19,7 +17,7 @@ const MobileMenu = () => {
     <>
       <div className="pro-header d-flex align-items-center justify-between border-bottom-light">
         <Link href="/">
-          <img src="/img/general/FINAL EURASIA GLOBAL LOGO.png" alt="logo icon" />
+          <Image src="/img/general/FINAL EURASIA GLOBAL LOGO.png" alt="logo icon" />
         </Link>
         {/* End logo */}
 

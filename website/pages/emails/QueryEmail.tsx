@@ -56,8 +56,14 @@ export const QueryEmail = ({
         <Text style={paragraph}>
             <ul>
             <li><strong>Location:</strong> {location}</li>
-            <li><strong>Dates:</strong> {dates.join(' to ')} </li>
-            <li><strong>Guests:</strong> {guests.Adults} Adults, {guests.Children} Children, {guests.Infant} Infant , {guests.Rooms} Rooms</li>
+            {dates && dates.length >= 2 && (
+              <li><strong>Dates:</strong> {`${dates[0]} - ${dates[1]}`} </li>
+            )}
+            {guests && typeof guests === 'object' && (
+               <li>
+                 <strong>Guests:</strong> {guests.Adults} Adults, {guests.Children} Children, {guests.Infant} Infant, {guests.Rooms} Rooms
+               </li>
+            )}
             <li><strong>Email:</strong> {email}</li>
             <li><strong>Phone:</strong> {phone}</li>
             </ul>
@@ -67,7 +73,7 @@ export const QueryEmail = ({
             Our team is currently reviewing your inquiry and will reach out to you shortly with more information.
         </Text>
         <Text style={paragraph}>
-        If you have any urgent questions, feel free to call us at +91-8542951004..
+            If you have any urgent questions, feel free to call us at +91-8542951004..
         </Text>
 
         
