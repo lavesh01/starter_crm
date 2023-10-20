@@ -58,7 +58,7 @@ const BlogSingleDynamic = () => {
               <div className="text-15 text-light-1 mt-10">{blog?.date}</div>
             </div>
             <div className="col-12">
-              <Image
+              <img
                 src={blog?.img}
                 alt={blog?.title}
                 className="col-12 rounded-8 w-100 img_large_details"

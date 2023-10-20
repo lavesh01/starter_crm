@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-import Image from "next/image";
 import Link from "next/link";
 import MainMenu from "../MainMenu";
 import MobileMenu from "../MobileMenu";
@@ -28,7 +27,7 @@ const Header1 = () => {
             <div className="col-4">
               <div className="d-flex items-center">
                 <Link href="/" className="header-logo mr-20" style={{width: "110px"}}>
-                  <Image src="/img/general/FINAL EURASIA GLOBAL LOGO.png" alt="logo icon" />
+                  <img src="/img/general/FINAL EURASIA GLOBAL LOGO.png" alt="logo icon" />
                 </Link>
                 {/* End logo */}
 
@@ -75,7 +74,7 @@ const Header1 = () => {
                       aria-labelledby="offcanvasMenuLabel"
                       data-bs-scroll="true"
                     >
-                      {/* <MobileMenu /> */}
+                      <MobileMenu />
                       {/* End MobileMenu */}
                     </div>
                   </div>

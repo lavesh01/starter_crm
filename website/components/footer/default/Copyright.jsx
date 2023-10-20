@@ -1,5 +1,5 @@
 import Social from "../../common/social/Social";
-import Link from "next/Link";
+import Link from "next/link";
 
 const Copyright = () => {
   return (

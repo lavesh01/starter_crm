@@ -17,7 +17,7 @@ const MobileMenu = () => {
     <>
       <div className="pro-header d-flex align-items-center justify-between border-bottom-light">
         <Link href="/">
-          <Image src="/img/general/FINAL EURASIA GLOBAL LOGO.png" alt="logo icon" />
+          <img src="/img/general/FINAL EURASIA GLOBAL LOGO.png" alt="logo icon" />
         </Link>
         {/* End logo */}
 

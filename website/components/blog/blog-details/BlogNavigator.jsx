@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 const BlogNavigator = () => {
   return (
@@ -16,7 +15,7 @@ const BlogNavigator = () => {
         </a>
       </div>
       <div className="col-auto">
-        <Image src="/img/general/menu.svg" alt="image" className="pt-20" />
+        <img src="/img/general/menu.svg" alt="image" className="pt-20" />
       </div>
       <div className="col-auto text-right">
         <a href="#">

@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 const Banner = ({destination}) => {
   return (
@@ -6,7 +5,7 @@ const Banner = ({destination}) => {
     <div className="col-12">
 
       <div className="relative d-flex">
-        <Image
+        <img
           src={destination?.img}
           alt="image"
           className="col-12 rounded-4"

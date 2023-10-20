@@ -14,9 +14,8 @@ export default function sendEmail(email,emailHtml){
     const mailOptions = {
         from: 'support@eurasiaglobal.net',
         to: email, 
-        // cc: 'sales@eurasiaglobal.net',  
-        cc: 'laveshbisht01@gmail.com',  
-        // bcc: 'keshav.singh4@gmail.com',
+        cc: 'sales@eurasiaglobal.net',  
+        bcc: 'keshav.singh4@gmail.com',
         subject: 'Thank You for Contacting Eurasia',
         html: emailHtml,
         attachments: [{

@@ -1,10 +1,9 @@
-import Image from "next/image";
 
 const TopComment = () => {
   return (
     <div className="row y-gap-30">
       <div className="col-auto">
-        <Image
+        <img
           src="/img/avatars/4.png"
           alt="image"
           className="size-70 rounded-full"

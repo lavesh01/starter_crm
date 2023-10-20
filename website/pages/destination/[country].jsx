@@ -71,13 +71,13 @@ const Destinations = () => {
                   height={175}
                 >
                   {({ ref, open }) => (
-                    <Image
+                    <img
                       ref={ref}
                       onClick={open}
                       src={image}
                       alt="image"
                       className="rounded-4"
-                      style={{ maxHeight: "450px", objectFit: "cover", overflow: "hidden" }}
+                      style={{ maxHeight: "500px", objectFit: "cover", overflow: "hidden" }}
                       role="button"
                     />
                   )}

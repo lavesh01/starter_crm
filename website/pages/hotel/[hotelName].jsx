@@ -124,7 +124,7 @@ const HotelSingleV1Dynamic = () => {
                   height={375}
                 >
                   {({ ref, open }) => (
-                    <Image
+                    <img
                       ref={ref}
                       onClick={open}
                       src={image}
