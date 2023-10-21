@@ -11,7 +11,6 @@ import Hotels from "../../components/hotels/Hotels2";
 import Image from "next/image";
 import IntroTown from "../../components/destinations/components/IntroTown";
 import Link from "next/link";
-import LocationTopBar from "../../components/common/LocationTopBar";
 import Seo from "../../components/common/Seo";
 import Testimonial from "../../components/home/Testimonial";
 import TestimonialLeftCol from "../../components/home/TestimonialLeftCol";
@@ -67,15 +66,18 @@ const Destinations = () => {
               <div key={index} className="galleryGrid__item">
                 <Item
                   original={image}
-                  width={350}
-                  height={175}
+                  // width={350}
+                  // height={175}
                 >
                   {({ ref, open }) => (
-                    <img
+                    <Image
                       ref={ref}
                       onClick={open}
                       src={image}
-                      alt="image"
+                      width={350}
+                      height={175}
+                      priority={true}
+                      alt="destination-image"
                       className="rounded-4"
                       style={{ maxHeight: "500px", objectFit: "cover", overflow: "hidden" }}
                       role="button"
