@@ -1,7 +1,7 @@
 module.exports = [
   {
     id: 1,
-    img: "/img/blog/almaty-blog.jpg",
+    img: "/img/blog/almaty-blog.png",
     title: "Discovering Almaty - The Gem of Kazakhstan",
     param: "discovering-almaty-the-gem-of-kazakhstan",
     date: "Oct 10, 2023",
@@ -27,7 +27,7 @@ module.exports = [
   },
   {
     id: 2,
-    img: "/img/blog/tashkent-blog.jpg",
+    img: "/img/blog/tashkent-blog.png",
     title: "Tashkent Unveiled - Where Tradition Meets Modernity",
     param: "tashkent-unveiled-where-tradition-meets-modernity",
     date: "Sept 06, 2023",

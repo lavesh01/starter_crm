@@ -17,12 +17,10 @@ import RatingTag from "../../components/hotel-single/RatingTag";
 import Seo from "../../components/common/Seo";
 import SidebarRight from "../../components/hotel-single/SidebarRight";
 import StickyHeader from "../../components/hotel-single/StickyHeader";
-import TopBreadCrumb from "../../components/hotel-single/TopBreadCrumb";
 import { hotelsData } from "../../data/hotels";
 import { useRouter } from "next/router";
 
 const HotelSingleV1Dynamic = () => {
-  const [isOpen, setOpen] = useState(false);
   const router = useRouter();
   const [hotel, setHotel] = useState({});
   const hotelName = router.query.hotelName;
@@ -35,7 +33,6 @@ const HotelSingleV1Dynamic = () => {
       return;
     }
     else setHotel(foundHotel);
-    console.log()
   }, [hotelName,router]);
 
   return (
@@ -52,19 +49,11 @@ const HotelSingleV1Dynamic = () => {
         keywords="Hotels, Accommodations, Charming Stays, Eurasia Hotels, Comfortable Retreats, Travel and Stay, Hotel Deals"
       />
 
-      {/* End Page Title */}
-
       <div className="header-margin"></div>
-      {/* header top margin */}
 
       <Header1 />
-      {/* End Header 1 */}
-
-      <TopBreadCrumb hotel={hotel?.title} />
-      {/* End top breadcrumb */}
 
       <StickyHeader href={hotel?.btnHref} />
-      {/* sticky single header for hotel single */}
 
       <section className="pt-40">
         <div className="container">
@@ -74,7 +63,6 @@ const HotelSingleV1Dynamic = () => {
                 <div className="col-auto">
                   <h1 className="text-30 sm:text-25 fw-600">{hotel?.title}</h1>
                 </div>
-                {/* End .col */}
                 <div className="col-auto">
                   <i className="icon-star text-10 text-yellow-1" />
                   <i className="icon-star text-10 text-yellow-1" />
@@ -83,7 +71,6 @@ const HotelSingleV1Dynamic = () => {
                   <i className="icon-star text-10 text-yellow-1" />
                 </div>
               </div>
-              {/* End .row */}
 
               <div className="row x-gap-20 y-gap-20 items-center">
                 <div className="col-auto">
@@ -93,9 +80,7 @@ const HotelSingleV1Dynamic = () => {
                   </div>
                 </div>
               </div>
-              {/* End .row */}
             </div>
-            {/* End .col */}
 
             <div className="col-auto">
               <div className="row x-gap-15 y-gap-15 items-center">
@@ -110,9 +95,7 @@ const HotelSingleV1Dynamic = () => {
                 </div>
               </div>
             </div>
-            {/* End .col */}
           </div>
-          {/* End .row */}
 
           <Gallery>
           <div className="galleryGrid -type-1 pt-30">
@@ -124,11 +107,14 @@ const HotelSingleV1Dynamic = () => {
                   height={375}
                 >
                   {({ ref, open }) => (
-                    <img
+                    <Image
                       ref={ref}
                       onClick={open}
                       src={image}
-                      alt="image"
+                      width={550}
+                      height={375}
+                      alt="hotel-image"
+                      priority={true}
                       className="rounded-4"
                       role="button"
                     />
@@ -141,9 +127,7 @@ const HotelSingleV1Dynamic = () => {
         </Gallery>
 
         </div>
-        {/* End .container */}
       </section>
-      {/* End gallery grid wrapper */}
 
       <section className="pt-30">
         <div className="container">
@@ -154,12 +138,10 @@ const HotelSingleV1Dynamic = () => {
                   <h3 className="text-22 fw-500">Property highlights</h3>
                   <PropertyHighlights />
                 </div>
-                {/* End .col-12 Property highlights */}
 
                 <div id="overview" className="col-12">
                   <Overview overview={hotel?.overview} />
                 </div>
-                {/* End .col-12  Overview */}
 
                 <div className="col-12">
                   <h3 className="text-22 fw-500 pt-40 border-top-light">
@@ -169,27 +151,19 @@ const HotelSingleV1Dynamic = () => {
                     <PopularFacilities />
                   </div>
                 </div>
-                {/* End .col-12 Most Popular Facilities */}
 
                 <div className="col-12">
                   <RatingTag />
                 </div>
-                {/* End .col-12 This property is in high demand! */}
               </div>
-              {/* End .row */}
             </div>
-            {/* End .col-xl-8 */}
 
             <div className="col-xl-4">
               <SidebarRight hotel={hotel} />
             </div>
-            {/* End .col-xl-4 */}
           </div>
-          {/* End .row */}
         </div>
-        {/* End container */}
       </section>
-      {/* End single page content */}
 
 
       <section className="mt-40" id="facilities">
@@ -200,15 +174,10 @@ const HotelSingleV1Dynamic = () => {
               <div className="row x-gap-40 y-gap-40 pt-20">
                 <Facilities />
               </div>
-              {/* End .row */}
             </div>
-            {/* End .col-12 */}
           </div>
-          {/* End .row */}
         </div>
-        {/* End .container */}
       </section>
-      {/* End facilites section */}
 
       <section className="pt-40">
         <div className="container">
@@ -241,7 +210,6 @@ const HotelSingleV1Dynamic = () => {
           </div>
         </div>
       </section>
-      {/* End health &  safety measures section */}
 
       <section className="layout-pt-md layout-pb-lg">
         <div className="container">
@@ -255,23 +223,16 @@ const HotelSingleV1Dynamic = () => {
                   Explore Our Top Hotel Selections in the Area
                 </p>
               </div>
-              {/* End sectionTitle */}
             </div>
-            {/* End .col */}
           </div>
-          {/* End .row */}
 
           <div className="pt-40 sm:pt-20 item_gap-x30">
             <Hotels2 />
           </div>
-          {/* End slide hotel */}
         </div>
-        {/* End .container */}
       </section>
-      {/* End similar hotel */}
 
       <CallToActions />
-      {/* End Call To Actions Section */}
 
       <DefaultFooter />
     </>

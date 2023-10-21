@@ -1,3 +1,5 @@
+import "photoswipe/dist/photoswipe.css";
+
 import { Gallery, Item } from "react-photoswipe-gallery";
 import { useEffect, useState } from "react";
 
@@ -58,7 +60,7 @@ const Destinations = () => {
           <div className="text-black">
             Explore deals, travel guides and things to do in {destination?.country}
           </div>
-
+          
         <Gallery>
           <div className="galleryGrid -type-1 pt-10">
 
@@ -66,8 +68,8 @@ const Destinations = () => {
               <div key={index} className="galleryGrid__item">
                 <Item
                   original={image}
-                  // width={350}
-                  // height={175}
+                  width={350}
+                  height={175}
                 >
                   {({ ref, open }) => (
                     <Image
@@ -75,11 +77,11 @@ const Destinations = () => {
                       onClick={open}
                       src={image}
                       width={350}
-                      height={175}
+                      height={375}
                       priority={true}
+                      style={{ maxHeight: "500px", objectFit: "cover", overflow: "hidden" }}
                       alt="destination-image"
                       className="rounded-4"
-                      style={{ maxHeight: "500px", objectFit: "cover", overflow: "hidden" }}
                       role="button"
                     />
                   )}
@@ -88,7 +90,8 @@ const Destinations = () => {
             ))}
         
           </div>
-        </Gallery>
+        </Gallery> 
+
     </div>
 
 
