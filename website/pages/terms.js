@@ -1,20 +1,17 @@
 import CallToActions from "../components/common/CallToActions";
-import Seo from "../components/common/Seo";
-import DefaultHeader from "../components/header/default-header";
 import DefaultFooter from "../components/footer/default";
+import DefaultHeader from "../components/header/default-header";
+import Seo from "../components/common/Seo";
 import TermsConent from "../components/common/TermsConent";
 
 const Terms = () => {
   return (
     <>
       <Seo pageTitle="Terms & Conditions" />
-      {/* End Page Title */}
 
       <div className="header-margin"></div>
-      {/* header top margin */}
 
       <DefaultHeader />
-      {/* End Header 1 */}
 
       <section className="layout-pt-lg layout-pb-lg">
         <div className="container">
@@ -23,13 +20,10 @@ const Terms = () => {
           </div>
         </div>
       </section>
-      {/* End terms section */}
 
       <CallToActions />
-      {/* End Call To Actions Section */}
 
       <DefaultFooter />
-      {/* End Call To Actions Section */}
     </>
   );
 };

@@ -13,10 +13,9 @@ const MainMenu = ({ style = "" }) => {
         >
           <Link href="/">Home</Link>
         </li>
-        {/* End home page menu */}
 
         <li className="menu-item-has-children -has-mega-menu">
-          <a href="#">
+          <a href="#" >
             <span className="mr-10">Destinations</span>
             <i className="icon icon-chevron-sm-down" />
           </a>
@@ -24,14 +23,13 @@ const MainMenu = ({ style = "" }) => {
             <CategoriesMegaMenu />
           </div>
         </li>
-        {/* End destinations menu items */}
 
-        <li className={router.pathname === "/contact" ? "current" : ""}>
+        <li className={router.pathname === "/testimonials" ? "current" : ""}>
           <Link href="/testimonials">Testimonials</Link>
         </li>
 
         <li
-          className={router.pathname === "/blog/blog-list-v1" ? "current" : ""}
+          className={router.pathname === "/about" ? "current" : ""}
         >
           <Link href="/about">About Us</Link>
         </li>
@@ -41,7 +39,6 @@ const MainMenu = ({ style = "" }) => {
         >
           <Link href="/blog">Blogs</Link>
         </li>
-        {/* End blog */}
 
       </ul>
     </nav>

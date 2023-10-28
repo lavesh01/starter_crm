@@ -66,9 +66,9 @@ const CallToActions = () => {
                 <div className="icon-newsletter text-60 sm:text-40 text-white" />
               </div>
               <div className="col-auto">
-                <h4 className="text-26 text-white fw-600">
+                <strong className="text-26 text-white fw-600">
                   Your Travel Journey Starts Here
-                </h4>
+                </strong>
                 <div className="text-white">
                   Sign up and we`&apos;ll send the best deals to you
                 </div>

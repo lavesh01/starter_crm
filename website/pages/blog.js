@@ -1,9 +1,9 @@
-import React from "react";
-import CallToActions from "../components/common/CallToActions";
-import Seo from "../components/common/Seo";
-import DefaultHeader from "../components/header/default-header";
-import DefaultFooter from "../components/footer/default";
 import Blog1 from "../components/blog/Blog1";
+import CallToActions from "../components/common/CallToActions";
+import DefaultFooter from "../components/footer/default";
+import DefaultHeader from "../components/header/default-header";
+import React from "react";
+import Seo from "../components/common/Seo";
 
 const Blog = () => {
   return (
@@ -19,13 +19,10 @@ const Blog = () => {
         robotsContent="index, follow"
         keywords="Travel Blog, Travel Tips, Adventure Stories, Destination Insights, Travel Trends, Eurasia Global DMC Blog"
       />
-      {/* End Page Title */}
 
       <div className="header-margin"></div>
-      {/* header top margin */}
 
       <DefaultHeader />
-      {/* End Header 1 */}
 
       <section className="layout-pt-md layout-pb-lg">
         <div className="container">
@@ -44,10 +41,8 @@ const Blog = () => {
       </section>
 
       <CallToActions />
-      {/* End Call To Actions Section */}
 
       <DefaultFooter />
-      {/* End Call To Actions Section */}
     </>
   );
 };

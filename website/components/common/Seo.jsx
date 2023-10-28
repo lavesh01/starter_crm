@@ -8,7 +8,10 @@ const Seo = ({ pageTitle, metaTitle, metaDescription ,ogImage,ogImageAlt, twitte
           `${pageTitle} || Eurasia Global DMC`}
       </title>
       
-      {structuredDataScript}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: structuredDataScript }}
+      />
 
       {metaTitle && <meta name="title" content={metaTitle} />}
       {metaDescription && <meta name="description" content={metaDescription} />}

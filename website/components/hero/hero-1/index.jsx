@@ -5,7 +5,7 @@ const index = () => {
   return (
     <section className="masthead -type-1 z-5">
       <div className="masthead__bg">
-        <img alt="image" src="/img/masthead/1/bg.webp" className="js-lazy" />
+        <Image width={50} height={50} alt="image" src="/img/masthead/1/bg.webp" className="js-lazy" />
       </div>
       <div className="container">
         <div className="row justify-center">
@@ -25,7 +25,6 @@ const index = () => {
                 Discover amzaing places at exclusive deals
               </p>
             </div>
-            {/* End hero title */}
 
             <div
               className="tabs -underline mt-60 js-tabs"
@@ -35,7 +34,6 @@ const index = () => {
              
             </div>
             <MainFilterSearchBox />
-            {/* End tab-filter */}
           </div>
         </div>
       </div>

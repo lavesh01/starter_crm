@@ -8,26 +8,6 @@ export const destinations1 = [
   { id: 7, city: "Almaty", properties: "9,323" },
   { id: 8, city: "Bishkek", properties: "4,239" },
   { id: 9, city: "Baku", properties: "12,233" },
-  // { id: 1, city: "Hawai", properties: "12,683" },
-  // { id: 2, city: "Istanbul", properties: "12,683" },
-  // { id: 3, city: "San Diego", properties: "12,683" },
-  // { id: 4, city: "Phuket", properties: "12,683" },
-  // { id: 5, city: "Reykjavik", properties: "12,683" },
-  // { id: 6, city: "Santorini", properties: "12,683" },
-  // { id: 7, city: "Los Angeles", properties: "12,683" },
-  // { id: 8, city: "Florence", properties: "12,683" },
-  // { id: 9, city: "Mykonos", properties: "12,683" },
-  // { id: 10, city: "Paris", properties: "12,683" },
-  // { id: 11, city: "Dubai", properties: "12,683" },
-  // { id: 12, city: "Krakow", properties: "12,683" },
-  // { id: 13, city: "Jersey", properties: "12,683" },
-  // { id: 14, city: "Prag", properties: "12,683" },
-  // { id: 15, city: "Amsterdam", properties: "12,683" },
-  // { id: 16, city: "İbiza", properties: "12,683" },
-  // { id: 17, city: "Boston", properties: "12,683" },
-  // { id: 18, city: "Florence", properties: "12,683" },
-  // { id: 19, city: "Mykonos", properties: "12,683" },
-  // { id: 20, city: "London", properties: "12,683" },
 ];
 
 export const destinations2 = [
@@ -59,7 +39,6 @@ export const destinations2 = [
     img: "/img/destinations/uzbekistan/uzbekistan-bg.jpg",
     href: "destination/uzbekistan",
   },
-
   {
     id: 2,
     hoverText: "1100 Hotels - 18 Tours - 85 Activities",

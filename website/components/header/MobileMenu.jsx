@@ -1,25 +1,18 @@
-import { Menu, MenuItem, Sidebar } from 'react-pro-sidebar';
+import { Menu, MenuItem, Sidebar, SubMenu } from 'react-pro-sidebar';
 
 import ContactInfo from "./ContactInfo";
 import Image from "next/image";
 import Link from "next/link";
 import Social from "../common/social/Social";
-import { useRouter } from "next/router";
 
 const MobileMenu = () => {
-  const router = useRouter();
-
-  const handleMenuItemClick = (routePath) => {
-    router.push(routePath);
-  };
 
   return (
     <>
       <div className="pro-header d-flex align-items-center justify-between border-bottom-light">
         <Link href="/">
-          <img src="/img/general/FINAL EURASIA GLOBAL LOGO.png" alt="logo icon" />
+          <Image width={120} height={120} priority={true} src="/img/general/FINAL EURASIA GLOBAL LOGO.png" alt="logo icon" />
         </Link>
-        {/* End logo */}
 
         <div
           className="fix-icon"
@@ -28,10 +21,8 @@ const MobileMenu = () => {
         >
           <i className="icon icon-close"></i>
         </div>
-        {/* icon close */}
       </div>
-      {/* End pro-header */}
-      <Sidebar>
+      <Sidebar style={{backgroundColor: "#ffffff",width: "100%"}}>
         <Menu
           menuItemStyles={{
             button: {
@@ -44,9 +35,23 @@ const MobileMenu = () => {
             },
           }}
         >
-          <MenuItem component={<Link href="/about" />}> About Us </MenuItem>
+          <MenuItem component={<Link href="/home" />}> Home </MenuItem>
+
+          <SubMenu label="Destinations"> 
+            <MenuItem component={<Link href="/destination/turkey" />}>Turkey</MenuItem>
+            <MenuItem component={<Link href="/destination/azerbaijan" />}>Azerbaijan</MenuItem>
+            <MenuItem component={<Link href="/destination/kazakhstan" />}>Kazakhstan</MenuItem>
+            <MenuItem component={<Link href="/destination/uzbekistan" />}>Uzbekistan</MenuItem>
+            <MenuItem component={<Link href="/destination/russia" />}>Russia</MenuItem>
+            <MenuItem component={<Link href="/destination/armenia" />}>Armenia</MenuItem>
+            <MenuItem component={<Link href="/destination/georgia" />}>Georgia</MenuItem>
+            <MenuItem component={<Link href="/destination/bishkek" />}>Bishkek</MenuItem>
+          </SubMenu>
+
           <MenuItem component={<Link href="/testimonials" />}> Testimonials </MenuItem>
-          <MenuItem component={<Link href="/blog/blog-list" />}> Blogs </MenuItem>
+          <MenuItem component={<Link href="/about" />}> About Us </MenuItem>
+          <MenuItem component={<Link href="/blog" />}> Blogs </MenuItem>
+          <MenuItem component={<Link href="/contact" />}> Contact Us </MenuItem>
         </Menu>
       </Sidebar>
 
@@ -62,7 +67,6 @@ const MobileMenu = () => {
           </div>
         </div>
       </div>
-      {/* End pro-footer */}
     </>
   );
 };

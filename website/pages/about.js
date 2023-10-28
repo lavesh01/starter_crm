@@ -1,8 +1,6 @@
 import Block1 from "../components/about/Block1";
-import Brand from "../components/brand/Brand";
 import CallToActions from "../components/common/CallToActions";
 import Counter from "../components/counter/Counter";
-import Counter2 from "../components/counter/Counter2";
 import DefaultFooter from "../components/footer/default";
 import DefaultHeader from "../components/header/default-header";
 import Image from "next/image";
@@ -25,13 +23,10 @@ const About = () => {
         keywords="Travel Company, Unforgettable Journeys, Travel Stories, Passion for Travel, About Eurasia Global DMC"
       />
 
-      {/* End Page Title */}
 
       <div className="header-margin"></div>
-      {/* header top margin */}
 
       <DefaultHeader />
-      {/* End Header 1 */}
 
       <section className="section-bg layout-pt-lg layout-pb-lg">
         <div className="section-bg__item col-12">
@@ -43,7 +38,6 @@ const About = () => {
             priority
           />
         </div>
-        {/* End section-bg__item */}
 
         <div className="container">
           <div className="row justify-center text-center">
@@ -57,9 +51,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        {/* End .container */}
       </section>
-      {/* End About Banner Section */}
 
       <section className="layout-pt-lg layout-pb-md">
         <div className="container">
@@ -73,16 +65,12 @@ const About = () => {
               </div>
             </div>
           </div>
-          {/* End .row */}
 
           <div className="row y-gap-40 justify-between pt-50">
             <WhyChoose />
           </div>
-          {/* End .row */}
         </div>
-        {/* End .container */}
       </section>
-      {/* End Why Choose Us section */}
 
       <section className="layout-pt-md">
         <div className="container">
@@ -91,7 +79,6 @@ const About = () => {
           </div>
         </div>
       </section>
-      {/* End about block section */}
 
       <section className="pt-60">
         <div className="container">
@@ -102,7 +89,6 @@ const About = () => {
           </div>
         </div>
       </section>
-      {/* End counter Section */}
 
       <section className="section-bg layout-pt-lg layout-pb-lg">
         <div className="section-bg__item -mx-20 bg-light-2" />
@@ -119,25 +105,19 @@ const About = () => {
               </div>
             </div>
           </div>
-          {/* End .row */}
 
           <div className="overflow-hidden pt-80 js-section-slider">
             <div className="item_gap-x30">
               <Testimonial />
             </div>
           </div>
-          {/* End .overflow-hidden */}
 
         </div>
-        {/* End .container */}
       </section>
-      {/* End testimonial section */}
 
       <CallToActions />
-      {/* End Call To Actions Section */}
 
       <DefaultFooter />
-      {/* End Call To Actions Section */}
     </>
   );
 };

@@ -20,22 +20,17 @@ const Testimonials = () => {
         keywords="Testimonials, Client Reviews, Travel Experiences, Client Testimonials, Happy Clients, Eurasia Global DMC Testimonials"
       />
 
-      {/* End Page Title */}
 
       <div className="header-margin"></div>
-      {/* header top margin */}
 
       <DefaultHeader />
-      {/* End Header 1 */}
 
-    
       <section className="layout-pt-lg layout-pb-lg bg-blue-2">
         <div className="container">
           <div className="row y-gap-40 justify-between">
             <div className="col-xl-5 col-lg-6" data-aos="fade-up">
               <TestimonialLeftCol />
             </div>
-            {/* End col */}
 
             <div className="col-lg-6">
               <div
@@ -47,19 +42,14 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-          {/* End .row */}
         </div>
-        {/* End container */}
       </section>
-      {/* End testimonial Section */}
 
 
 
       <CallToActions />
-      {/* End Call To Actions Section */}
 
       <DefaultFooter />
-      {/* End Call To Actions Section */}
     </>
   );
 };

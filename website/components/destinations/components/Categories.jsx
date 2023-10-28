@@ -40,10 +40,10 @@ const Categories = () => {
     { id: 1, icon: "icon-bed", catName: "Hotel" },
     { id: 2, icon: "icon-destination", catName: "Tour" },
     { id: 4, icon: "icon-ski", catName: "Activity" },
-    { id: 5, icon: "icon-home", catName: "Holiday Rentals" },
+    { id: 5, icon: "icon-home", catName: "Rentals" },
     { id: 5, icon: "icon-car", catName: "Car" },
-    { id: 6, icon: "icon-yatch", catName: " Cruise" },
-    { id: 7, icon: "icon-tickets", catName: " Flights" },
+    { id: 6, icon: "icon-yatch", catName: "Cruise" },
+    { id: 7, icon: "icon-tickets", catName: "Flights" },
   ];
   return (
     <Slider {...settings}>
@@ -51,7 +51,7 @@ const Categories = () => {
         <div className="col" key={item.id}>
           <button className="d-flex flex-column justify-center px-20 py-15 rounded-4 border-light text-16 lh-14 fw-500 col-12">
             <i className={`${item.icon} text-25 mb-10`} />
-            {item.catName}
+            <span className="d-flex justify-center">{item.catName}</span>
           </button>
         </div>
       ))}

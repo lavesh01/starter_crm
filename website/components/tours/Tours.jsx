@@ -60,7 +60,7 @@ const Tours = () => {
         </>
       );
     return (
-      <button className={className} onClick={props.onClick}>
+      <button className={className} onClick={props.onClick} aria-label="heart" >
         {char}
       </button>
     );
@@ -104,7 +104,7 @@ const Tours = () => {
                   </Slider>
 
                   <div className="cardImage__wishlist">
-                    <button className="button -blue-1 bg-white size-30 rounded-full shadow-2">
+                    <button className="button -blue-1 bg-white size-30 rounded-full shadow-2" aria-label="arrow">
                       <i className="icon-heart text-12" />
                     </button>
                   </div>
@@ -140,9 +140,9 @@ const Tours = () => {
                   <div className="size-3 bg-light-1 rounded-full ml-10 mr-10" />
                   <div className="text-14 text-light-1">{item?.tourType}</div>
                 </div>
-                <h4 className="tourCard__title text-dark-1 text-18 lh-16 fw-500">
+                <strong className="tourCard__title text-dark-1 text-18 lh-16 fw-500">
                   <span>{item?.title}</span>
-                </h4>
+                </strong>
                 <p className="text-light-1 lh-14 text-14 mt-5">
                   {item?.location}
                 </p>

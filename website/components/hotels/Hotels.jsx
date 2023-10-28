@@ -64,7 +64,7 @@ const Hotels = () => {
                               height={300}
                               className="rounded-4 col-12 js-lazy"
                               src={slide}
-                              alt="image"
+                              alt="hotel-image"
                             />
                           </SwiperSlide>
                         ))}
@@ -135,21 +135,17 @@ const Hotels = () => {
             <i className="icon icon-arrow-left" />
           </button>
         </div>
-        {/* End .prev */}
 
         <div className="col-auto">
           <div className="pagination -dots text-border js-hotels-pag" />
         </div>
-        {/* End .pagination */}
 
         <div className="col-auto">
           <button className="d-flex items-center text-24 arrow-right-hover js-hotels-next">
             <i className="icon icon-arrow-right" />
           </button>
         </div>
-        {/* End .next */}
       </div>
-      {/* End navigation and pagination */}
     </>
   );
 };

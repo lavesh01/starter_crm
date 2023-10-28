@@ -79,6 +79,7 @@ const GuestSearch = ({ setGuests , guests}) => {
         data-bs-auto-close="outside"
         aria-expanded="false"
         data-bs-offset="0,22"
+        aria-label="Guests"
       >
         <div className="text-15 text-light-1 ls-2 lh-16">
           Adults-&nbsp;<span className="js-count-adult">&nbsp;{guestCounts.Adults}&nbsp;</span> {" "}

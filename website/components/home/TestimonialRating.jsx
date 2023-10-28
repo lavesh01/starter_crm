@@ -14,7 +14,6 @@ const TestimonialRating = () => {
             <div className="text-30 lh-15 fw-600">1000+</div>
             <div className="lh-15">Happy People</div>
           </div>
-          {/* End .col */}
   
           <div className="col-sm-5 col-6">
             <div className="text-30 lh-15 fw-600">4.88</div>
@@ -27,7 +26,6 @@ const TestimonialRating = () => {
               <div className="icon-star text-white text-10" />
             </div>
           </div>
-          {/* End .col */}
         </div>
       </>
     );

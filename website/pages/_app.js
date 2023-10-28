@@ -8,6 +8,7 @@ import "../styles/index.scss";
 
 import Aos from "aos";
 import { Provider } from "react-redux";
+import Script from "next/script";
 import SrollTop from "../components/common/ScrollTop";
 import { store } from "../app/store";
 import { useEffect } from "react";
@@ -27,6 +28,21 @@ export default function App({ Component, pageProps }) {
   return (
     <main>
       <Provider store={store}>
+
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_MEASUREMENT_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', ${process.env.GA_MEASUREMENT_ID});
+        `}
+      </Script>
+
         <Component {...pageProps} />
         <SrollTop />
       </Provider>

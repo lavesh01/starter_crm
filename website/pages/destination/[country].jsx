@@ -1,7 +1,6 @@
 import "photoswipe/dist/photoswipe.css";
 
 import { Gallery, Item } from "react-photoswipe-gallery";
-import { useEffect, useState } from "react";
 
 import Blog from "../../components/blog/Blog3";
 import CallToActions from "../../components/common/CallToActions";
@@ -12,28 +11,13 @@ import DefaultHeader from "../../components/header/default-header";
 import Hotels from "../../components/hotels/Hotels2";
 import Image from "next/image";
 import IntroTown from "../../components/destinations/components/IntroTown";
-import Link from "next/link";
 import Seo from "../../components/common/Seo";
 import Testimonial from "../../components/home/Testimonial";
 import TestimonialLeftCol from "../../components/home/TestimonialLeftCol";
 import Tours from "../../components/tours/Tours";
 import { destinations } from "../../data/desinations";
-import { useRouter } from "next/router";
 
-const Destinations = () => {
-  const router = useRouter();
-  const [destination, setDestination] = useState({});
-  const country = router.query.country;
-
-  useEffect(() => {
-    const foundCountry = destinations.find((item) => item.param === country)
-    if (!country) <h1>Loading...</h1>;
-    else if (!foundCountry){
-      router.push('/404')
-      return;
-    }
-    else setDestination(foundCountry);
-  }, [country,router]);
+const Destinations =  ({destination}) => {
 
   return (
     <>
@@ -79,6 +63,7 @@ const Destinations = () => {
                       width={350}
                       height={375}
                       priority={true}
+                      quality={60}
                       style={{ maxHeight: "500px", objectFit: "cover", overflow: "hidden" }}
                       alt="destination-image"
                       className="rounded-4"
@@ -94,8 +79,6 @@ const Destinations = () => {
 
     </div>
 
-
-
       <section className="">
         <div className="container">
 
@@ -104,10 +87,6 @@ const Destinations = () => {
           </div>
 
           <div className="row y-gap-20 pt-40">
-            <div className="col-auto">
-              <h2>What to know before visiting {destination?.country}</h2>
-            </div>
-
             <IntroTown destination={destination} />
           </div>
 
@@ -147,7 +126,7 @@ const Destinations = () => {
                 </p>
               </div>
             </div>
-          </div>
+            </div>
 
           <div className="row y-gap-30 pt-40 sm:pt-20 item_gap-x30">
             <Hotels />
@@ -165,15 +144,6 @@ const Destinations = () => {
                   Embark on Unforgettable Adventures – Our Top-Rated Tours Await You
                 </p>
               </div>
-            </div>
-
-            <div className="col-auto">
-              <Link
-                href="#"
-                className="button -md -blue-1 bg-blue-1-05 text-blue-1"
-              >
-                More <div className="icon-arrow-top-right ml-15" />
-              </Link>
             </div>
           </div>
 
@@ -231,3 +201,30 @@ const Destinations = () => {
 };
 
 export default Destinations;
+export async function getStaticPaths() {
+  const paths = destinations.map((destination) => ({
+    params: { country: destination.param },
+  }));
+
+  return {
+    paths,
+    fallback: false, 
+  };
+}
+
+export async function getStaticProps({ params }) {
+  const { country } = params;
+  const foundCountry = destinations.find((item) => item.param === country);
+
+  if (!foundCountry) {
+    return {
+      notFound: true, 
+    };
+  }
+
+  return {
+    props: {
+      destination: foundCountry,
+    },
+  };
+}

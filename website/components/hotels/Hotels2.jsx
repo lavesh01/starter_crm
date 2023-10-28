@@ -60,7 +60,7 @@ const Hotels2 = () => {
         </>
       );
     return (
-      <button className={className} onClick={props.onClick}>
+      <button className={className} onClick={props.onClick} aria-label="arrow">
         {char}
       </button>
     );
@@ -96,7 +96,7 @@ const Hotels2 = () => {
                             height={300}
                             className="rounded-4 col-12 js-lazy"
                             src={slide}
-                            alt="image"
+                            alt="hotel-image"
                           />
                         </div>
                       </div>
@@ -104,7 +104,7 @@ const Hotels2 = () => {
                   </Slider>
 
                   <div className="cardImage__wishlist">
-                    <button className="button -blue-1 bg-white size-30 rounded-full shadow-2">
+                    <button className="button -blue-1 bg-white size-30 rounded-full shadow-2" aria-label="heart-logo">
                       <i className="icon-heart text-12" />
                     </button>
                   </div>
@@ -131,9 +131,9 @@ const Hotels2 = () => {
                 </div>
               </div>
               <div className="hotelsCard__content mt-10">
-                <h4 className="hotelsCard__title text-dark-1 text-18 lh-16 fw-500">
+                <strong className="hotelsCard__title text-dark-1 text-18 lh-16 fw-500">
                   <span>{item?.title}</span>
-                </h4>
+                </strong>
                 <p className="text-light-1 lh-14 text-14 mt-5">
                   {item?.location}
                 </p>

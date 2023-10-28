@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import MainMenu from "../MainMenu";
 import MobileMenu from "../MobileMenu";
+import Image from "next/image";
 
 const Header1 = () => {
   const [navbar, setNavbar] = useState(false);
@@ -27,14 +28,11 @@ const Header1 = () => {
             <div className="col-4">
               <div className="d-flex items-center">
                 <Link href="/" className="header-logo mr-20" style={{width: "110px"}}>
-                  <img src="/img/general/FINAL EURASIA GLOBAL LOGO.png" alt="logo icon" />
+                  <Image width={120} height={120} priority={true} src="/img/general/FINAL EURASIA GLOBAL LOGO.png" alt="logo icon" />
                 </Link>
-                {/* End logo */}
 
               </div>
-              {/* End d-flex */}
             </div>
-            {/* End col */}
 
             <div className="col-8">
               <div className="d-flex items-center justify-content-between">
@@ -44,9 +42,7 @@ const Header1 = () => {
                     <MainMenu style="text-dark-1" />
                   </div>
                 </div>
-                {/* End header-menu */}
 
-                {/* Start btn-group */}
                 <div className="d-flex items-center ml-20 is-menu-opened-hide md:d-none">
                   <Link
                     href="/contact"
@@ -55,9 +51,7 @@ const Header1 = () => {
                     Contact
                   </Link>
                 </div>
-                {/* End btn-group */}
 
-                {/* Start mobile menu icon */}
                 <div className="d-none xl:d-flex x-gap-20 items-center pl-30 text-dark-1" style={{width:"100%",justifyContent:"flex-end"}}>
                   <div>
                     <button
@@ -75,18 +69,13 @@ const Header1 = () => {
                       data-bs-scroll="true"
                     >
                       <MobileMenu />
-                      {/* End MobileMenu */}
                     </div>
                   </div>
                 </div>
-                {/* End mobile menu icon */}
               </div>
             </div>
-            {/* End col-auto */}
           </div>
-          {/* End .row */}
         </div>
-        {/* End header_container */}
       </header>
     </>
   );

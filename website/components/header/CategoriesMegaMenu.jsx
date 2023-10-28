@@ -23,7 +23,6 @@ const CategoriesMegaMenu = () => {
           </Tab>
         ))}
       </TabList>
-      {/* End tab-controls */}
 
       <div className="tabs__content js-tabs-content">
         {categorieMegaMenuItems.map((megaMenu) => (
@@ -51,7 +50,6 @@ const CategoriesMegaMenu = () => {
                     </div>
                   ))}
                 </li>
-                {/* End mega menu list left */}
 
                 <li className="mega__image d-flex relative">
                   <Image
@@ -74,13 +72,11 @@ const CategoriesMegaMenu = () => {
                     </Link>
                   </div>
                 </li>
-                {/* End mega menu right images */}
               </ul>
             ))}
           </TabPanel>
         ))}
       </div>
-      {/* End tab_content */}
     </Tabs>
   );
 };

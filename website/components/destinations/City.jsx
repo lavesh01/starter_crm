@@ -63,7 +63,7 @@ const City = ({destination}) => {
                     {item.city}
                   </h4>
                   <Link href={item.routePath}>
-                    <button className="button col-12 h-60 -blue-1 bg-white text-dark-1">
+                    <button className="button col-12 h-60 -blue-1 bg-white text-dark-1" aria-label="Discover" >
                       Discover
                     </button>
                   </Link>
@@ -75,10 +75,10 @@ const City = ({destination}) => {
       </Swiper>
 
       <div>
-        <button className="section-slider-nav  -prev flex-center button -blue-1 bg-white shadow-1 size-40 rounded-full sm:d-none js-destination-prev">
+        <button className="section-slider-nav  -prev flex-center button -blue-1 bg-white shadow-1 size-40 rounded-full sm:d-none js-destination-prev" aria-label="arrow" >
           <i className="icon icon-chevron-left text-12" />
         </button>
-        <button className="section-slider-nav -next flex-center button -blue-1 bg-white shadow-1 size-40 rounded-full sm:d-none js-destination-next">
+        <button className="section-slider-nav -next flex-center button -blue-1 bg-white shadow-1 size-40 rounded-full sm:d-none js-destination-next" aria-label="arrow">
           <i className="icon icon-chevron-right text-12" />
         </button>
         <div className="slider-scrollbar bg-light-2 mt-40  js-popular-destination-scrollbar" />

@@ -4,8 +4,12 @@ const IntroTown = ({destination}) => {
   return (
     <>
       <div className="col-xl-8">
+        <div className="col-auto">
+          <h2>What to know before visiting {destination?.country}</h2>
+        </div>
+
         <p className="text-15 text-dark-1">
-          {destination.description}
+          {destination?.description}
         </p>
       </div>
 

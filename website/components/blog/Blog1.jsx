@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import blogsData from "../../data/blogs";
-import BlogPagination from "./BlogPagination";
 
 const Blog1 = () => {
   const [filterOption, setFilterOption] = useState("art_culture");
@@ -14,7 +13,6 @@ const Blog1 = () => {
     { label: "Family holidays", value: "family_holidays" },
     { label: "Air travel", value: "air_travel" },
     { label: "Food and drink", value: "food_drink" },
-    // add more options as needed
   ];
 
   return (
@@ -34,7 +32,6 @@ const Blog1 = () => {
             </div>
           ))}
         </div>
-        {/* End tab-controls */}
 
         <div className="row y-gap-30 pt-30">
           {blogsData.slice(0, 9).map((item) => (
@@ -55,7 +52,7 @@ const Blog1 = () => {
                   </div>
                 </div>
                 <div className="pt-20">
-                  <h4 className="text-dark-1 text-18 fw-500">{item.title}</h4>
+                  <strong className="text-dark-1 text-18 fw-500">{item.title}</strong>
                   <div className="text-light-1 text-15 lh-14 mt-5">
                     {item.date}
                   </div>
@@ -64,7 +61,6 @@ const Blog1 = () => {
             </div>
           ))}
         </div>
-        {/* End .row */}
 
       </div>
     </>
