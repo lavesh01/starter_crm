@@ -1,6 +1,6 @@
 import Image from "next/image";
-import blogsData from "../../../data/blogs";
 import Link from "next/link";
+import blogsData from "../../../data/blogs";
 
 const RelatedBlog = () => {
   return (
@@ -28,7 +28,7 @@ const RelatedBlog = () => {
                 {item.date}
               </div>
             </div>
-          </a>
+          </Link>
         </div>
       ))}
     </>
