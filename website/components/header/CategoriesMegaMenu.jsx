@@ -51,10 +51,11 @@ const CategoriesMegaMenu = () => {
                   ))}
                 </li>
 
-                <li className="mega__image d-flex relative">
+                <li className=" d-flex relative">
                   <Image
                     width={270}
                     height={300}
+                    priority={true}
                     src={megaCol?.megaBanner}
                     alt="image"
                     className="rounded-4 js-lazy"

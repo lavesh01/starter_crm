@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const LocationTopBar = ({country}) => {
   return (
     <section
@@ -20,9 +22,9 @@ const LocationTopBar = ({country}) => {
             </div>
           </div>
           <div className="col-auto">
-            <a href="#" className="text-14 text-light-1">
+            <Link href="#" className="text-14 text-light-1">
               {country} Tourism: Best of {country}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

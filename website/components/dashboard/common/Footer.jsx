@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function Footer() {
@@ -23,9 +24,9 @@ function Footer() {
               <div className="row x-gap-20 y-gap-10 items-center text-14">
                 {linksData.map((link, index) => (
                   <div className="col-auto" key={index}>
-                    <a href={link.url} className="text-13 lh-1">
+                    <Link href={link.url} className="text-13 lh-1">
                       {link.label}
-                    </a>
+                    </Link>
                   </div>
                 ))}
               </div>

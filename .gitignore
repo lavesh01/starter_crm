@@ -2,6 +2,9 @@
 client/.env
 server/.env
 website/.env
+website/next.config.js
+**/next.config.js
+**/.env
 
 # Ignore node_modules in both client and server
 website/node_modules/@next/swc-win32-x64-msvc/next-swc.win32-x64-msvc.node

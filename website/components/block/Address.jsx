@@ -5,7 +5,7 @@ const Address = () => {
       colClass: "col-lg-3",
       title: "Address",
       content: (
-        <>647/2A, vashishtpuram, Jankipuram Extension, Lucknow, 226021, India.</>
+        <p>647/2A, vashishtpuram, Jankipuram Extension, Lucknow, 226021, India.</p>
       ),
     },
     {
@@ -14,7 +14,7 @@ const Address = () => {
       title: "Customer Care No.",
       content: (
         <>
-          <a href="tel:+4733378901">+91-8542951004</a>
+          <p>+91-8542951004</p>
         </>
       ),
     },
@@ -25,7 +25,7 @@ const Address = () => {
       content: (
         <>
           {" "}
-          <a href="mailto:i@gotrip.com">sales@eurasiaglobal.net</a>
+          <p>sales@eurasiaglobal.net</p>
         </>
       ),
     },

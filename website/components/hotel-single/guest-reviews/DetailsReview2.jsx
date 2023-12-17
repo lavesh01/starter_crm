@@ -154,10 +154,10 @@ const DetailsReview2 = () => {
       {/* End .col */}
 
       <div className="col-auto">
-        <a href="#" className="button -md -outline-blue-1 text-blue-1">
+        <p className="button -md -outline-blue-1 text-blue-1">
           Show all 116 reviews{" "}
           <div className="icon-arrow-top-right ml-15"></div>
-        </a>
+        </p>
       </div>
       {/* End .col-auto */}
     </div>

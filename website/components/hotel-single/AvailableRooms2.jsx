@@ -61,12 +61,11 @@ const AvailableRooms2 = ({ hotel }) => {
                     <div className="text-15">Kitchen</div>
                   </div>
                 </div>
-                <a
-                  href="#"
+                <p
                   className="d-block text-15 fw-500 underline text-blue-1 mt-15"
                 >
                   Show Room Information
-                </a>
+                </p>
               </div>
             </div>
             {/* End col-xl-atuo */}
@@ -143,12 +142,11 @@ const AvailableRooms2 = ({ hotel }) => {
                         <div className="text-20 lh-14 fw-500">
                           ₹{hotel?.price}
                         </div>
-                        <a
-                          href="#"
+                        <p
                           className="button h-50 px-35 -dark-1 bg-blue-1 text-white mt-10"
                         >
                           Reserve <div className="icon-arrow-top-right ml-15" />
-                        </a>
+                        </p>
                       </div>
                     </div>
                     {/* End .col */}

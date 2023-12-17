@@ -49,12 +49,11 @@ const AvailableRooms = ({ hotel }) => {
                     </div>
                   </div>
                   {/* End room features */}
-                  <a
-                    href="#"
+                  <p
                     className="d-block text-15 fw-500 underline text-blue-1 mt-15"
                   >
                     Show Room Information
-                  </a>
+                  </p>
                 </div>
                 {/* End roomgrid inner */}
 
@@ -231,12 +230,11 @@ const AvailableRooms = ({ hotel }) => {
                   <div className="text-22 fw-500 lh-17 mt-5">
                     ₹{hotel?.price}
                   </div>
-                  <a
-                    href="#"
+                  <p
                     className="button h-50 px-24 -dark-1 bg-blue-1 text-white mt-10"
                   >
                     Reserve <div className="icon-arrow-top-right ml-15" />
-                  </a>
+                  </p>
                   <div className="text-15 fw-500 mt-30">
                     You&lsquo;ll be taken to the next step
                   </div>
@@ -303,12 +301,11 @@ const AvailableRooms = ({ hotel }) => {
                     </div>
                   </div>
                   {/* End room features */}
-                  <a
-                    href="#"
+                  <p
                     className="d-block text-15 fw-500 underline text-blue-1 mt-15"
                   >
                     Show Room Information
-                  </a>
+                  </p>
                 </div>
                 {/* End roomgrid inner */}
 

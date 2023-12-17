@@ -1,4 +1,6 @@
 import { BsPinterest } from "react-icons/bs"
+import Link from "next/link";
+
 const Social = () => {
   const socialContent = [
     { id: 1, icon: "icon-facebook", link: "https://www.facebook.com/EurasiaB2BGlobalDMC/", ariaLabel: "Facebook" },
@@ -10,7 +12,7 @@ const Social = () => {
   return (
     <>
       {socialContent.map((item) => (
-        <a
+        <Link
           href={item.link}
           target="_blank"
           rel="noopener noreferrer"
@@ -21,7 +23,7 @@ const Social = () => {
             <BsPinterest className="d-flex items-center" size={14} /> :  
             <i className={`${item.icon} text-14`} />
           }
-        </a>
+        </Link>
       ))}
     </>
   );

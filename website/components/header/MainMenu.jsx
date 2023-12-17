@@ -15,10 +15,10 @@ const MainMenu = ({ style = "" }) => {
         </li>
 
         <li className="menu-item-has-children -has-mega-menu">
-          <a href="#" >
+          <Link href="#" >
             <span className="mr-10">Destinations</span>
             <i className="icon icon-chevron-sm-down" />
-          </a>
+          </Link>
           <div className="mega">
             <CategoriesMegaMenu />
           </div>

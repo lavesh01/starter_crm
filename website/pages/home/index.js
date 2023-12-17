@@ -35,7 +35,7 @@ const Home = () => {
         ogImage={`${process.env.BASE_URL}/img/seo/home-page.png`}
         ogImageAlt="home-page-image" 
         twitterHandle="@Eurasiab2bdmc" 
-        canonicalUrl={`${process.env.BASE_URL}`} 
+        canonicalUrl={`${process.env.BASE_URL}/home`} 
         robotsContent="index, follow"
         keywords="eurasia global,eurasia global dmc, eurasia DMC, eurasia, eurasia b2b, eurasia b2b dmc"
         structuredDataScript={structuredData}

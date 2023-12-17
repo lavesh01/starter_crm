@@ -1,6 +1,7 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import Image from "next/image";
 import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import { Scrollbar } from "swiper";
 import dynamic from "next/dynamic";
@@ -62,11 +63,11 @@ const City = ({destination}) => {
                   <h4 className="text-26 md:text-20 lh-13 text-white mb-20">
                     {item.city}
                   </h4>
-                  <Link href={item.routePath}>
+                  <p>
                     <button className="button col-12 h-60 -blue-1 bg-white text-dark-1" aria-label="Discover" >
                       Discover
                     </button>
-                  </Link>
+                  </p>
                 </div>
               </div>
             </Link>
