@@ -41,7 +41,7 @@ const City = ({destination}) => {
         {destination.city && Array.isArray(destination.city) && destination.city.map((item,i) => (
           <SwiperSlide key={i}>
             <Link
-              href="#"
+              href={`${process.env.BASE_URL}${item.routePath}`}
               className="citiesCard -type-1 d-block rounded-4"
               key={i}
             >

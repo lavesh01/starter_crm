@@ -19,7 +19,6 @@ import Tours from "../../components/tours/Tours";
 import { destinations } from "../../data/desinations";
 
 const Destinations =  ({destination}) => {
-  console.log(destination)
 
   return (
     <>
