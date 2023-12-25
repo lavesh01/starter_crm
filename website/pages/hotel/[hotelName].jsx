@@ -29,7 +29,7 @@ const HotelSingleV1Dynamic = ({ hotel }) => {
         ogImage="/img/seo/hotels-page.jpg"
         ogImageAlt="hotels-page-image"
         twitterHandle="@Eurasiab2bdmc"
-        canonicalUrl={`${process.env.BASE_URL}/hotels/${hotel?.title}`}
+        canonicalUrl={`${process.env.BASE_URL}/hotel/${hotel?.param}`}
         robotsContent="index, follow"
         keywords="eurasia global,eurasia global dmc, eurasia DMC, eurasia, eurasia b2b, eurasia b2b dmc,Hotels, Accommodations, Charming Stays, Eurasia Hotels, Comfortable Retreats, Travel and Stay, Hotel Deals"
       />
