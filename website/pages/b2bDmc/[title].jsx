@@ -8,7 +8,6 @@ import QuotationForm from "../../components/hero/GetQuoteForm/QuotationForm"
 import React from "react";
 import Seo from "../../components/common/Seo";
 import pSeoBlogData from '../../data/programmaticSeo';
-import parse from 'html-react-parser';
 
 const ProgrammaticSeo = ({ blog }) => {
   
@@ -38,12 +37,12 @@ const ProgrammaticSeo = ({ blog }) => {
 
             <div className="col-auto mb-20">
                 <div className="row x-gap-10 y-gap-10">
-                  { blog?.keyword?.map((key,index) => {
+                  { blog?.keyword?.map((data,index) => {
                     return (<>
                       <div key={index} style={{width: "fit-content", border: "1px solid blue"}} className="mr-10 mt-10 button  -blue-1 py-5 px-10 rounded-100 text-12 fw-500 text-blue-1 text-capitalize">
                         <span className="col-auto"  >
                             <BsFillTagFill className='mr-5' />
-                            {key}
+                            {data}
                         </span>
                       </div>
                     </>)
@@ -61,11 +60,7 @@ const ProgrammaticSeo = ({ blog }) => {
                 <Image src={`/img/programmatic-seo/${blog?.image}`} style={{objectFit:"cover"}} width={750} height={200} alt={blog?.title} />
               </div>
               <div className="no-page">
-                <div className="pr-30 mt-5">
-                  {
-                    parse(blog?.description)
-                  }
-                </div>
+                <div className="pr-30 mt-5" dangerouslySetInnerHTML={{ __html: blog?.description }} />
 
                 <div style={{ display: "flex", paddingTop: "1rem", gap: "1rem"}}>
 
